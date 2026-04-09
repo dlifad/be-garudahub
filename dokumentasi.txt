@@ -1,0 +1,27 @@
+Tabel :
+1.Users
+2.News
+3.Merchandise
+
+Endpoint :
+1.Auth
+-POST /api/auth/register
+-POST /api/auth/verify-email
+-POST /api/auth/resend-code
+-POST /api/auth/login
+-GET /api/auth/me
+
+2.Profile
+-GET /api/profile
+-PUT /api/profile
+
+3.News
+-GET /api/news
+-GET /api/news/:id
+
+4.Merc
+-GET /api/merchandise
+-GET /api/merchandise/:id
+
+5.Search
+-GET /api/search?q=...
