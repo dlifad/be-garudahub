@@ -209,3 +209,15 @@ exports.me = (req, res) => {
     }
   );
 };
+
+exports.logout = (req, res) => {
+  try {
+    return res.status(200).json({
+      message: 'Logout berhasil',
+    });
+  } catch (error) {
+    return res.status(500).json({
+      message: 'Terjadi kesalahan saat logout',
+    });
+  }
+};

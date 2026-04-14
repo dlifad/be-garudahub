@@ -10,6 +10,7 @@ Endpoint :
 -POST /api/auth/resend-code
 -POST /api/auth/login
 -GET /api/auth/me
+-POST /api/auth/logout
 
 2.Profile
 -GET /api/profile
