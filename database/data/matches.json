@@ -1,0 +1,40 @@
+[
+  {
+    "tournament_id": 1,
+    "matchday": 1,
+    "round": "Group Stage",
+    "is_home": 1,
+    "home_team": "Indonesia",
+    "away_team": "Vietnam",
+    "opponent": "Vietnam",
+    "opponent_flag": "VN",
+    "home_team_flag": "IDN",
+    "away_team_flag": "VN",
+    "match_date_utc": "2099-12-15T13:00:00.000Z",
+    "venue": "Stadion Utama GBK, Jakarta",
+    "stadium_name": "Stadion Utama GBK, Jakarta",
+    "status": "scheduled",
+    "home_score": null,
+    "away_score": null,
+    "ticket_price_idr": 150000
+  },
+  {
+    "tournament_id": 1,
+    "matchday": 2,
+    "round": "Group Stage",
+    "is_home": 0,
+    "home_team": "Thailand",
+    "away_team": "Indonesia",
+    "opponent": "Thailand",
+    "opponent_flag": "TH",
+    "home_team_flag": "TH",
+    "away_team_flag": "IDN",
+    "match_date_utc": "2099-12-20T13:00:00.000Z",
+    "venue": "Rajamangala Stadium, Bangkok",
+    "stadium_name": "Rajamangala Stadium, Bangkok",
+    "status": "scheduled",
+    "home_score": null,
+    "away_score": null,
+    "ticket_price_idr": 200000
+  }
+]

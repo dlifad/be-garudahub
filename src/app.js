@@ -1,11 +1,16 @@
-const express = require('express');
-const cors = require('cors');
+const express = require("express");
+const cors = require("cors");
 
-const authRoutes = require('./routes/authRoutes');
-const profileRoutes = require('./routes/profileRoutes');
-const newsRoutes = require('./routes/newsRoutes');
-const searchRoutes = require('./routes/searchRoutes');
-const merchandiseRoutes = require('./routes/merchandiseRoutes');
+const authRoutes = require("./routes/authRoutes");
+const profileRoutes = require("./routes/profileRoutes");
+const newsRoutes = require("./routes/newsRoutes");
+const searchRoutes = require("./routes/searchRoutes");
+const merchandiseRoutes = require("./routes/merchandiseRoutes");
+const tournamentRoutes = require("./routes/tournamentRoutes");
+const matchRoutes = require("./routes/matchRoutes");
+const playerRoutes = require("./routes/playerRoutes");
+const predictionRoutes = require("./routes/predictionRoutes");
+const currencyRoutes = require("./routes/currencyRoutes");
 
 const app = express();
 
@@ -13,14 +18,19 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.get('/', (req, res) => {
-  res.json({ message: 'GarudaHub API berjalan' });
+app.get("/", (req, res) => {
+  res.json({ message: "GarudaHub API berjalan" });
 });
 
-app.use('/api/auth', authRoutes);
-app.use('/api/profile', profileRoutes);
-app.use('/api/news', newsRoutes);
-app.use('/api/search', searchRoutes);
-app.use('/api/merchandise', merchandiseRoutes);
+app.use("/api/auth", authRoutes);
+app.use("/api/profile", profileRoutes);
+app.use("/api/news", newsRoutes);
+app.use("/api/search", searchRoutes);
+app.use("/api/merchandise", merchandiseRoutes);
+app.use("/api/tournaments", tournamentRoutes);
+app.use("/api/matches", matchRoutes);
+app.use("/api/players", playerRoutes);
+app.use("/api/predictions", predictionRoutes);
+app.use("/api/currency", currencyRoutes);
 
 module.exports = app;

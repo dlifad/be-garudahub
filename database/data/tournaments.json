@@ -1,0 +1,28 @@
+[
+  {
+    "name": "AFF Championship 2026",
+    "type": "regional",
+    "confederation": "AFF",
+    "stage": "Group Stage",
+    "indonesia_group": "A",
+    "start_date": "2026-12-01",
+    "end_date": "2026-12-31",
+    "host_country": "Indonesia",
+    "logo_url": "https://example.com/aff-2026.png",
+    "season": "2026",
+    "description": "Turnamen regional Asia Tenggara"
+  },
+  {
+    "name": "FIFA World Cup Qualification 2027",
+    "type": "world",
+    "confederation": "AFC",
+    "stage": "Group Stage",
+    "indonesia_group": "C",
+    "start_date": "2027-03-01",
+    "end_date": "2027-11-30",
+    "host_country": "Various",
+    "logo_url": "https://example.com/wcq-2027.png",
+    "season": "2027",
+    "description": "Kualifikasi Piala Dunia zona AFC"
+  }
+]
