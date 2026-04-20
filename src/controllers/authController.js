@@ -221,3 +221,61 @@ exports.logout = (req, res) => {
     });
   }
 };
+
+exports.changePassword = (req, res) => {
+  const { current_password, new_password } = req.body;
+
+  if (!current_password || !new_password) {
+    return res.status(400).json({
+      message: 'Password lama dan password baru wajib diisi',
+    });
+  }
+
+  if (new_password.length < 6) {
+    return res.status(400).json({
+      message: 'Password baru minimal 6 karakter',
+    });
+  }
+
+  db.get(
+    'SELECT * FROM users WHERE id = ?',
+    [req.user.id],
+    async (err, user) => {
+      if (err) return res.status(500).json({ message: err.message });
+
+      if (!user) {
+        return res.status(404).json({ message: 'User tidak ditemukan' });
+      }
+
+      const isMatch = await bcrypt.compare(current_password, user.password);
+
+      if (!isMatch) {
+        return res.status(401).json({
+          message: 'Password lama salah',
+        });
+      }
+
+      const isSamePassword = await bcrypt.compare(new_password, user.password);
+
+      if (isSamePassword) {
+        return res.status(400).json({
+          message: 'Password baru tidak boleh sama dengan password lama',
+        });
+      }
+
+      const hashedPassword = await bcrypt.hash(new_password, 10);
+
+      db.run(
+        'UPDATE users SET password = ? WHERE id = ?',
+        [hashedPassword, req.user.id],
+        function (err) {
+          if (err) return res.status(500).json({ message: err.message });
+
+          return res.json({
+            message: 'Password berhasil diubah',
+          });
+        }
+      );
+    }
+  );
+};
