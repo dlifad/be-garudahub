@@ -279,3 +279,86 @@ exports.changePassword = (req, res) => {
     }
   );
 };
+
+exports.forgotPassword = (req, res) => {
+  const { email } = req.body;
+
+  if (!email) {
+    return res.status(400).json({ message: 'Email wajib diisi' });
+  }
+
+  db.get('SELECT * FROM users WHERE email = ?', [email], async (err, user) => {
+    if (err) return res.status(500).json({ message: err.message });
+
+    if (!user) {
+      return res.status(404).json({ message: 'User tidak ditemukan' });
+    }
+
+    const code = generateOTP();
+    const expiresAt = new Date(Date.now() + 10 * 60 * 1000).toISOString();
+
+    db.run(
+      `UPDATE users SET verification_code = ?, verification_expires_at = ? WHERE email = ?`,
+      [code, expiresAt, email],
+      async function (err) {
+        if (err) return res.status(500).json({ message: err.message });
+
+        try {
+          await sendVerificationEmail(email, code, user.name);
+          res.json({ message: 'Kode reset password dikirim ke email' });
+        } catch (e) {
+          res.status(500).json({ message: 'Gagal mengirim email' });
+        }
+      }
+    );
+  });
+};
+
+exports.resetPassword = (req, res) => {
+  const { email, code, new_password } = req.body;
+
+  if (!email || !code || !new_password) {
+    return res.status(400).json({
+      message: 'Semua field wajib diisi',
+    });
+  }
+
+  if (new_password.length < 6) {
+    return res.status(400).json({
+      message: 'Password minimal 6 karakter',
+    });
+  }
+
+  db.get('SELECT * FROM users WHERE email = ?', [email], async (err, user) => {
+    if (err) return res.status(500).json({ message: err.message });
+
+    if (!user) {
+      return res.status(404).json({ message: 'User tidak ditemukan' });
+    }
+
+    if (user.verification_code !== code) {
+      return res.status(400).json({ message: 'Kode salah' });
+    }
+
+    const now = new Date();
+    const expiresAt = new Date(user.verification_expires_at);
+
+    if (now > expiresAt) {
+      return res.status(400).json({ message: 'Kode sudah kedaluwarsa' });
+    }
+
+    const hashedPassword = await bcrypt.hash(new_password, 10);
+
+    db.run(
+      `UPDATE users 
+       SET password = ?, verification_code = NULL, verification_expires_at = NULL
+       WHERE email = ?`,
+      [hashedPassword, email],
+      function (err) {
+        if (err) return res.status(500).json({ message: err.message });
+
+        res.json({ message: 'Password berhasil direset' });
+      }
+    );
+  });
+};

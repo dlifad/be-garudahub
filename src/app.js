@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 
 const authRoutes = require('./routes/authRoutes');
 const profileRoutes = require('./routes/profileRoutes');
@@ -22,5 +23,6 @@ app.use('/api/profile', profileRoutes);
 app.use('/api/news', newsRoutes);
 app.use('/api/search', searchRoutes);
 app.use('/api/merchandise', merchandiseRoutes);
+app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
 
 module.exports = app;

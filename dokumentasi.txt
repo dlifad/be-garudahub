@@ -12,6 +12,8 @@ Endpoint :
 -GET /api/auth/me
 -POST /api/auth/logout
 -PUT /api/auth/change-password
+-POST /api/auth/forgot-password
+-POST /api/auth/reset-password
 
 2.Profile
 -GET /api/profile
