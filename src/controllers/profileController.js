@@ -5,10 +5,9 @@ const path = require('path');
 const deleteOldPhoto = (url) => {
   if (!url) return;
 
-  const oldPath = url.split('/uploads/')[1];
-  if (!oldPath) return;
+  const relativePath = url.startsWith('/') ? url.substring(1) : url;
 
-  const fullPath = path.join(__dirname, '../../uploads', oldPath);
+  const fullPath = path.join(__dirname, '../../', relativePath);
 
   fs.unlink(fullPath, (err) => {
     if (err) console.log('Gagal hapus foto lama:', err.message);
@@ -57,7 +56,7 @@ exports.updateProfile = (req, res) => {
       if (req.file) {
         deleteOldPhoto(oldUser.profile_photo);
 
-        newPhoto = `${req.protocol}://${req.get('host')}/uploads/profile/${req.file.filename}`;
+        newPhoto = `/uploads/profile/${req.file.filename}`;
       }
 
       // UPDATE DATABASE

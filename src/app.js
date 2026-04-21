@@ -18,11 +18,12 @@ app.get('/', (req, res) => {
   res.json({ message: 'GarudaHub API berjalan' });
 });
 
+app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
+
 app.use('/api/auth', authRoutes);
 app.use('/api/profile', profileRoutes);
 app.use('/api/news', newsRoutes);
 app.use('/api/search', searchRoutes);
 app.use('/api/merchandise', merchandiseRoutes);
-app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
 
 module.exports = app;
