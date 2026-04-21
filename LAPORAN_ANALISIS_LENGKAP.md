@@ -17,6 +17,103 @@
 
 ---
 
+## 🆕 UPDATE IMPLEMENTASI TERBARU (2026-04-21)
+
+**Status:** ✅ PHASE 3 (P1) selesai diimplementasikan oleh GitHub Copilot (mode serius).
+
+### Perubahan yang sudah dilakukan
+
+- ✅ `mapMatchRow()` sekarang mengembalikan field `head_coach`
+- ✅ Query `getMatches()` sudah `LEFT JOIN tournament_coaches` untuk ambil `head_coach_name`
+- ✅ Query response `createMatch()` sudah include `head_coach_name`
+- ✅ Query response `updateMatch()` sudah include `head_coach_name`
+- ✅ `getLocalSchedule()` sekarang include `head_coach` (opsional, sudah diterapkan)
+- ✅ Route detail match `GET /matches/:id` dipastikan aktif dan return `head_coach`
+
+### File yang diubah
+
+- `src/controllers/matchController.js`
+- `src/routes/matchRoutes.js`
+
+### Catatan verifikasi
+
+- ✅ Validasi sintaks file lulus (no errors pada file yang diubah)
+- ✅ Verifikasi runtime endpoint (`curl`/start server) sudah dijalankan dan lolos
+
+---
+
+## 🆕 UPDATE IMPLEMENTASI PHASE 5 (2026-04-21)
+
+**Status:** ✅ DONE - seluruh item Phase 5 selesai.
+
+### Perubahan yang sudah dilakukan
+
+- ✅ `GET /tournaments/:id` sekarang mengembalikan detail turnamen, `head_coach`, `coaches`, `total_players`, dan `total_matches`
+- ✅ `PATCH /tournaments/:id` sekarang aktif dan memvalidasi `start_date <= end_date`
+- ✅ Route turnamen detail dan update sudah didaftarkan di `tournamentRoutes.js`
+- ✅ `createPlayer()` sekarang menandai `player_already_existed` saat pemain lama ditambahkan ke tournament baru
+
+### File yang diubah
+
+- `src/controllers/tournamentController.js`
+- `src/routes/tournamentRoutes.js`
+
+### Catatan verifikasi
+
+- ✅ `GET /api/tournaments/1` berhasil mengembalikan detail lengkap turnamen
+- ✅ `PATCH /api/tournaments/1` dengan payload kosong berhasil ditolak dengan validasi yang sesuai
+
+### Sisa pekerjaan Phase 5
+
+- Tidak ada sisa item Phase 5 yang blocking
+
+---
+
+## 🆕 UPDATE IMPLEMENTASI PHASE 7 (2026-04-21)
+
+**Status:** ✅ DONE - seeding dan testing endpoint inti selesai.
+
+### Perubahan yang sudah dilakukan
+
+- ✅ Tambah 6 pemain ke `database/data/players.json` dengan `tournament_id: 2`
+- ✅ Jalankan `npm run seed` dan data masuk tanpa error
+- ✅ Verifikasi API `GET /api/players?tournament_id=2` menampilkan squad tournament 2
+- ✅ Verifikasi API `GET /api/tournaments/2` menampilkan detail turnamen 2
+- ✅ Verifikasi `GET /api/predictions/leaderboard?tournament_id=1` berjalan normal
+- ✅ Verifikasi POST/DELETE lineup dan error handling (404/409/400) berjalan sesuai ekspektasi
+
+### File yang diubah
+
+- `database/data/players.json`
+
+### Sisa pekerjaan Phase 7
+
+- Tidak ada sisa pekerjaan Phase 7 yang blocking
+
+---
+
+## 🆕 UPDATE IMPLEMENTASI PHASE 6 (2026-04-21)
+
+**Status:** ✅ DONE (Optional feature selesai).
+
+### Perubahan yang sudah dilakukan
+
+- ✅ Menambah tabel `match_lineups` di schema DB
+- ✅ Menambah endpoint lineup di `matchController.js`:
+  - `POST /api/matches/:id/lineup`
+  - `GET /api/matches/:id/lineup`
+  - `DELETE /api/matches/:id/lineup/:player_id`
+- ✅ Menambah route lineup di `matchRoutes.js`
+- ✅ Uji create/update (upsert), fetch, delete, dan negative cases berhasil
+
+### File yang diubah
+
+- `database/init.sql`
+- `src/controllers/matchController.js`
+- `src/routes/matchRoutes.js`
+
+---
+
 # 🔍 ANALISIS DETAIL PER MODULE
 
 ## 1️⃣ PLAYER MODULE
@@ -81,8 +178,8 @@ Tidak ada fitur baru yang harus dibuat untuk relasi tournament, tetapi untuk rel
 
 | No  | Masalah                                                | Solusi                                            | Priority |
 | --- | ------------------------------------------------------ | ------------------------------------------------- | -------- |
-| 1   | GET /tournaments/:id tidak return player/match count   | Include total_players & total_matches di response | P2       |
-| 2   | Update tournament tidak validasi start_date < end_date | Tambah validation di PATCH /:id                   | P2       |
+| 1   | GET /tournaments/:id tidak return player/match count   | Include total_players & total_matches di response | ✅ DONE  |
+| 2   | Update tournament tidak validasi start_date < end_date | Tambah validation di PATCH /:id                   | ✅ DONE  |
 
 ---
 
@@ -265,7 +362,7 @@ FIELDS: match detail lengkap dengan result, scores, tournament_name
 
 ## PHASE 3: ADD COACH TO MATCH ENDPOINTS (P1 - HIGH PRIORITY)
 
-**Durasi: 1-2 jam | Status: ⏳ NEEDS IMPLEMENTATION**
+**Durasi: 1-2 jam | Status: ✅ DONE (Implemented by GitHub Copilot, 2026-04-21)**
 
 ### Step 3.1 - Modify mapMatchRow untuk include head_coach
 
@@ -561,9 +658,11 @@ GET /predictions/leaderboard?tournament_id=1
 
 ### P1 - HIGH (Perlu dikerjakan segera)
 
-- [ ] Step 3.1: Modify mapMatchRow add head_coach
-- [ ] Step 3.2: Update getMatches query JOIN tournament_coaches
-- [ ] Step 3.3: Update getLocalSchedule (optional)
+- [x] Step 3.1: Modify mapMatchRow add head_coach
+- [x] Step 3.2: Update getMatches query JOIN tournament_coaches
+- [x] Step 3.3: Update getLocalSchedule (optional)
+
+**P1 Status:** ✅ Completed
 
 ### P2 - MEDIUM (Bisa dikerjakan setelah P1)
 
@@ -584,8 +683,8 @@ GET /predictions/leaderboard?tournament_id=1
 
 1. **Hari 1 (Done ✅)** - Fix P0 bugs dari Claude Sonnet
 2. **Hari 2 (Done ✅)** - Add missing endpoints dari Claude Sonnet
-3. **Hari 3 (Today)** - **Implement Step 3.1 & 3.2** (Add coach to match)
-4. **Hari 4** - Complete Step 5.x (quality improvements)
+3. **Hari 3 (Done ✅)** - Implement Step 3.1 & 3.2 (Add coach to match)
+4. **Hari 4 (Next)** - Complete Step 5.x (quality improvements)
 5. **Hari 5** - Data seeding & testing
 6. **Hari 6** - Optional: match_lineups feature
 

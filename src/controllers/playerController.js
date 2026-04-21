@@ -4,12 +4,10 @@ exports.assignPlayerToTournament = async (req, res) => {
     const { tournament_id, player_id, jersey_number, status, is_active } =
       req.body;
     if (!tournament_id || !player_id || jersey_number === undefined) {
-      return res
-        .status(400)
-        .json({
-          success: false,
-          message: "Field wajib: tournament_id, player_id, jersey_number",
-        });
+      return res.status(400).json({
+        success: false,
+        message: "Field wajib: tournament_id, player_id, jersey_number",
+      });
     }
     // Cek turnamen dan pemain
     const tournament = await get("SELECT id FROM tournaments WHERE id = ?", [
@@ -32,24 +30,20 @@ exports.assignPlayerToTournament = async (req, res) => {
       [tournament_id, player_id],
     );
     if (existing)
-      return res
-        .status(409)
-        .json({
-          success: false,
-          message: "Pemain sudah terdaftar di turnamen ini",
-        });
+      return res.status(409).json({
+        success: false,
+        message: "Pemain sudah terdaftar di turnamen ini",
+      });
     // Cek nomor punggung
     const jerseyUsed = await get(
       "SELECT id FROM tournament_players WHERE tournament_id = ? AND jersey_number = ? AND is_active = 1",
       [tournament_id, jersey_number],
     );
     if (jerseyUsed)
-      return res
-        .status(409)
-        .json({
-          success: false,
-          message: "Nomor punggung sudah dipakai pemain aktif di turnamen ini",
-        });
+      return res.status(409).json({
+        success: false,
+        message: "Nomor punggung sudah dipakai pemain aktif di turnamen ini",
+      });
     await run(
       `INSERT INTO tournament_players (tournament_id, player_id, jersey_number, is_active, status) VALUES (?, ?, ?, ?, ?)`,
       [
@@ -64,13 +58,11 @@ exports.assignPlayerToTournament = async (req, res) => {
       .status(201)
       .json({ success: true, message: "Pemain berhasil diassign ke turnamen" });
   } catch (error) {
-    return res
-      .status(500)
-      .json({
-        success: false,
-        message: "Gagal assign pemain",
-        error: error.message,
-      });
+    return res.status(500).json({
+      success: false,
+      message: "Gagal assign pemain",
+      error: error.message,
+    });
   }
 };
 
@@ -79,37 +71,31 @@ exports.unassignPlayerFromTournament = async (req, res) => {
   try {
     const { tournament_id, player_id } = req.body;
     if (!tournament_id || !player_id) {
-      return res
-        .status(400)
-        .json({
-          success: false,
-          message: "Field wajib: tournament_id, player_id",
-        });
+      return res.status(400).json({
+        success: false,
+        message: "Field wajib: tournament_id, player_id",
+      });
     }
     const link = await get(
       "SELECT id FROM tournament_players WHERE tournament_id = ? AND player_id = ?",
       [tournament_id, player_id],
     );
     if (!link)
-      return res
-        .status(404)
-        .json({
-          success: false,
-          message: "Pemain tidak terdaftar di turnamen ini",
-        });
+      return res.status(404).json({
+        success: false,
+        message: "Pemain tidak terdaftar di turnamen ini",
+      });
     await run("DELETE FROM tournament_players WHERE id = ?", [link.id]);
     return res.json({
       success: true,
       message: "Pemain berhasil dilepas dari turnamen",
     });
   } catch (error) {
-    return res
-      .status(500)
-      .json({
-        success: false,
-        message: "Gagal lepas pemain",
-        error: error.message,
-      });
+    return res.status(500).json({
+      success: false,
+      message: "Gagal lepas pemain",
+      error: error.message,
+    });
   }
 };
 
@@ -118,12 +104,10 @@ exports.updateJerseyNumber = async (req, res) => {
   try {
     const { tournament_id, player_id, jersey_number } = req.body;
     if (!tournament_id || !player_id || jersey_number === undefined) {
-      return res
-        .status(400)
-        .json({
-          success: false,
-          message: "Field wajib: tournament_id, player_id, jersey_number",
-        });
+      return res.status(400).json({
+        success: false,
+        message: "Field wajib: tournament_id, player_id, jersey_number",
+      });
     }
     // Cek link
     const link = await get(
@@ -131,24 +115,20 @@ exports.updateJerseyNumber = async (req, res) => {
       [tournament_id, player_id],
     );
     if (!link)
-      return res
-        .status(404)
-        .json({
-          success: false,
-          message: "Pemain tidak terdaftar di turnamen ini",
-        });
+      return res.status(404).json({
+        success: false,
+        message: "Pemain tidak terdaftar di turnamen ini",
+      });
     // Cek nomor punggung baru
     const jerseyUsed = await get(
       "SELECT id FROM tournament_players WHERE tournament_id = ? AND jersey_number = ? AND is_active = 1 AND player_id != ?",
       [tournament_id, jersey_number, player_id],
     );
     if (jerseyUsed)
-      return res
-        .status(409)
-        .json({
-          success: false,
-          message: "Nomor punggung sudah dipakai pemain aktif di turnamen ini",
-        });
+      return res.status(409).json({
+        success: false,
+        message: "Nomor punggung sudah dipakai pemain aktif di turnamen ini",
+      });
     await run("UPDATE tournament_players SET jersey_number = ? WHERE id = ?", [
       jersey_number,
       link.id,
@@ -158,13 +138,11 @@ exports.updateJerseyNumber = async (req, res) => {
       message: "Nomor punggung berhasil diupdate",
     });
   } catch (error) {
-    return res
-      .status(500)
-      .json({
-        success: false,
-        message: "Gagal update nomor punggung",
-        error: error.message,
-      });
+    return res.status(500).json({
+      success: false,
+      message: "Gagal update nomor punggung",
+      error: error.message,
+    });
   }
 };
 const { all, get, run } = require("../utils/dbAsync");
@@ -430,6 +408,7 @@ exports.createPlayer = async (req, res) => {
     return res.status(201).json({
       success: true,
       message: "Pemain berhasil ditambahkan",
+      player_already_existed: Boolean(existingPlayer),
       data: {
         ...created,
         tournament_assignment: squadAssignment

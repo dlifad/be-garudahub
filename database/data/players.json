@@ -1,10 +1,8 @@
 [
   {
-    "tournament_id": 1,
     "name": "Maarten Paes",
     "nickname": "Paes",
     "position": "GK",
-    "jersey_number": 1,
     "date_of_birth": "1998-05-14",
     "nationality": "Indonesia",
     "is_naturalized": 1,
@@ -18,11 +16,9 @@
     "status": "active"
   },
   {
-    "tournament_id": 1,
     "name": "Ernando Ari Sutaryadi",
     "nickname": "Ernando",
     "position": "GK",
-    "jersey_number": 21,
     "date_of_birth": "2002-02-27",
     "nationality": "Indonesia",
     "is_naturalized": 0,
@@ -36,11 +32,9 @@
     "status": "active"
   },
   {
-    "tournament_id": 1,
     "name": "Muhammad Riyandi",
     "nickname": "Riyandi",
     "position": "GK",
-    "jersey_number": 31,
     "date_of_birth": "2000-01-03",
     "nationality": "Indonesia",
     "is_naturalized": 0,
@@ -54,11 +48,9 @@
     "status": "active"
   },
   {
-    "tournament_id": 1,
     "name": "Syahrul Trisna Fadillah",
     "nickname": "Syahrul",
     "position": "GK",
-    "jersey_number": 26,
     "date_of_birth": "1995-11-26",
     "nationality": "Indonesia",
     "is_naturalized": 0,
@@ -72,11 +64,9 @@
     "status": "active"
   },
   {
-    "tournament_id": 1,
     "name": "Emil Audero Mulyadi",
     "nickname": "Emil",
     "position": "GK",
-    "jersey_number": 12,
     "date_of_birth": "1997-01-18",
     "nationality": "Indonesia",
     "is_naturalized": 1,
@@ -90,11 +80,9 @@
     "status": "active"
   },
   {
-    "tournament_id": 1,
     "name": "Nadeo Argawinata",
     "nickname": "Nadeo",
     "position": "GK",
-    "jersey_number": 22,
     "date_of_birth": "1997-03-09",
     "nationality": "Indonesia",
     "is_naturalized": 0,
@@ -108,11 +96,9 @@
     "status": "active"
   },
   {
-    "tournament_id": 1,
     "name": "Jay Idzes",
     "nickname": "Idzes",
     "position": "DEF",
-    "jersey_number": 4,
     "date_of_birth": "2000-06-02",
     "nationality": "Indonesia",
     "is_naturalized": 1,
@@ -126,11 +112,9 @@
     "status": "active"
   },
   {
-    "tournament_id": 1,
     "name": "Kevin Diks",
     "nickname": "Diks",
     "position": "DEF",
-    "jersey_number": 2,
     "date_of_birth": "1996-10-06",
     "nationality": "Indonesia",
     "is_naturalized": 1,
@@ -144,11 +128,9 @@
     "status": "active"
   },
   {
-    "tournament_id": 1,
     "name": "Justin Hubner",
     "nickname": "Hubner",
     "position": "DEF",
-    "jersey_number": 23,
     "date_of_birth": "2003-09-14",
     "nationality": "Indonesia",
     "is_naturalized": 1,
@@ -162,11 +144,9 @@
     "status": "active"
   },
   {
-    "tournament_id": 1,
     "name": "Sandy Walsh",
     "nickname": "Sandy",
     "position": "DEF",
-    "jersey_number": 6,
     "date_of_birth": "1995-03-14",
     "nationality": "Indonesia",
     "is_naturalized": 1,
@@ -180,11 +160,9 @@
     "status": "active"
   },
   {
-    "tournament_id": 1,
     "name": "Calvin Verdonk",
     "nickname": "Calvin",
     "position": "DEF",
-    "jersey_number": 17,
     "date_of_birth": "1997-04-26",
     "nationality": "Indonesia",
     "is_naturalized": 1,
@@ -198,11 +176,9 @@
     "status": "active"
   },
   {
-    "tournament_id": 1,
     "name": "Shayne Pattynama",
     "nickname": "Shayne",
     "position": "DEF",
-    "jersey_number": 20,
     "date_of_birth": "1998-08-11",
     "nationality": "Indonesia",
     "is_naturalized": 1,
@@ -216,11 +192,9 @@
     "status": "active"
   },
   {
-    "tournament_id": 1,
     "name": "Nathan Tjoe-A-On",
     "nickname": "Nathan",
     "position": "DEF",
-    "jersey_number": 16,
     "date_of_birth": "2001-12-22",
     "nationality": "Indonesia",
     "is_naturalized": 1,
@@ -234,11 +208,9 @@
     "status": "active"
   },
   {
-    "tournament_id": 1,
     "name": "Rizky Ridho Ramadhani",
     "nickname": "Ridho",
     "position": "DEF",
-    "jersey_number": 5,
     "date_of_birth": "2001-11-21",
     "nationality": "Indonesia",
     "is_naturalized": 0,
@@ -252,11 +224,9 @@
     "status": "active"
   },
   {
-    "tournament_id": 1,
     "name": "Jordi Amat",
     "nickname": "Jordi",
     "position": "DEF",
-    "jersey_number": 3,
     "date_of_birth": "1992-03-21",
     "nationality": "Indonesia",
     "is_naturalized": 1,
@@ -270,11 +240,9 @@
     "status": "active"
   },
   {
-    "tournament_id": 1,
     "name": "Thom Jan Marinus Haye",
     "nickname": "Haye",
     "position": "MID",
-    "jersey_number": 19,
     "date_of_birth": "1995-02-09",
     "nationality": "Indonesia",
     "is_naturalized": 1,
@@ -288,11 +256,9 @@
     "status": "active"
   },
   {
-    "tournament_id": 1,
     "name": "Ivar Jenner",
     "nickname": "Ivar",
     "position": "MID",
-    "jersey_number": 18,
     "date_of_birth": "2004-01-10",
     "nationality": "Indonesia",
     "is_naturalized": 1,
@@ -306,11 +272,9 @@
     "status": "active"
   },
   {
-    "tournament_id": 1,
     "name": "Marselino Ferdinan",
     "nickname": "Marselino",
     "position": "MID",
-    "jersey_number": 7,
     "date_of_birth": "2004-09-09",
     "nationality": "Indonesia",
     "is_naturalized": 0,
@@ -324,11 +288,9 @@
     "status": "active"
   },
   {
-    "tournament_id": 1,
     "name": "Ricky Kambuaya",
     "nickname": "Kambuaya",
     "position": "MID",
-    "jersey_number": 15,
     "date_of_birth": "1996-05-05",
     "nationality": "Indonesia",
     "is_naturalized": 0,
@@ -342,11 +304,9 @@
     "status": "active"
   },
   {
-    "tournament_id": 1,
     "name": "Joey Pelupessy",
     "nickname": "Pelupessy",
     "position": "MID",
-    "jersey_number": 8,
     "date_of_birth": "1993-05-15",
     "nationality": "Indonesia",
     "is_naturalized": 1,
@@ -360,11 +320,9 @@
     "status": "active"
   },
   {
-    "tournament_id": 1,
     "name": "Ole Ter Haar Romeny",
     "nickname": "Romeny",
     "position": "FWD",
-    "jersey_number": 9,
     "date_of_birth": "2000-06-20",
     "nationality": "Indonesia",
     "is_naturalized": 1,
@@ -378,11 +336,9 @@
     "status": "active"
   },
   {
-    "tournament_id": 1,
     "name": "Rafael William Struick",
     "nickname": "Rafael",
     "position": "FWD",
-    "jersey_number": 11,
     "date_of_birth": "2003-03-27",
     "nationality": "Indonesia",
     "is_naturalized": 1,
@@ -396,11 +352,9 @@
     "status": "active"
   },
   {
-    "tournament_id": 1,
     "name": "Miliano Jonathans",
     "nickname": "Miliano",
     "position": "FWD",
-    "jersey_number": 25,
     "date_of_birth": "2004-04-05",
     "nationality": "Indonesia",
     "is_naturalized": 1,
@@ -414,11 +368,9 @@
     "status": "active"
   },
   {
-    "tournament_id": 1,
     "name": "Ramadhan Sananta",
     "nickname": "Sananta",
     "position": "FWD",
-    "jersey_number": 29,
     "date_of_birth": "2002-11-27",
     "nationality": "Indonesia",
     "is_naturalized": 0,
@@ -432,11 +384,9 @@
     "status": "active"
   },
   {
-    "tournament_id": 1,
     "name": "Jens Raven",
     "nickname": "Raven",
     "position": "FWD",
-    "jersey_number": 13,
     "date_of_birth": "2005-10-12",
     "nationality": "Indonesia",
     "is_naturalized": 1,
@@ -450,11 +400,9 @@
     "status": "active"
   },
   {
-    "tournament_id": 1,
     "name": "Ragnar Oratmangoen",
     "nickname": "Wak Haji",
     "position": "FWD",
-    "jersey_number": 10,
     "date_of_birth": "1998-01-21",
     "nationality": "Indonesia",
     "is_naturalized": 1,
@@ -468,11 +416,9 @@
     "status": "active"
   },
   {
-    "tournament_id": 1,
     "name": "Mauro Zijlstra",
     "nickname": "Mauro",
     "position": "FWD",
-    "jersey_number": 24,
     "date_of_birth": "2004-11-09",
     "nationality": "Indonesia",
     "is_naturalized": 1,
@@ -486,11 +432,9 @@
     "status": "active"
   },
   {
-    "tournament_id": 1,
     "name": "Egy Maulana Vikri",
     "nickname": "Egy",
     "position": "FWD",
-    "jersey_number": 30,
     "date_of_birth": "2000-07-07",
     "nationality": "Indonesia",
     "is_naturalized": 0,

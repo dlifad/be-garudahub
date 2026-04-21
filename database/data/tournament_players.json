@@ -1,0 +1,240 @@
+[
+  {
+    "tournament_id": 1,
+    "player_name": "Maarten Paes",
+    "jersey_number": 1,
+    "is_active": 1,
+    "status": "active"
+  },
+  {
+    "tournament_id": 1,
+    "player_name": "Ernando Ari Sutaryadi",
+    "jersey_number": 21,
+    "is_active": 1,
+    "status": "active"
+  },
+  {
+    "tournament_id": 1,
+    "player_name": "Muhammad Riyandi",
+    "jersey_number": 31,
+    "is_active": 1,
+    "status": "active"
+  },
+  {
+    "tournament_id": 1,
+    "player_name": "Syahrul Trisna Fadillah",
+    "jersey_number": 26,
+    "is_active": 1,
+    "status": "active"
+  },
+  {
+    "tournament_id": 1,
+    "player_name": "Emil Audero Mulyadi",
+    "jersey_number": 12,
+    "is_active": 1,
+    "status": "active"
+  },
+  {
+    "tournament_id": 1,
+    "player_name": "Nadeo Argawinata",
+    "jersey_number": 22,
+    "is_active": 1,
+    "status": "active"
+  },
+  {
+    "tournament_id": 1,
+    "player_name": "Jay Idzes",
+    "jersey_number": 4,
+    "is_active": 1,
+    "status": "active"
+  },
+  {
+    "tournament_id": 1,
+    "player_name": "Kevin Diks",
+    "jersey_number": 2,
+    "is_active": 1,
+    "status": "active"
+  },
+  {
+    "tournament_id": 1,
+    "player_name": "Justin Hubner",
+    "jersey_number": 23,
+    "is_active": 1,
+    "status": "active"
+  },
+  {
+    "tournament_id": 1,
+    "player_name": "Sandy Walsh",
+    "jersey_number": 6,
+    "is_active": 1,
+    "status": "active"
+  },
+  {
+    "tournament_id": 1,
+    "player_name": "Calvin Verdonk",
+    "jersey_number": 17,
+    "is_active": 1,
+    "status": "active"
+  },
+  {
+    "tournament_id": 1,
+    "player_name": "Shayne Pattynama",
+    "jersey_number": 20,
+    "is_active": 1,
+    "status": "active"
+  },
+  {
+    "tournament_id": 1,
+    "player_name": "Nathan Tjoe-A-On",
+    "jersey_number": 16,
+    "is_active": 1,
+    "status": "active"
+  },
+  {
+    "tournament_id": 1,
+    "player_name": "Rizky Ridho Ramadhani",
+    "jersey_number": 5,
+    "is_active": 1,
+    "status": "active"
+  },
+  {
+    "tournament_id": 1,
+    "player_name": "Jordi Amat",
+    "jersey_number": 3,
+    "is_active": 1,
+    "status": "active"
+  },
+  {
+    "tournament_id": 1,
+    "player_name": "Thom Jan Marinus Haye",
+    "jersey_number": 19,
+    "is_active": 1,
+    "status": "active"
+  },
+  {
+    "tournament_id": 1,
+    "player_name": "Ivar Jenner",
+    "jersey_number": 18,
+    "is_active": 1,
+    "status": "active"
+  },
+  {
+    "tournament_id": 1,
+    "player_name": "Marselino Ferdinan",
+    "jersey_number": 7,
+    "is_active": 1,
+    "status": "active"
+  },
+  {
+    "tournament_id": 1,
+    "player_name": "Ricky Kambuaya",
+    "jersey_number": 15,
+    "is_active": 1,
+    "status": "active"
+  },
+  {
+    "tournament_id": 1,
+    "player_name": "Joey Pelupessy",
+    "jersey_number": 8,
+    "is_active": 1,
+    "status": "active"
+  },
+  {
+    "tournament_id": 1,
+    "player_name": "Ole Ter Haar Romeny",
+    "jersey_number": 9,
+    "is_active": 1,
+    "status": "active"
+  },
+  {
+    "tournament_id": 1,
+    "player_name": "Rafael William Struick",
+    "jersey_number": 11,
+    "is_active": 1,
+    "status": "active"
+  },
+  {
+    "tournament_id": 1,
+    "player_name": "Miliano Jonathans",
+    "jersey_number": 25,
+    "is_active": 1,
+    "status": "active"
+  },
+  {
+    "tournament_id": 1,
+    "player_name": "Ramadhan Sananta",
+    "jersey_number": 29,
+    "is_active": 1,
+    "status": "active"
+  },
+  {
+    "tournament_id": 1,
+    "player_name": "Jens Raven",
+    "jersey_number": 13,
+    "is_active": 1,
+    "status": "active"
+  },
+  {
+    "tournament_id": 1,
+    "player_name": "Ragnar Oratmangoen",
+    "jersey_number": 10,
+    "is_active": 1,
+    "status": "active"
+  },
+  {
+    "tournament_id": 1,
+    "player_name": "Mauro Zijlstra",
+    "jersey_number": 24,
+    "is_active": 1,
+    "status": "active"
+  },
+  {
+    "tournament_id": 1,
+    "player_name": "Egy Maulana Vikri",
+    "jersey_number": 30,
+    "is_active": 1,
+    "status": "active"
+  },
+  {
+    "tournament_id": 2,
+    "player_name": "Nadeo Argawinata",
+    "jersey_number": 1,
+    "is_active": 1,
+    "status": "active"
+  },
+  {
+    "tournament_id": 2,
+    "player_name": "Jordi Amat",
+    "jersey_number": 4,
+    "is_active": 1,
+    "status": "active"
+  },
+  {
+    "tournament_id": 2,
+    "player_name": "Thom Jan Marinus Haye",
+    "jersey_number": 19,
+    "is_active": 1,
+    "status": "active"
+  },
+  {
+    "tournament_id": 2,
+    "player_name": "Marselino Ferdinan",
+    "jersey_number": 7,
+    "is_active": 1,
+    "status": "active"
+  },
+  {
+    "tournament_id": 2,
+    "player_name": "Ragnar Oratmangoen",
+    "jersey_number": 10,
+    "is_active": 1,
+    "status": "active"
+  },
+  {
+    "tournament_id": 2,
+    "player_name": "Ernando Ari Sutaryadi",
+    "jersey_number": 21,
+    "is_active": 1,
+    "status": "active"
+  }
+]

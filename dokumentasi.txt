@@ -1,28 +1,83 @@
-Tabel :
-1.Users
-2.News
-3.Merchandise
+TABEL (AKTUAL)
+1. users
+2. news
+3. merchandise
+4. tournaments
+5. matches
+6. players
+7. tournament_players
+8. tournament_coaches
+9. predictions
+10. match_lineups
 
-Endpoint :
-1.Auth
--POST /api/auth/register
--POST /api/auth/verify-email
--POST /api/auth/resend-code
--POST /api/auth/login
--GET /api/auth/me
--POST /api/auth/logout
+ENDPOINT (AKTUAL)
 
-2.Profile
--GET /api/profile
--PUT /api/profile
+1. Auth
+- POST /api/auth/register
+- POST /api/auth/verify-email
+- POST /api/auth/resend-code
+- POST /api/auth/login
+- GET /api/auth/me
+- POST /api/auth/logout
 
-3.News
--GET /api/news
--GET /api/news/:id
+2. Profile
+- GET /api/profile
+- PUT /api/profile
 
-4.Merc
--GET /api/merchandise
--GET /api/merchandise/:id
+3. News
+- GET /api/news
+- GET /api/news/:id
 
-5.Search
--GET /api/search?q=...
+4. Merchandise
+- GET /api/merchandise
+- GET /api/merchandise/:id
+
+5. Search
+- GET /api/search?q=...
+
+6. Tournaments
+- GET /api/tournaments
+- GET /api/tournaments/:id
+- POST /api/tournaments
+- PATCH /api/tournaments/:id
+- GET /api/tournaments/:tournament_id/coaches
+- POST /api/tournaments/:tournament_id/coaches
+
+7. Matches
+- GET /api/matches
+- GET /api/matches/:id
+- POST /api/matches
+- PUT /api/matches/:id
+- GET /api/matches/:id/schedule-local
+- POST /api/matches/:id/lineup
+- GET /api/matches/:id/lineup
+- DELETE /api/matches/:id/lineup/:player_id
+
+8. Players
+- GET /api/players
+- POST /api/players
+- GET /api/players/squad/:tournament_id
+- POST /api/players/assign
+- PATCH /api/players/assign
+- DELETE /api/players/assign
+
+9. Predictions
+- POST /api/predictions
+- POST /api/predictions/calculate-points
+- GET /api/predictions/leaderboard
+
+10. Currency
+- GET /api/currency/ticket-price
+
+ALUR SINGKAT ADMIN (PLAYER -> TOURNAMENT -> MATCH -> LINEUP)
+1. Siapkan data master pemain (players).
+2. Assign pemain ke turnamen (tournament_players) dan isi jersey number.
+3. Buat match untuk turnamen terkait (matches).
+4. Saat set lineup match, ambil pemain berdasarkan tournament_id match, bukan all players.
+5. Simpan pemain ke match_lineups via endpoint lineup.
+6. Detail match menampilkan lineup sesuai data match tersebut.
+
+CATATAN PENTING
+- players.json sekarang format ideal: data master pemain saja.
+- relasi ke turnamen dipisah di tournament_players.json.
+- backend memvalidasi pemain harus terdaftar di squad turnamen sebelum bisa masuk lineup match.

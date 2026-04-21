@@ -125,6 +125,22 @@ CREATE TABLE IF NOT EXISTS predictions (
     FOREIGN KEY (match_id) REFERENCES matches(id)
 );
 
+CREATE TABLE IF NOT EXISTS match_lineups (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    match_id INTEGER NOT NULL,
+    player_id INTEGER NOT NULL,
+    tournament_id INTEGER NOT NULL,
+    is_starting_eleven INTEGER DEFAULT 1,
+    jersey_number INTEGER,
+    position TEXT CHECK(position IN ('GK', 'DEF', 'MID', 'FWD')),
+    is_active INTEGER DEFAULT 1,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (match_id) REFERENCES matches(id),
+    FOREIGN KEY (player_id) REFERENCES players(id),
+    FOREIGN KEY (tournament_id) REFERENCES tournaments(id),
+    UNIQUE(match_id, player_id)
+);
+
 CREATE UNIQUE INDEX IF NOT EXISTS idx_tournaments_name_dates
 ON tournaments(name, start_date, end_date);
 
@@ -160,3 +176,9 @@ ON tournament_coaches(tournament_id);
 
 CREATE INDEX IF NOT EXISTS idx_predictions_match
 ON predictions(match_id);
+
+CREATE INDEX IF NOT EXISTS idx_match_lineups_match
+ON match_lineups(match_id);
+
+CREATE INDEX IF NOT EXISTS idx_match_lineups_player
+ON match_lineups(player_id);

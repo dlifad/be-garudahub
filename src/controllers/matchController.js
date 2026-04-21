@@ -6,6 +6,7 @@ const {
 } = require("../utils/datetime");
 
 const STATUS_VALUES = new Set(["scheduled", "ongoing", "finished"]);
+const LINEUP_POSITIONS = new Set(["GK", "DEF", "MID", "FWD"]);
 
 function mapMatchRow(row, timezone) {
   const isHome = Boolean(row.is_home);
@@ -31,6 +32,7 @@ function mapMatchRow(row, timezone) {
     id: row.id,
     tournament_id: row.tournament_id,
     tournament_name: row.tournament_name,
+    head_coach: row.head_coach_name || null,
     matchday: row.matchday,
     round: row.round,
     is_home: isHome,
@@ -100,9 +102,12 @@ exports.getMatches = async (req, res) => {
     const whereClause = where.length ? `WHERE ${where.join(" AND ")}` : "";
 
     const rows = await all(
-      `SELECT m.*, t.name AS tournament_name
+      `SELECT m.*, t.name AS tournament_name,
+              tc.name AS head_coach_name
        FROM matches m
        JOIN tournaments t ON t.id = m.tournament_id
+       LEFT JOIN tournament_coaches tc ON tc.tournament_id = t.id
+         AND tc.role = 'head_coach' AND tc.is_active = 1
        ${whereClause}
        ORDER BY m.match_date_utc ASC`,
       params,
@@ -113,13 +118,52 @@ exports.getMatches = async (req, res) => {
       data: rows.map((row) => mapMatchRow(row, timezone)),
     });
   } catch (error) {
-    return res
-      .status(500)
-      .json({
-        success: false,
-        message: "Gagal mengambil data pertandingan",
-        error: error.message,
-      });
+    return res.status(500).json({
+      success: false,
+      message: "Gagal mengambil data pertandingan",
+      error: error.message,
+    });
+  }
+};
+
+exports.getMatchById = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const timezone = req.query.timezone || "UTC";
+
+    if (!isValidTimezone(timezone)) {
+      return res
+        .status(400)
+        .json({ success: false, message: "timezone tidak valid" });
+    }
+
+    const row = await get(
+      `SELECT m.*, t.name AS tournament_name,
+              tc.name AS head_coach_name
+       FROM matches m
+       JOIN tournaments t ON t.id = m.tournament_id
+       LEFT JOIN tournament_coaches tc ON tc.tournament_id = t.id
+         AND tc.role = 'head_coach' AND tc.is_active = 1
+       WHERE m.id = ?`,
+      [id],
+    );
+
+    if (!row) {
+      return res
+        .status(404)
+        .json({ success: false, message: "Pertandingan tidak ditemukan" });
+    }
+
+    return res.json({
+      success: true,
+      data: mapMatchRow(row, timezone),
+    });
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      message: "Gagal mengambil detail pertandingan",
+      error: error.message,
+    });
   }
 };
 
@@ -214,9 +258,12 @@ exports.createMatch = async (req, res) => {
     );
 
     const created = await get(
-      `SELECT m.*, t.name AS tournament_name
+      `SELECT m.*, t.name AS tournament_name,
+              tc.name AS head_coach_name
        FROM matches m
        JOIN tournaments t ON t.id = m.tournament_id
+       LEFT JOIN tournament_coaches tc ON tc.tournament_id = t.id
+         AND tc.role = 'head_coach' AND tc.is_active = 1
        WHERE m.id = ?`,
       [inserted.lastID],
     );
@@ -227,13 +274,11 @@ exports.createMatch = async (req, res) => {
       data: mapMatchRow(created, "UTC"),
     });
   } catch (error) {
-    return res
-      .status(500)
-      .json({
-        success: false,
-        message: "Gagal membuat pertandingan",
-        error: error.message,
-      });
+    return res.status(500).json({
+      success: false,
+      message: "Gagal membuat pertandingan",
+      error: error.message,
+    });
   }
 };
 
@@ -288,9 +333,12 @@ exports.updateMatch = async (req, res) => {
     );
 
     const updated = await get(
-      `SELECT m.*, t.name AS tournament_name
+      `SELECT m.*, t.name AS tournament_name,
+              tc.name AS head_coach_name
        FROM matches m
        JOIN tournaments t ON t.id = m.tournament_id
+       LEFT JOIN tournament_coaches tc ON tc.tournament_id = t.id
+         AND tc.role = 'head_coach' AND tc.is_active = 1
        WHERE m.id = ?`,
       [id],
     );
@@ -301,13 +349,11 @@ exports.updateMatch = async (req, res) => {
       data: mapMatchRow(updated, "UTC"),
     });
   } catch (error) {
-    return res
-      .status(500)
-      .json({
-        success: false,
-        message: "Gagal memperbarui pertandingan",
-        error: error.message,
-      });
+    return res.status(500).json({
+      success: false,
+      message: "Gagal memperbarui pertandingan",
+      error: error.message,
+    });
   }
 };
 
@@ -322,7 +368,15 @@ exports.getLocalSchedule = async (req, res) => {
         .json({ success: false, message: "timezone tidak valid" });
     }
 
-    const row = await get("SELECT * FROM matches WHERE id = ?", [id]);
+    const row = await get(
+      `SELECT m.*, tc.name AS head_coach_name
+       FROM matches m
+       LEFT JOIN tournaments t ON t.id = m.tournament_id
+       LEFT JOIN tournament_coaches tc ON tc.tournament_id = t.id
+         AND tc.role = 'head_coach' AND tc.is_active = 1
+       WHERE m.id = ?`,
+      [id],
+    );
     if (!row) {
       return res
         .status(404)
@@ -334,6 +388,7 @@ exports.getLocalSchedule = async (req, res) => {
     return res.json({
       success: true,
       match: matchName,
+      head_coach: row.head_coach_name || null,
       utc: row.match_date_utc,
       wib: formatWithOffset(row.match_date_utc, "Asia/Jakarta"),
       wita: formatWithOffset(row.match_date_utc, "Asia/Makassar"),
@@ -342,12 +397,268 @@ exports.getLocalSchedule = async (req, res) => {
       local: formatWithOffset(row.match_date_utc, timezone),
     });
   } catch (error) {
-    return res
-      .status(500)
-      .json({
+    return res.status(500).json({
+      success: false,
+      message: "Gagal mengambil jadwal lokal",
+      error: error.message,
+    });
+  }
+};
+
+exports.setMatchLineup = async (req, res) => {
+  try {
+    const matchId = Number(req.params.id);
+    const {
+      player_id,
+      is_starting_eleven,
+      jersey_number,
+      position,
+      is_active,
+    } = req.body;
+
+    if (!Number.isInteger(matchId) || matchId <= 0) {
+      return res
+        .status(400)
+        .json({ success: false, message: "id pertandingan tidak valid" });
+    }
+
+    const playerIdNum = Number(player_id);
+    if (!Number.isInteger(playerIdNum) || playerIdNum <= 0) {
+      return res
+        .status(400)
+        .json({ success: false, message: "player_id tidak valid" });
+    }
+
+    if (position && !LINEUP_POSITIONS.has(position)) {
+      return res
+        .status(400)
+        .json({ success: false, message: "position lineup tidak valid" });
+    }
+
+    const match = await get(
+      "SELECT id, tournament_id, home_team, away_team FROM matches WHERE id = ?",
+      [matchId],
+    );
+    if (!match) {
+      return res
+        .status(404)
+        .json({ success: false, message: "Pertandingan tidak ditemukan" });
+    }
+
+    const player = await get(
+      "SELECT id, name, position FROM players WHERE id = ?",
+      [playerIdNum],
+    );
+    if (!player) {
+      return res
+        .status(404)
+        .json({ success: false, message: "Pemain tidak ditemukan" });
+    }
+
+    const squadLink = await get(
+      `SELECT jersey_number, is_active, status
+       FROM tournament_players
+       WHERE tournament_id = ? AND player_id = ?`,
+      [match.tournament_id, playerIdNum],
+    );
+
+    if (!squadLink) {
+      return res.status(409).json({
         success: false,
-        message: "Gagal mengambil jadwal lokal",
-        error: error.message,
+        message: "Pemain belum terdaftar di squad turnamen match ini",
       });
+    }
+
+    const isStarting =
+      typeof is_starting_eleven === "undefined"
+        ? 1
+        : is_starting_eleven === true ||
+            is_starting_eleven === 1 ||
+            is_starting_eleven === "1"
+          ? 1
+          : 0;
+
+    const isActive =
+      typeof is_active === "undefined"
+        ? 1
+        : is_active === true || is_active === 1 || is_active === "1"
+          ? 1
+          : 0;
+
+    const jerseyNumber =
+      typeof jersey_number === "undefined" || jersey_number === null
+        ? squadLink.jersey_number
+        : Number(jersey_number);
+
+    if (
+      typeof jerseyNumber !== "undefined" &&
+      jerseyNumber !== null &&
+      (Number.isNaN(jerseyNumber) || jerseyNumber <= 0)
+    ) {
+      return res
+        .status(400)
+        .json({ success: false, message: "jersey_number tidak valid" });
+    }
+
+    await run(
+      `INSERT INTO match_lineups
+       (match_id, player_id, tournament_id, is_starting_eleven, jersey_number, position, is_active)
+       VALUES (?, ?, ?, ?, ?, ?, ?)
+       ON CONFLICT(match_id, player_id) DO UPDATE SET
+         is_starting_eleven = excluded.is_starting_eleven,
+         jersey_number = excluded.jersey_number,
+         position = excluded.position,
+         is_active = excluded.is_active`,
+      [
+        matchId,
+        playerIdNum,
+        match.tournament_id,
+        isStarting,
+        jerseyNumber,
+        position || player.position,
+        isActive,
+      ],
+    );
+
+    const lineupPlayer = await get(
+      `SELECT ml.match_id, ml.player_id, ml.tournament_id, ml.is_starting_eleven,
+              ml.jersey_number, ml.position, ml.is_active,
+              p.name AS player_name
+       FROM match_lineups ml
+       JOIN players p ON p.id = ml.player_id
+       WHERE ml.match_id = ? AND ml.player_id = ?`,
+      [matchId, playerIdNum],
+    );
+
+    return res.status(201).json({
+      success: true,
+      message: "Lineup pemain berhasil disimpan",
+      data: {
+        ...lineupPlayer,
+        is_starting_eleven: Boolean(lineupPlayer.is_starting_eleven),
+        is_active: Boolean(lineupPlayer.is_active),
+      },
+    });
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      message: "Gagal menyimpan lineup pemain",
+      error: error.message,
+    });
+  }
+};
+
+exports.getMatchLineup = async (req, res) => {
+  try {
+    const matchId = Number(req.params.id);
+
+    if (!Number.isInteger(matchId) || matchId <= 0) {
+      return res
+        .status(400)
+        .json({ success: false, message: "id pertandingan tidak valid" });
+    }
+
+    const match = await get(
+      `SELECT m.id, m.tournament_id, t.name AS tournament_name,
+              m.home_team, m.away_team, m.match_date_utc, m.status
+       FROM matches m
+       JOIN tournaments t ON t.id = m.tournament_id
+       WHERE m.id = ?`,
+      [matchId],
+    );
+
+    if (!match) {
+      return res
+        .status(404)
+        .json({ success: false, message: "Pertandingan tidak ditemukan" });
+    }
+
+    const rows = await all(
+      `SELECT ml.player_id, ml.is_starting_eleven, ml.jersey_number,
+              ml.position AS lineup_position, ml.is_active,
+              p.name, p.nickname, p.position AS player_position,
+              p.current_club, p.photo_url
+       FROM match_lineups ml
+       JOIN players p ON p.id = ml.player_id
+       WHERE ml.match_id = ? AND ml.is_active = 1
+       ORDER BY ml.is_starting_eleven DESC, ml.jersey_number ASC, p.name ASC`,
+      [matchId],
+    );
+
+    const players = rows.map((row) => ({
+      player_id: row.player_id,
+      name: row.name,
+      nickname: row.nickname,
+      position: row.lineup_position || row.player_position,
+      jersey_number: row.jersey_number,
+      current_club: row.current_club,
+      photo_url: row.photo_url,
+      is_starting_eleven: Boolean(row.is_starting_eleven),
+      is_active: Boolean(row.is_active),
+    }));
+
+    return res.json({
+      success: true,
+      match,
+      total_players: players.length,
+      starting_xi: players.filter((player) => player.is_starting_eleven),
+      substitutes: players.filter((player) => !player.is_starting_eleven),
+    });
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      message: "Gagal mengambil lineup pertandingan",
+      error: error.message,
+    });
+  }
+};
+
+exports.deleteMatchLineup = async (req, res) => {
+  try {
+    const matchId = Number(req.params.id);
+    const playerIdNum = Number(req.params.player_id);
+
+    if (!Number.isInteger(matchId) || matchId <= 0) {
+      return res
+        .status(400)
+        .json({ success: false, message: "id pertandingan tidak valid" });
+    }
+
+    if (!Number.isInteger(playerIdNum) || playerIdNum <= 0) {
+      return res
+        .status(400)
+        .json({ success: false, message: "player_id tidak valid" });
+    }
+
+    const existing = await get(
+      `SELECT match_id, player_id
+       FROM match_lineups
+       WHERE match_id = ? AND player_id = ?`,
+      [matchId, playerIdNum],
+    );
+
+    if (!existing) {
+      return res.status(404).json({
+        success: false,
+        message: "Pemain tidak ada di lineup pertandingan ini",
+      });
+    }
+
+    await run(
+      `DELETE FROM match_lineups
+       WHERE match_id = ? AND player_id = ?`,
+      [matchId, playerIdNum],
+    );
+
+    return res.json({
+      success: true,
+      message: "Pemain berhasil dihapus dari lineup pertandingan",
+    });
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      message: "Gagal menghapus pemain dari lineup pertandingan",
+      error: error.message,
+    });
   }
 };

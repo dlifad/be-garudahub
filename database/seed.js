@@ -48,6 +48,11 @@ const seedConfig = [
     columns: [],
   },
   {
+    table: "tournament_players",
+    file: "./data/tournament_players.json",
+    columns: [],
+  },
+  {
     table: "merchandise",
     file: "./data/merchandise.json",
     columns: [
@@ -114,56 +119,64 @@ db.serialize(() => {
                 `Gagal upsert pemain ${item.name}:`,
                 insertErr.message,
               );
+            }
+          },
+        );
+      });
+      console.log("Seeder players selesai (mode upsert).");
+
+      return;
+    }
+
+    if (config.table === "tournament_players") {
+      data.forEach((item) => {
+        db.get(
+          "SELECT id FROM players WHERE LOWER(name) = LOWER(?)",
+          [item.player_name],
+          (findErr, rowPlayer) => {
+            if (findErr) {
+              console.error(
+                `Gagal cari id pemain ${item.player_name}:`,
+                findErr.message,
+              );
               return;
             }
 
-            db.get(
-              "SELECT id FROM players WHERE LOWER(name) = LOWER(?)",
-              [item.name],
-              (findErr, rowPlayer) => {
-                if (findErr) {
+            if (!rowPlayer) {
+              console.error(
+                `Player ${item.player_name} tidak ditemukan untuk relasi turnamen ${item.tournament_id}`,
+              );
+              return;
+            }
+
+            db.run(
+              `INSERT INTO tournament_players
+               (tournament_id, player_id, jersey_number, is_active, status)
+               VALUES (?, ?, ?, ?, ?)
+               ON CONFLICT(tournament_id, player_id) DO UPDATE SET
+                 jersey_number = excluded.jersey_number,
+                 is_active = excluded.is_active,
+                 status = excluded.status`,
+              [
+                item.tournament_id,
+                rowPlayer.id,
+                item.jersey_number,
+                item.is_active,
+                item.status,
+              ],
+              (squadErr) => {
+                if (squadErr) {
                   console.error(
-                    `Gagal cari id pemain ${item.name}:`,
-                    findErr.message,
+                    `Gagal upsert relasi pemain ${item.player_name} ke turnamen ${item.tournament_id}:`,
+                    squadErr.message,
                   );
-                  return;
                 }
-
-                if (!rowPlayer) {
-                  console.error(`player_id tidak ditemukan untuk ${item.name}`);
-                  return;
-                }
-
-                db.run(
-                  `INSERT INTO tournament_players
-                   (tournament_id, player_id, jersey_number, is_active, status)
-                   VALUES (?, ?, ?, ?, ?)
-                   ON CONFLICT(tournament_id, player_id) DO UPDATE SET
-                     jersey_number = excluded.jersey_number,
-                     is_active = excluded.is_active,
-                     status = excluded.status`,
-                  [
-                    item.tournament_id,
-                    rowPlayer.id,
-                    item.jersey_number,
-                    item.is_active,
-                    item.status,
-                  ],
-                  (squadErr) => {
-                    if (squadErr) {
-                      console.error(
-                        `Gagal upsert relasi pemain ${item.name} ke turnamen ${item.tournament_id}:`,
-                        squadErr.message,
-                      );
-                    }
-                  },
-                );
               },
             );
           },
         );
       });
-      console.log("Seeder players + tournament_players selesai (mode upsert).");
+      console.log("Seeder tournament_players selesai (mode upsert).");
 
       return;
     }
