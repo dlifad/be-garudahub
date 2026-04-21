@@ -4,7 +4,9 @@ exports.globalSearch = (req, res) => {
   const q = req.query.q;
 
   if (!q) {
-    return res.status(400).json({ message: "Query pencarian wajib diisi" });
+    return res
+      .status(400)
+      .json({ success: false, message: "Query pencarian wajib diisi" });
   }
 
   const keyword = `%${q}%`;
@@ -20,7 +22,10 @@ exports.globalSearch = (req, res) => {
     "SELECT * FROM players WHERE name LIKE ? OR current_club LIKE ? OR position LIKE ?",
     [keyword, keyword, keyword],
     (err, players) => {
-      if (err) return res.status(500).json({ message: err.message });
+      if (err)
+        return res
+          .status(500)
+          .json({ success: false, message: "Gagal mencari data", error: err.message });
       result.players = players;
 
       db.all(
@@ -30,14 +35,20 @@ exports.globalSearch = (req, res) => {
        WHERE m.opponent LIKE ? OR t.name LIKE ? OR m.stadium_name LIKE ?`,
         [keyword, keyword, keyword],
         (err, matches) => {
-          if (err) return res.status(500).json({ message: err.message });
+          if (err)
+            return res
+              .status(500)
+              .json({ success: false, message: "Gagal mencari data", error: err.message });
           result.matches = matches;
 
           db.all(
             "SELECT * FROM tournaments WHERE name LIKE ? OR season LIKE ? OR description LIKE ?",
             [keyword, keyword, keyword],
             (err, tournaments) => {
-              if (err) return res.status(500).json({ message: err.message });
+              if (err)
+                return res
+                  .status(500)
+                  .json({ success: false, message: "Gagal mencari data", error: err.message });
               result.tournaments = tournaments;
 
               db.all(
@@ -45,10 +56,15 @@ exports.globalSearch = (req, res) => {
                 [keyword, keyword],
                 (err, news) => {
                   if (err)
-                    return res.status(500).json({ message: err.message });
+                    return res
+                      .status(500)
+                      .json({ success: false, message: "Gagal mencari data", error: err.message });
                   result.news = news;
 
-                  res.json(result);
+                  res.json({
+                    success: true,
+                    data: result,
+                  });
                 },
               );
             },

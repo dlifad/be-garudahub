@@ -71,11 +71,9 @@ CREATE TABLE IF NOT EXISTS matches (
 
 CREATE TABLE IF NOT EXISTS players (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    tournament_id INTEGER,
     name TEXT NOT NULL,
     nickname TEXT,
     position TEXT NOT NULL CHECK(position IN ('GK', 'DEF', 'MID', 'FWD')),
-    jersey_number INTEGER NOT NULL,
     date_of_birth TEXT,
     nationality TEXT NOT NULL DEFAULT 'Indonesia',
     is_naturalized INTEGER DEFAULT 0,
@@ -87,6 +85,29 @@ CREATE TABLE IF NOT EXISTS players (
     photo_url TEXT,
     is_active INTEGER DEFAULT 1,
     status TEXT DEFAULT 'active' CHECK(status IN ('active', 'injured', 'suspended')),
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS tournament_players (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    tournament_id INTEGER NOT NULL,
+    player_id INTEGER NOT NULL,
+    jersey_number INTEGER NOT NULL,
+    is_active INTEGER DEFAULT 1,
+    status TEXT DEFAULT 'active' CHECK(status IN ('active', 'injured', 'suspended')),
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (tournament_id) REFERENCES tournaments(id),
+    FOREIGN KEY (player_id) REFERENCES players(id)
+);
+
+CREATE TABLE IF NOT EXISTS tournament_coaches (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    tournament_id INTEGER NOT NULL,
+    name TEXT NOT NULL,
+    role TEXT NOT NULL DEFAULT 'head_coach' CHECK(role IN ('head_coach', 'assistant', 'caretaker')),
+    start_date TEXT,
+    end_date TEXT,
+    is_active INTEGER DEFAULT 1,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (tournament_id) REFERENCES tournaments(id)
 );
@@ -121,6 +142,21 @@ ON players(name);
 
 CREATE INDEX IF NOT EXISTS idx_players_position
 ON players(position);
+
+CREATE UNIQUE INDEX IF NOT EXISTS idx_tournament_players_unique
+ON tournament_players(tournament_id, player_id);
+
+CREATE UNIQUE INDEX IF NOT EXISTS idx_tournament_players_jersey
+ON tournament_players(tournament_id, jersey_number);
+
+CREATE INDEX IF NOT EXISTS idx_tournament_players_tournament
+ON tournament_players(tournament_id);
+
+CREATE INDEX IF NOT EXISTS idx_tournament_players_player
+ON tournament_players(player_id);
+
+CREATE INDEX IF NOT EXISTS idx_tournament_coaches_tournament
+ON tournament_coaches(tournament_id);
 
 CREATE INDEX IF NOT EXISTS idx_predictions_match
 ON predictions(match_id);

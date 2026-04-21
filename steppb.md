@@ -91,51 +91,89 @@ Kerjakan berurutan agar minim konflik dan minim bug.
 
 ## 3) Checklist Implementasi
 
-Centang saat selesai.
+Status riil per 2026-04-19: gunakan label `DONE`, `PARTIAL`, atau `BELUM` agar notulensi tidak misleading.
 
 ### A. Database
 
-- [x] Tabel tournaments dibuat
-- [x] Tabel matches dibuat
-- [x] Tabel players dibuat
-- [x] Tabel predictions dibuat
-- [x] Foreign key dan index minimum siap
+- [DONE] Tabel tournaments dibuat
+- [DONE] Tabel matches dibuat
+- [DONE] Tabel players dibuat
+- [DONE] Tabel predictions dibuat
+- [DONE] Foreign key dan index minimum siap
 
 ### B. API Tournaments
 
-- [x] GET /api/tournaments
-- [x] POST /api/tournaments
+- [DONE] GET /api/tournaments
+- [DONE] POST /api/tournaments
+- [DONE] GET /api/tournaments/:tournament_id/coaches (tambahan scope terbaru)
+- [DONE] POST /api/tournaments/:tournament_id/coaches (tambahan scope terbaru)
 
 ### C. API Matches
 
-- [x] GET /api/matches + filter
-- [x] POST /api/matches + validasi lawan/bentrok
-- [x] PUT /api/matches/:id + hitung result
-- [x] GET /api/matches/:id/schedule-local
+- [DONE] GET /api/matches + filter
+- [DONE] POST /api/matches + validasi lawan/bentrok
+- [DONE] PUT /api/matches/:id + hitung result
+- [DONE] GET /api/matches/:id/schedule-local
 
 ### D. API Players
 
-- [x] GET /api/players + filter
-- [x] POST /api/players + validasi duplikat jersey/nama
-- [x] GET /api/players/squad/:tournament_id
+- [PARTIAL] GET /api/players + filter
+- [PARTIAL] POST /api/players + validasi duplikat jersey/nama
+- [PARTIAL] GET /api/players/squad/:tournament_id
+- [PARTIAL] POST /api/players/assign (assign pemain ke turnamen)
+- [PARTIAL] DELETE /api/players/assign (drop squad)
+- [PARTIAL] PATCH /api/players/assign (ubah nomor punggung)
+- Catatan update: blocker urutan deklarasi route players sudah diperbaiki, lanjutkan smoke test endpoint players untuk validasi final.
 
 ### E. API Predictions
 
-- [x] POST /api/predictions + JWT + validasi penuh
-- [x] POST /api/predictions/calculate-points
-- [x] GET /api/predictions/leaderboard
+- [DONE] POST /api/predictions + JWT + validasi penuh
+- [DONE] POST /api/predictions/calculate-points
+- [DONE] GET /api/predictions/leaderboard
 
 ### F. Integrasi Eksternal
 
-- [x] GET /api/currency/ticket-price
-- [x] Konversi UTC ke timezone user jalan
-- [x] WIB/WITA/WIT muncul di response
+- [DONE] GET /api/currency/ticket-price
+- [DONE] Konversi UTC ke timezone user jalan
+- [DONE] WIB/WITA/WIT muncul di response
 
 ### G. Stabilitas
 
-- [x] Search endpoint tidak error setelah tabel baru ditambahkan
-- [x] Semua endpoint return format JSON konsisten
-- [x] Error handling standar 400/401/404/409/500 rapi
+- [DONE] Search endpoint tidak error setelah tabel baru ditambahkan
+- [PARTIAL] Semua endpoint return format JSON konsisten
+- [PARTIAL] Error handling standar 400/401/404/409/500 rapi
+- Catatan update: endpoint search sudah diseragamkan ke wrapper `success/data`, tinggal audit endpoint lain jika masih beda gaya response.
+
+## 3.1) Step Revisi Prioritas (Wajib)
+
+Kerjakan berurutan agar notulensi dan implementasi sinkron.
+
+1. Perbaiki route players dulu (blocker)
+
+- Rapikan urutan deklarasi `router` dan pendaftaran route di file route players.
+- Validasi server bisa boot tanpa error import route.
+
+2. Stabilkan kontrak API players
+
+- Uji ulang GET /api/players, POST /api/players, GET /api/players/squad/:tournament_id.
+- Uji endpoint assign/unassign/update jersey dengan skenario sukses + gagal.
+- Tegaskan aturan create master player vs assign ke tournament di dokumentasi.
+
+3. Rapikan konsistensi response
+
+- Samakan format response endpoint search agar ada wrapper standar (`success`, `data`, `message` saat perlu).
+- Audit endpoint lain yang masih beda gaya response.
+
+4. Rapikan seed roster
+
+- Pastikan players.json diperlakukan sebagai sumber data gabungan: master player + assignment turnamen.
+- Dokumentasikan bahwa seeder players skip saat tournament_players sudah berisi data.
+- Tambahkan prosedur refresh data demo (clear + reseed atau upsert strategy).
+
+5. Validasi E2E dan update notulensi
+
+- Jalankan test manual untuk semua endpoint di Test Plan.
+- Update checklist status dari PARTIAL/BELUM ke DONE hanya setelah lulus uji.
 
 ## 4) Notulensi Harian (Template)
 
@@ -213,6 +251,27 @@ Salin bagian ini setiap kali selesai sesi kerja.
   1. Testing end-to-end via Postman untuk semua skenario sukses + gagal
   2. Sinkron final kontrak response dengan Programmer A dan UI team
   3. Tambah data seed untuk tournament/match/player agar demo lebih cepat
+
+## 9) Notulensi Update (2026-04-19) - Audit Ulang Kesesuaian
+
+- Tanggal: 2026-04-19
+- Jam: sesi audit dan koreksi notulensi
+- Fokus sesi: verifikasi realisasi endpoint vs checklist, khusus domain tournament/player/match/prediction/currency
+- File yang diubah:
+  - steppb.md
+- Temuan utama:
+  - Tournament, Match, Prediction, Currency: implementasi inti sudah berjalan sesuai scope.
+  - Players: fitur baru assign/unassign/update jersey sudah dibuat, route players sudah dirapikan, status tetap PARTIAL sampai smoke test lulus.
+  - Stabilitas: endpoint search sudah diseragamkan, status naik jadi PARTIAL sambil audit endpoint lain.
+- Kendala:
+  - Notulensi sebelumnya terlalu cepat menandai semua selesai.
+- Solusi sementara:
+  - Checklist diubah jadi status riil DONE/PARTIAL/BELUM.
+  - Dibuat Step Revisi Prioritas agar progres berikutnya terarah.
+- Next action sesi berikutnya:
+  1. Smoke test API players (GET/POST/squad/assign/unassign/patch jersey)
+  2. Audit endpoint lain untuk konsistensi response JSON
+  3. Uji E2E ulang dan naikkan status PARTIAL ke DONE setelah lolos
 
 ## 6) Definisi Selesai (Definition of Done)
 

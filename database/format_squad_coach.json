@@ -1,0 +1,55 @@
+// Contoh format JSON data coach + squad per turnamen
+
+{
+  "tournament_id": 1,
+  "tournament_name": "Piala AFF 2024",
+  "head_coach": {
+    "name": "Shin Tae-yong",
+    "role": "head_coach",
+    "start_date": "2023-12-01",
+    "end_date": null,
+    "is_active": true
+  },
+  "coach_history": [
+    {
+      "name": "Shin Tae-yong",
+      "role": "head_coach",
+      "start_date": "2023-12-01",
+      "end_date": null,
+      "is_active": true
+    },
+    {
+      "name": "Indra Sjafri",
+      "role": "caretaker",
+      "start_date": "2023-10-01",
+      "end_date": "2023-11-30",
+      "is_active": false
+    }
+  ],
+  "squad": {
+    "GK": [
+      {
+        "player_id": 1,
+        "name": "Nadeo Argawinata",
+        "jersey_number": 1,
+        "position": "GK",
+        "is_naturalized": false,
+        "is_active": true,
+        "status": "active"
+      }
+    ],
+    "DEF": [
+      {
+        "player_id": 2,
+        "name": "Jordi Amat",
+        "jersey_number": 4,
+        "position": "DEF",
+        "is_naturalized": true,
+        "is_active": true,
+        "status": "active"
+      }
+    ],
+    "MID": [],
+    "FWD": []
+  }
+}
