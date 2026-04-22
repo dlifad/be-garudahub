@@ -23,6 +23,8 @@ app.get("/", (req, res) => {
   res.json({ message: "GarudaHub API berjalan" });
 });
 app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
+app.use('/assets', express.static(path.join(__dirname, '../assets')));
+
 app.use("/api/auth", authRoutes);
 app.use("/api/profile", profileRoutes);
 app.use("/api/news", newsRoutes);
@@ -33,5 +35,4 @@ app.use("/api/matches", matchRoutes);
 app.use("/api/players", playerRoutes);
 app.use("/api/predictions", predictionRoutes);
 app.use("/api/currency", currencyRoutes);
-app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
 module.exports = app;
