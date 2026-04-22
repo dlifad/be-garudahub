@@ -26,8 +26,8 @@
     "caps": 25,
     "goals": 0,
     "photo_url": "https://example.com/ernando_2024.jpg",
-    "is_active": 1,
-    "status": "active"
+    "is_active": 0,
+    "status": "suspended"
   },
   {
     "name": "Muhammad Riyandi",
@@ -41,8 +41,8 @@
     "caps": 5,
     "goals": 0,
     "photo_url": "https://example.com/riyandi_2024.jpg",
-    "is_active": 1,
-    "status": "active"
+    "is_active": 0,
+    "status": "suspended"
   },
   {
     "name": "Syahrul Trisna Fadillah",
@@ -56,8 +56,8 @@
     "caps": 7,
     "goals": 0,
     "photo_url": "https://example.com/syahrul_2024.jpg",
-    "is_active": 1,
-    "status": "active"
+    "is_active": 0,
+    "status": "suspended"
   },
   {
     "name": "Emil Audero Mulyadi",
@@ -176,8 +176,8 @@
     "caps": 20,
     "goals": 1,
     "photo_url": "https://example.com/shayne.jpg",
-    "is_active": 1,
-    "status": "active"
+    "is_active": 0,
+    "status": "suspended"
   },
   {
     "name": "Nathan Tjoe-A-On",
@@ -236,8 +236,8 @@
     "caps": 22,
     "goals": 2,
     "photo_url": "https://example.com/haye.jpg",
-    "is_active": 1,
-    "status": "active"
+    "is_active": 0,
+    "status": "suspended"
   },
   {
     "name": "Ivar Jenner",
@@ -266,8 +266,8 @@
     "caps": 37,
     "goals": 5,
     "photo_url": "https://example.com/marselino.jpg",
-    "is_active": 1,
-    "status": "active"
+    "is_active": 0,
+    "status": "suspended"
   },
   {
     "name": "Ricky Kambuaya",
@@ -281,8 +281,8 @@
     "caps": 43,
     "goals": 5,
     "photo_url": "https://example.com/kambuaya.jpg",
-    "is_active": 1,
-    "status": "active"
+    "is_active": 0,
+    "status": "suspended"
   },
   {
     "name": "Joey Pelupessy",
@@ -326,8 +326,8 @@
     "caps": 23,
     "goals": 1,
     "photo_url": "https://example.com/struick.jpg",
-    "is_active": 1,
-    "status": "active"
+    "is_active": 0,
+    "status": "suspended"
   },
   {
     "name": "Miliano Jonathans",
@@ -342,7 +342,7 @@
     "goals": 0,
     "photo_url": "https://example.com/miliano.jpg",
     "is_active": 1,
-    "status": "active"
+    "status": "injured"
   },
   {
     "name": "Ramadhan Sananta",
@@ -371,8 +371,8 @@
     "caps": 0,
     "goals": 0,
     "photo_url": "https://example.com/raven.jpg",
-    "is_active": 1,
-    "status": "active"
+    "is_active": 0,
+    "status": "suspended"
   },
   {
     "name": "Ragnar Oratmangoen",
@@ -402,7 +402,7 @@
     "goals": 1,
     "photo_url": "https://example.com/mauro.jpg",
     "is_active": 1,
-    "status": "active"
+    "status": "injured"
   },
   {
     "name": "Egy Maulana Vikri",
@@ -416,8 +416,8 @@
     "caps": 29,
     "goals": 8,
     "photo_url": "https://example.com/egy.jpg",
-    "is_active": 1,
-    "status": "active"
+    "is_active": 0,
+    "status": "suspended"
   },
   {
     "name": "Adi Satryo",
@@ -431,8 +431,8 @@
     "caps": 5,
     "goals": 0,
     "photo_url": "https://example.com/adi_satryo.jpg",
-    "is_active": 1,
-    "status": "active"
+    "is_active": 0,
+    "status": "suspended"
   },
   {
     "name": "Reza Arya Pratama",
@@ -446,8 +446,8 @@
     "caps": 0,
     "goals": 0,
     "photo_url": "https://example.com/reza_arya.jpg",
-    "is_active": 1,
-    "status": "active"
+    "is_active": 0,
+    "status": "suspended"
   },
   {
     "name": "Elkan William Tio Baggott",
@@ -477,7 +477,7 @@
     "goals": 3,
     "photo_url": "https://example.com/arhan.jpg",
     "is_active": 1,
-    "status": "active"
+    "status": "injured"
   },
   {
     "name": "Asnawi Mangkualam Bahar",
@@ -492,7 +492,7 @@
     "goals": 2,
     "photo_url": "https://example.com/asnawi.jpg",
     "is_active": 1,
-    "status": "active"
+    "status": "injured"
   },
   {
     "name": "Wahyu Prasetyo",
@@ -506,8 +506,8 @@
     "caps": 3,
     "goals": 0,
     "photo_url": "https://example.com/wahyu.jpg",
-    "is_active": 1,
-    "status": "active"
+    "is_active": 0,
+    "status": "suspended"
   },
   {
     "name": "Edo Febriansah",
@@ -521,8 +521,8 @@
     "caps": 14,
     "goals": 0,
     "photo_url": "https://example.com/edo.jpg",
-    "is_active": 1,
-    "status": "active"
+    "is_active": 0,
+    "status": "suspended"
   },
   {
     "name": "Fachruddin Aryanto",
@@ -536,8 +536,8 @@
     "caps": 54,
     "goals": 4,
     "photo_url": "https://example.com/fachruddin.jpg",
-    "is_active": 1,
-    "status": "active"
+    "is_active": 0,
+    "status": "suspended"
   },
   {
     "name": "Witan Sulaeman",
@@ -551,8 +551,8 @@
     "caps": 46,
     "goals": 9,
     "photo_url": "https://example.com/witan.jpg",
-    "is_active": 1,
-    "status": "active"
+    "is_active": 0,
+    "status": "suspended"
   },
   {
     "name": "Marc Anthony Klok",
@@ -566,8 +566,8 @@
     "caps": 25,
     "goals": 4,
     "photo_url": "https://example.com/klok.jpg",
-    "is_active": 1,
-    "status": "active"
+    "is_active": 0,
+    "status": "suspended"
   },
   {
     "name": "Rachmat Irianto",
@@ -581,8 +581,8 @@
     "caps": 30,
     "goals": 3,
     "photo_url": "https://example.com/irianto.jpg",
-    "is_active": 1,
-    "status": "active"
+    "is_active": 0,
+    "status": "suspended"
   },
   {
     "name": "Dimas Drajad",
@@ -596,8 +596,8 @@
     "caps": 13,
     "goals": 6,
     "photo_url": "https://example.com/dimas.jpg",
-    "is_active": 1,
-    "status": "active"
+    "is_active": 0,
+    "status": "suspended"
   },
   {
     "name": "Cahya Supriadi",
@@ -627,7 +627,7 @@
     "goals": 0,
     "photo_url": "https://example.com/hilgers.jpg",
     "is_active": 1,
-    "status": "active"
+    "status": "injured"
   },
   {
     "name": "Dean James",
@@ -656,8 +656,8 @@
     "caps": 7,
     "goals": 2,
     "photo_url": "https://example.com/ferarri.jpg",
-    "is_active": 1,
-    "status": "active"
+    "is_active": 0,
+    "status": "suspended"
   },
   {
     "name": "Dony Tri Pamungkas",
@@ -746,6 +746,81 @@
     "caps": 2,
     "goals": 0,
     "photo_url": "https://example.com/malik.jpg",
+    "is_active": 0,
+    "status": "suspended"
+  },
+  {
+    "name": "Yakob Sayuri",
+    "nickname": "Yakob",
+    "position": "MID",
+    "date_of_birth": "22 september 1997",
+    "nationality": "Indonesia",
+    "is_naturalized": 0,
+    "club": "Malut United",
+    "club_country": "Indonesia",
+    "caps": 30,
+    "goals": 3,
+    "photo_url": "https://example.com/yakob.jpg",
+    "is_active": 1,
+    "status": "active"
+  },
+  {
+    "name": "Hokky Caraka Bintang Brilyant",
+    "nickname": "Hokky",
+    "position": "FWD",
+    "date_of_birth": "21 agustus 2004",
+    "nationality": "Indonesia",
+    "is_naturalized": 0,
+    "club": "Persita Tangerang",
+    "club_country": "Indonesia",
+    "caps": 10,
+    "goals": 2,
+    "photo_url": "https://example.com/hokky.jpg",
+    "is_active": 0,
+    "status": "suspended"
+  },
+  {
+    "name": "Dendy Sulistyawan",
+    "nickname": "Dendy",
+    "position": "FWD",
+    "date_of_birth": "12 oktober 1996",
+    "nationality": "Indonesia",
+    "is_naturalized": 0,
+    "club": "Bhayangkara FC",
+    "club_country": "Indonesia",
+    "caps": 16,
+    "goals": 5,
+    "photo_url": "https://example.com/dendy.jpg",
+    "is_active": 0,
+    "status": "suspended"
+  },
+  {
+    "name": "Yance Sayuri",
+    "nickname": "Yance",
+    "position": "DEF",
+    "date_of_birth": "22 september 1997",
+    "nationality": "Indonesia",
+    "is_naturalized": 0,
+    "club": "Malut United",
+    "club_country": "Indonesia",
+    "caps": 4,
+    "goals": 0,
+    "photo_url": "https://example.com/yance.jpg",
+    "is_active": 0,
+    "status": "suspended"
+  },
+  {
+    "name": "Andy Setyo Nugroho",
+    "nickname": "Andy",
+    "position": "DEF",
+    "date_of_birth": "16 september 1997",
+    "nationality": "Indonesia",
+    "is_naturalized": 0,
+    "club": "Bhayangkara FC",
+    "club_country": "Indonesia",
+    "caps": 2,
+    "goals": 0,
+    "photo_url": "https://example.com/andy.jpg",
     "is_active": 0,
     "status": "suspended"
   }
