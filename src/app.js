@@ -1,11 +1,6 @@
-<<<<<<< HEAD
-const express = require("express");
-const cors = require("cors");
-=======
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
->>>>>>> ca77c6e7e5d6573b56b291bec46b1f11158779ab
 
 const authRoutes = require("./routes/authRoutes");
 const profileRoutes = require("./routes/profileRoutes");
@@ -28,7 +23,8 @@ app.get("/", (req, res) => {
   res.json({ message: "GarudaHub API berjalan" });
 });
 
-<<<<<<< HEAD
+app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
+
 app.use("/api/auth", authRoutes);
 app.use("/api/profile", profileRoutes);
 app.use("/api/news", newsRoutes);
@@ -39,14 +35,5 @@ app.use("/api/matches", matchRoutes);
 app.use("/api/players", playerRoutes);
 app.use("/api/predictions", predictionRoutes);
 app.use("/api/currency", currencyRoutes);
-=======
 app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
-
-app.use('/api/auth', authRoutes);
-app.use('/api/profile', profileRoutes);
-app.use('/api/news', newsRoutes);
-app.use('/api/search', searchRoutes);
-app.use('/api/merchandise', merchandiseRoutes);
->>>>>>> ca77c6e7e5d6573b56b291bec46b1f11158779ab
-
 module.exports = app;
