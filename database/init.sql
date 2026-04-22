@@ -64,7 +64,10 @@ CREATE TABLE IF NOT EXISTS matches (
     status TEXT NOT NULL DEFAULT 'scheduled' CHECK(status IN ('scheduled', 'ongoing', 'finished')),
     home_score INTEGER,
     away_score INTEGER,
-    ticket_price_idr INTEGER,
+    ticket_cat1 INTEGER,
+    ticket_cat2 INTEGER,
+    ticket_cat3 INTEGER,
+    ticket_VIP INTEGER,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (tournament_id) REFERENCES tournaments(id)
 );
