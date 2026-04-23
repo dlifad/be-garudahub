@@ -17,6 +17,47 @@
 
 ---
 
+## 🆕 UPDATE SESI TERBARU (2026-04-22)
+
+**Status:** ✅ DONE untuk update data pemain + reseed DB, ⏳ sebagian verifikasi API tertunda.
+
+### Perubahan yang sudah dilakukan
+
+- ✅ Konversi format `date_of_birth` pada seed pemain ke format `DD namabulan YYYY`
+- ✅ Standardisasi field klub pada seed pemain (gunakan `club`, hapus `current_club` dari data seed)
+- ✅ Penambahan batch pemain baru ke `database/data/players.json`
+- ✅ Normalisasi status tidak valid (`inactive`) menjadi status valid sesuai constraint DB (`suspended`)
+- ✅ Sinkronisasi status skuad aktif timnas:
+  - pemain aktif: `is_active = 1`
+  - pemain cedera: `status = injured`
+  - pemain non-aktif: `is_active = 0`
+- ✅ Penyesuaian khusus pemain cedera agar tetap aktif (`is_active = 1`) pada data final
+- ✅ Reseed database berhasil (`npm run seed`)
+- ✅ Verifikasi langsung ke SQLite berhasil (data pemain terbaru sudah tersimpan)
+
+### Ringkasan hasil data terbaru
+
+- Total pemain di DB: **55**
+- Active: **28**
+- Inactive: **27**
+- Status distribusi valid: `active`, `injured`, `suspended`
+
+### Kendala yang ditemukan
+
+- ⚠️ `npm start` gagal karena isu kompatibilitas `uuid` (ESM) dengan `require` di middleware upload.
+- Dampak: verifikasi endpoint HTTP full-flow belum bisa dituntaskan pada sesi ini.
+
+### Yang belum selesai (untuk sesi lanjutan)
+
+1. Fix runtime `uuid` di middleware upload agar server bisa start normal.
+2. Uji endpoint setelah server normal:
+   - `GET /api/players`
+   - `GET /api/players?tournament_id={id}`
+   - endpoint terkait player lainnya.
+3. Pastikan dokumentasi endpoint konsisten dengan data seed terbaru.
+
+---
+
 ## 🆕 UPDATE IMPLEMENTASI TERBARU (2026-04-21)
 
 **Status:** ✅ PHASE 3 (P1) selesai diimplementasikan oleh GitHub Copilot (mode serius).

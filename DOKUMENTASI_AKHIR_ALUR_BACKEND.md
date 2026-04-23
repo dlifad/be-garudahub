@@ -1,5 +1,50 @@
 # Dokumentasi Akhir Alur Backend GarudaHub
 
+## 0. Update Sesi Terbaru (2026-04-22)
+
+Dokumentasi ini diperbarui berdasarkan pekerjaan sesi terbaru agar progres bisa dilanjutkan tanpa kehilangan konteks.
+
+### 0.1 Yang sudah dikerjakan di sesi ini
+
+1. Standardisasi data pemain di seed:
+
+- `date_of_birth` sudah diformat ke `DD namabulan YYYY` pada data seed pemain.
+- Field `current_club` di seed pemain sudah dihapus, dan nilai klub diseragamkan menggunakan field `club`.
+
+2. Penambahan dan sinkronisasi data pemain:
+
+- Data pemain tambahan berhasil dimasukkan ke `database/data/players.json`.
+- Status yang tidak valid untuk constraint DB (`inactive`) sudah dinormalisasi ke status valid (`suspended`).
+
+3. Sinkronisasi status skuad aktif timnas:
+
+- Pemain yang dinyatakan aktif timnas diset `is_active = 1`.
+- Pemain cedera diset `status = injured`.
+- Pemain di luar daftar aktif diset nonaktif.
+
+4. Verifikasi database:
+
+- Seeder dijalankan ulang (`npm run seed`) dan berhasil.
+- Verifikasi langsung ke SQLite menunjukkan data pemain terbaru sudah tersimpan.
+
+### 0.2 Yang belum selesai / perlu dilanjutkan
+
+1. Verifikasi endpoint via HTTP belum final:
+
+- Server belum bisa dijalankan normal karena error kompatibilitas `uuid` (ESM vs `require`) pada middleware upload.
+
+2. Pekerjaan lanjutan yang direkomendasikan:
+
+- Perbaiki import `uuid` di middleware upload agar server start normal.
+- Setelah server normal, lakukan verifikasi endpoint:
+  - `GET /api/players`
+  - `GET /api/players?tournament_id={id}`
+  - endpoint lain yang terdampak data pemain.
+
+3. Catatan operasional:
+
+- Sumber kebenaran data pemain sesi ini adalah `database/data/players.json` + hasil `npm run seed` terakhir.
+
 ## 1. Status Akhir Implementasi
 
 Backend untuk alur utama admin saat ini sudah siap dipakai untuk skenario:
