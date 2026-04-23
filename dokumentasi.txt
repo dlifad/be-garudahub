@@ -55,6 +55,7 @@ Endpoint :
 - POST /api/matches/:id/lineup
 - GET /api/matches/:id/lineup
 - DELETE /api/matches/:id/lineup/:player_id
+- /api/matches?has_ticket=true&upcoming=true
 
 8. Players
 - GET /api/players

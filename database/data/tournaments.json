@@ -8,7 +8,7 @@
     "start_date": "2024-11-23",
     "end_date": "2024-12-21",
     "host_country": "Various",
-    "logo_url": "https://example.com/aff-2024.png",
+    "logo_url": "/assets/images/logos/2024_AFF.jpg",
     "season": "2024",
     "description": "Turnamen regional Asia Tenggara"
   },
@@ -21,7 +21,7 @@
     "start_date": "2024-01-12",
     "end_date": "2024-02-10",
     "host_country": "Qatar",
-    "logo_url": "https://example.com/asian-cup-2023.png",
+    "logo_url": "/assets/images/logos/2023_afc_asian_cup.jpg",
     "season": "2023",
     "description": "Piala Asia AFC (diselenggarakan tahun 2024)"
   },
@@ -34,7 +34,7 @@
     "start_date": "2023-10-12",
     "end_date": "2025-11-18",
     "host_country": "Various",
-    "logo_url": "https://example.com/wcq-2026.png",
+    "logo_url": "/assets/images/logos/AFC_Asian_Qualifiers.jpg",
     "season": "2023-2025",
     "description": "Kualifikasi Piala Dunia FIFA 2026 zona AFC"
   },
@@ -47,7 +47,7 @@
     "start_date": "2023-06-14",
     "end_date": "2026-04-30",
     "host_country": "Various",
-    "logo_url": "https://example.com/fifa-matchday.png",
+    "logo_url": "/assets/images/logos/fifa_macthday.jpg",
     "season": "2023-2026",
     "description": "Seluruh pertandingan FIFA Matchday Timnas Indonesia sejak vs Palestina hingga periode terbaru"
   },
@@ -60,7 +60,7 @@
     "start_date": "2026-03-23",
     "end_date": "2026-03-31",
     "host_country": "Indonesia",
-    "logo_url": "https://example.com/fifa-series.png",
+    "logo_url": "/assets/images/logos/fifa_macthday.jpg",
     "season": "2026",
     "description": "Turnamen mini resmi FIFA antar negara"
   },
@@ -73,7 +73,7 @@
     "start_date": "2026-12-01",
     "end_date": "2026-12-31",
     "host_country": "Indonesia",
-    "logo_url": "https://example.com/aff-2026.png",
+    "logo_url": "/assets/images/logos/2026_AFF.jpg",
     "season": "2026",
     "description": "Turnamen regional Asia Tenggara"
   }
