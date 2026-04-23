@@ -40,9 +40,9 @@
   },
   {
     "name": "FIFA Matchday",
-    "type": "international",
+    "type": "world",
     "confederation": "FIFA",
-    "stage": "Friendly Matches",
+    "stage": "Group Stage",
     "indonesia_group": null,
     "start_date": "2023-06-14",
     "end_date": "2026-04-30",
@@ -53,9 +53,9 @@
   },
   {
     "name": "FIFA Series Indonesia 2026",
-    "type": "international",
+    "type": "world",
     "confederation": "FIFA",
-    "stage": "Mini Tournament",
+    "stage": "Group Stage",
     "indonesia_group": null,
     "start_date": "2026-03-23",
     "end_date": "2026-03-31",
