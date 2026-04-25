@@ -1,240 +1,490 @@
 [
   {
     "tournament_id": 1,
-    "player_name": "Maarten Paes",
-    "jersey_number": 1,
-    "is_active": 1,
-    "status": "active"
+    "player_code": "cahya-supriadi"
   },
   {
     "tournament_id": 1,
-    "player_name": "Ernando Ari Sutaryadi",
-    "jersey_number": 21,
-    "is_active": 1,
-    "status": "active"
+    "player_code": "erlangga-setyo-dwi-saputra"
   },
   {
     "tournament_id": 1,
-    "player_name": "Muhammad Riyandi",
-    "jersey_number": 31,
-    "is_active": 1,
-    "status": "active"
+    "player_code": "daffa-fasya-sumawijaya"
   },
   {
     "tournament_id": 1,
-    "player_name": "Syahrul Trisna Fadillah",
-    "jersey_number": 26,
-    "is_active": 1,
-    "status": "active"
+    "player_code": "achmad-maulana-syarif"
   },
   {
     "tournament_id": 1,
-    "player_name": "Emil Audero Mulyadi",
-    "jersey_number": 12,
-    "is_active": 1,
-    "status": "active"
+    "player_code": "muhammad-ferarri"
   },
   {
     "tournament_id": 1,
-    "player_name": "Nadeo Argawinata",
-    "jersey_number": 22,
-    "is_active": 1,
-    "status": "active"
+    "player_code": "asnawi-mangkualam-bahar"
   },
   {
     "tournament_id": 1,
-    "player_name": "Jay Idzes",
-    "jersey_number": 4,
-    "is_active": 1,
-    "status": "active"
+    "player_code": "dony-tri-pamungkas"
   },
   {
     "tournament_id": 1,
-    "player_name": "Kevin Diks",
-    "jersey_number": 2,
-    "is_active": 1,
-    "status": "active"
+    "player_code": "kakang-rudianto"
   },
   {
     "tournament_id": 1,
-    "player_name": "Justin Hubner",
-    "jersey_number": 23,
-    "is_active": 1,
-    "status": "active"
+    "player_code": "pratama-arhan-alif-rifai"
   },
   {
     "tournament_id": 1,
-    "player_name": "Sandy Walsh",
-    "jersey_number": 6,
-    "is_active": 1,
-    "status": "active"
+    "player_code": "kadek-arel-priyatna"
   },
   {
     "tournament_id": 1,
-    "player_name": "Calvin Verdonk",
-    "jersey_number": 17,
-    "is_active": 1,
-    "status": "active"
+    "player_code": "mikael-alfredo-tata"
   },
   {
     "tournament_id": 1,
-    "player_name": "Shayne Pattynama",
-    "jersey_number": 20,
-    "is_active": 1,
-    "status": "active"
+    "player_code": "sulthan-zaky-pramana"
   },
   {
     "tournament_id": 1,
-    "player_name": "Nathan Tjoe-A-On",
-    "jersey_number": 16,
-    "is_active": 1,
-    "status": "active"
+    "player_code": "robi-darwis"
   },
   {
     "tournament_id": 1,
-    "player_name": "Rizky Ridho Ramadhani",
-    "jersey_number": 5,
-    "is_active": 1,
-    "status": "active"
+    "player_code": "muhammad-rayhan-hannan"
   },
   {
     "tournament_id": 1,
-    "player_name": "Jordi Amat",
-    "jersey_number": 3,
-    "is_active": 1,
-    "status": "active"
+    "player_code": "arkhan-fikri"
   },
   {
     "tournament_id": 1,
-    "player_name": "Thom Jan Marinus Haye",
-    "jersey_number": 19,
-    "is_active": 1,
-    "status": "active"
+    "player_code": "marselino-ferdinan"
   },
   {
     "tournament_id": 1,
-    "player_name": "Ivar Jenner",
-    "jersey_number": 18,
-    "is_active": 1,
-    "status": "active"
+    "player_code": "rivaldo-pakpahan"
   },
   {
     "tournament_id": 1,
-    "player_name": "Marselino Ferdinan",
-    "jersey_number": 7,
-    "is_active": 1,
-    "status": "active"
+    "player_code": "zanadin-fariz"
   },
   {
     "tournament_id": 1,
-    "player_name": "Ricky Kambuaya",
-    "jersey_number": 15,
-    "is_active": 1,
-    "status": "active"
+    "player_code": "hokky-caraka-bintang-brilyant"
   },
   {
     "tournament_id": 1,
-    "player_name": "Joey Pelupessy",
-    "jersey_number": 8,
-    "is_active": 1,
-    "status": "active"
+    "player_code": "alfriyanto-nico-saputro"
   },
   {
     "tournament_id": 1,
-    "player_name": "Ole Ter Haar Romeny",
-    "jersey_number": 9,
-    "is_active": 1,
-    "status": "active"
+    "player_code": "ronaldo-joybera-kwateh"
   },
   {
     "tournament_id": 1,
-    "player_name": "Rafael William Struick",
-    "jersey_number": 11,
-    "is_active": 1,
-    "status": "active"
+    "player_code": "rafael-william-struick"
   },
   {
     "tournament_id": 1,
-    "player_name": "Miliano Jonathans",
-    "jersey_number": 25,
-    "is_active": 1,
-    "status": "active"
+    "player_code": "victor-jonson-benjamin-dethan"
   },
   {
     "tournament_id": 1,
-    "player_name": "Ramadhan Sananta",
-    "jersey_number": 29,
-    "is_active": 1,
-    "status": "active"
-  },
-  {
-    "tournament_id": 1,
-    "player_name": "Jens Raven",
-    "jersey_number": 13,
-    "is_active": 1,
-    "status": "active"
-  },
-  {
-    "tournament_id": 1,
-    "player_name": "Ragnar Oratmangoen",
-    "jersey_number": 10,
-    "is_active": 1,
-    "status": "active"
-  },
-  {
-    "tournament_id": 1,
-    "player_name": "Mauro Zijlstra",
-    "jersey_number": 24,
-    "is_active": 1,
-    "status": "active"
-  },
-  {
-    "tournament_id": 1,
-    "player_name": "Egy Maulana Vikri",
-    "jersey_number": 30,
-    "is_active": 1,
-    "status": "active"
+    "player_code": "arkhan-kaka-putra-purwanto"
   },
   {
     "tournament_id": 2,
-    "player_name": "Nadeo Argawinata",
-    "jersey_number": 1,
-    "is_active": 1,
-    "status": "active"
+    "player_code": "muhammad-riyandi"
   },
   {
     "tournament_id": 2,
-    "player_name": "Jordi Amat",
-    "jersey_number": 4,
-    "is_active": 1,
-    "status": "active"
+    "player_code": "ernando-ari-sutaryadi"
   },
   {
     "tournament_id": 2,
-    "player_name": "Thom Jan Marinus Haye",
-    "jersey_number": 19,
-    "is_active": 1,
-    "status": "active"
+    "player_code": "syahrul-trisna-fadillah"
   },
   {
     "tournament_id": 2,
-    "player_name": "Marselino Ferdinan",
-    "jersey_number": 7,
-    "is_active": 1,
-    "status": "active"
+    "player_code": "elkan-william-tio-baggott"
   },
   {
     "tournament_id": 2,
-    "player_name": "Ragnar Oratmangoen",
-    "jersey_number": 10,
-    "is_active": 1,
-    "status": "active"
+    "player_code": "jordi-amat"
   },
   {
     "tournament_id": 2,
-    "player_name": "Ernando Ari Sutaryadi",
-    "jersey_number": 21,
-    "is_active": 1,
-    "status": "active"
+    "player_code": "rizky-ridho-ramadhani"
+  },
+  {
+    "tournament_id": 2,
+    "player_code": "sandy-walsh"
+  },
+  {
+    "tournament_id": 2,
+    "player_code": "pratama-arhan-alif-rifai"
+  },
+  {
+    "tournament_id": 2,
+    "player_code": "edo-febriansah"
+  },
+  {
+    "tournament_id": 2,
+    "player_code": "asnawi-mangkualam-bahar"
+  },
+  {
+    "tournament_id": 2,
+    "player_code": "wahyu-prasetyo"
+  },
+  {
+    "tournament_id": 2,
+    "player_code": "shayne-pattynama"
+  },
+  {
+    "tournament_id": 2,
+    "player_code": "justin-hubner"
+  },
+  {
+    "tournament_id": 2,
+    "player_code": "yakob-sayuri"
+  },
+  {
+    "tournament_id": 2,
+    "player_code": "marselino-ferdinan"
+  },
+  {
+    "tournament_id": 2,
+    "player_code": "witan-sulaeman"
+  },
+  {
+    "tournament_id": 2,
+    "player_code": "egy-maulana-vikri"
+  },
+  {
+    "tournament_id": 2,
+    "player_code": "ricky-kambuaya"
+  },
+  {
+    "tournament_id": 2,
+    "player_code": "adam-alis-setyano"
+  },
+  {
+    "tournament_id": 2,
+    "player_code": "marc-anthony-klok"
+  },
+  {
+    "tournament_id": 2,
+    "player_code": "ivar-jenner"
+  },
+  {
+    "tournament_id": 2,
+    "player_code": "dimas-drajad"
+  },
+  {
+    "tournament_id": 2,
+    "player_code": "rafael-william-struick"
+  },
+  {
+    "tournament_id": 2,
+    "player_code": "hokky-caraka-bintang-brilyant"
+  },
+  {
+    "tournament_id": 2,
+    "player_code": "ramadhan-sananta"
+  },
+  {
+    "tournament_id": 2,
+    "player_code": "dendy-sulistyawan"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "maarten-paes"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "mees-hilgers"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "jay-idzes"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "kevin-diks"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "rizky-ridho-ramadhani"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "sandy-walsh"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "marselino-ferdinan"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "witan-sulaeman"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "rafael-william-struick"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "ole-ter-haar-romeny"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "ragnar-oratmangoen"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "pratama-arhan-alif-rifai"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "mauro-zijlstra"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "asnawi-mangkualam-bahar"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "wahyu-prasetyo"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "nadeo-argawinata"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "calvin-verdonk"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "ivar-jenner"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "thom-jan-marinus-haye"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "shayne-pattynama"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "ernando-ari-sutaryadi"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "nathan-tjoe-a-on"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "justin-hubner"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "rachmat-irianto"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "muhammad-riyandi"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "syahrul-trisna-fadillah"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "adi-satryo"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "dean-james"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "emil-audero-mulyadi"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "marc-anthony-klok"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "ricky-kambuaya"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "edo-febriansah"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "fachruddin-aryanto"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "adam-alis-setyano"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "muhammad-dzaky-asraf-huwaidi"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "muhammad-ferarri"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "dony-tri-pamungkas"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "andy-setyo-nugroho"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "yance-sayuri"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "achmad-maulana-syarif"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "kadek-arel-priyatna"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "kakang-rudianto"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "mikael-alfredo-tata"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "sulthan-zaky-pramana"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "joey-pelupessy"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "arkhan-fikri"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "beckham-putra-nugraha"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "muhammad-rayhan-hannan"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "rivaldo-pakpahan"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "robi-darwis"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "zanadin-fariz"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "eliano-reijnders"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "miliano-jonathans"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "jens-raven"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "ramadhan-sananta"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "dimas-drajad"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "hokky-caraka-bintang-brilyant"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "egy-maulana-vikri"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "yakob-sayuri"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "dendy-sulistyawan"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "saddil-ramdani"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "stefano-lilipaly"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "malik-risaldi"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "alfriyanto-nico-saputro"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "arkhan-kaka-putra-purwanto"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "ronaldo-joybera-kwateh"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "victor-jonson-benjamin-dethan"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "daffa-fasya-sumawijaya"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "erlangga-setyo-dwi-saputra"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "cahya-supriadi"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "reza-arya-pratama"
+  },
+  {
+    "tournament_id": 3,
+    "player_code": "elkan-william-tio-baggott"
   }
 ]

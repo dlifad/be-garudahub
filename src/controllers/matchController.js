@@ -33,7 +33,7 @@ function mapMatchRow(row, timezone) {
     row.ticket_cat2,
     row.ticket_cat3,
     row.ticket_VIP,
-  ].filter(v => v !== null);
+  ].filter((v) => v !== null);
 
   const minPrice = prices.length ? Math.min(...prices) : null;
 
@@ -510,7 +510,7 @@ exports.setMatchLineup = async (req, res) => {
     }
 
     const squadLink = await get(
-      `SELECT jersey_number, is_active, status
+      `SELECT id
        FROM tournament_players
        WHERE tournament_id = ? AND player_id = ?`,
       [match.tournament_id, playerIdNum],
@@ -539,10 +539,13 @@ exports.setMatchLineup = async (req, res) => {
           ? 1
           : 0;
 
-    const jerseyNumber =
-      typeof jersey_number === "undefined" || jersey_number === null
-        ? squadLink.jersey_number
-        : Number(jersey_number);
+    if (typeof jersey_number === "undefined" || jersey_number === null) {
+      return res
+        .status(400)
+        .json({ success: false, message: "jersey_number wajib diisi" });
+    }
+
+    const jerseyNumber = Number(jersey_number);
 
     if (
       typeof jerseyNumber !== "undefined" &&

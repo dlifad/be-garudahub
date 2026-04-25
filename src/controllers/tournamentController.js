@@ -45,7 +45,7 @@ async function buildTournamentDetail(tournamentId) {
   const totalPlayersRow = await get(
     `SELECT COUNT(*) AS count
      FROM tournament_players
-     WHERE tournament_id = ? AND is_active = 1`,
+     WHERE tournament_id = ?`,
     [tournamentId],
   );
 

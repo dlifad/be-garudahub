@@ -3,7 +3,7 @@ TABEL (AKTUAL)
 2. news
 3. merchandise
 4. tournaments
-5. venue
+5. venues
 6. matches
 7. players
 8. tournament_players
@@ -11,17 +11,17 @@ TABEL (AKTUAL)
 10. predictions
 11. match_lineups
 
-Endpoint :
-1.Auth
--POST /api/auth/register
--POST /api/auth/verify-email
--POST /api/auth/resend-code
--POST /api/auth/login
--GET /api/auth/me
--POST /api/auth/logout
--PUT /api/auth/change-password
--POST /api/auth/forgot-password
--POST /api/auth/reset-password
+ENDPOINT
+1. Auth
+- POST /api/auth/register
+- POST /api/auth/verify-email
+- POST /api/auth/resend-code
+- POST /api/auth/login
+- GET /api/auth/me
+- POST /api/auth/logout
+- PUT /api/auth/change-password
+- POST /api/auth/forgot-password
+- POST /api/auth/reset-password
 
 2. Profile
 - GET /api/profile
@@ -55,7 +55,7 @@ Endpoint :
 - POST /api/matches/:id/lineup
 - GET /api/matches/:id/lineup
 - DELETE /api/matches/:id/lineup/:player_id
-- /api/matches?has_ticket=true&upcoming=true
+- GET /api/matches?has_ticket=true&upcoming=true
 
 8. Players
 - GET /api/players
@@ -74,14 +74,16 @@ Endpoint :
 - GET /api/currency/ticket-price
 
 ALUR SINGKAT ADMIN (PLAYER -> TOURNAMENT -> MATCH -> LINEUP)
-1. Siapkan data master pemain (players).
-2. Assign pemain ke turnamen (tournament_players) dan isi jersey number.
-3. Buat match untuk turnamen terkait (matches).
-4. Saat set lineup match, ambil pemain berdasarkan tournament_id match, bukan all players.
+1. Siapkan data master pemain di players.
+2. Assign pemain ke turnamen melalui tournament_players.
+3. Buat match untuk turnamen terkait.
+4. Saat set lineup match, pemain harus berasal dari squad turnamen match tersebut.
 5. Simpan pemain ke match_lineups via endpoint lineup.
-6. Detail match menampilkan lineup sesuai data match tersebut.
+6. Detail match menampilkan lineup sesuai data pada match tersebut.
 
-CATATAN PENTING
-- players.json sekarang format ideal: data master pemain saja.
-- relasi ke turnamen dipisah di tournament_players.json.
-- backend memvalidasi pemain harus terdaftar di squad turnamen sebelum bisa masuk lineup match.
+CATATAN PENTING (SEED DATA)
+- players.json adalah master pemain dan sekarang menyimpan player_code sebagai identifier stabil lintas environment.
+- tournament_players.json sekarang memakai format relasi: tournament_id + player_code.
+- Seeder tournament_players memproses urutan fallback: player_code -> player_id -> player_name (untuk kompatibilitas data lama).
+- Seeder matches sudah mode upsert dengan konflik unik (tournament_id, match_date_utc), sehingga aman dijalankan berulang (idempotent) tanpa duplikasi match.
+- Backend tetap memvalidasi bahwa pemain harus terdaftar di squad turnamen sebelum bisa masuk lineup match.

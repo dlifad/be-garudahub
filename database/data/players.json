@@ -12,7 +12,8 @@
     "goals": 0,
     "photo_url": "https://example.com/paes.jpg",
     "is_active": 1,
-    "status": "active"
+    "status": "active",
+    "player_code": "maarten-paes"
   },
   {
     "name": "Ernando Ari Sutaryadi",
@@ -27,7 +28,8 @@
     "goals": 0,
     "photo_url": "https://example.com/ernando_2024.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "ernando-ari-sutaryadi"
   },
   {
     "name": "Muhammad Riyandi",
@@ -42,7 +44,8 @@
     "goals": 0,
     "photo_url": "https://example.com/riyandi_2024.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "muhammad-riyandi"
   },
   {
     "name": "Syahrul Trisna Fadillah",
@@ -57,7 +60,8 @@
     "goals": 0,
     "photo_url": "https://example.com/syahrul_2024.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "syahrul-trisna-fadillah"
   },
   {
     "name": "Emil Audero Mulyadi",
@@ -72,7 +76,8 @@
     "goals": 0,
     "photo_url": "https://example.com/emil.jpg",
     "is_active": 1,
-    "status": "active"
+    "status": "active",
+    "player_code": "emil-audero-mulyadi"
   },
   {
     "name": "Nadeo Argawinata",
@@ -87,7 +92,8 @@
     "goals": 0,
     "photo_url": "https://example.com/nadeo.jpg",
     "is_active": 1,
-    "status": "active"
+    "status": "active",
+    "player_code": "nadeo-argawinata"
   },
   {
     "name": "Jay Idzes",
@@ -102,7 +108,8 @@
     "goals": 2,
     "photo_url": "https://example.com/idzes.jpg",
     "is_active": 1,
-    "status": "active"
+    "status": "active",
+    "player_code": "jay-idzes"
   },
   {
     "name": "Kevin Diks",
@@ -117,7 +124,8 @@
     "goals": 1,
     "photo_url": "https://example.com/diks.jpg",
     "is_active": 1,
-    "status": "active"
+    "status": "active",
+    "player_code": "kevin-diks"
   },
   {
     "name": "Justin Hubner",
@@ -132,7 +140,8 @@
     "goals": 0,
     "photo_url": "https://example.com/hubner.jpg",
     "is_active": 1,
-    "status": "active"
+    "status": "active",
+    "player_code": "justin-hubner"
   },
   {
     "name": "Sandy Walsh",
@@ -147,7 +156,8 @@
     "goals": 1,
     "photo_url": "https://example.com/sandy.jpg",
     "is_active": 1,
-    "status": "active"
+    "status": "active",
+    "player_code": "sandy-walsh"
   },
   {
     "name": "Calvin Verdonk",
@@ -162,7 +172,8 @@
     "goals": 0,
     "photo_url": "https://example.com/verdonk.jpg",
     "is_active": 1,
-    "status": "active"
+    "status": "active",
+    "player_code": "calvin-verdonk"
   },
   {
     "name": "Shayne Pattynama",
@@ -177,7 +188,8 @@
     "goals": 1,
     "photo_url": "https://example.com/shayne.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "shayne-pattynama"
   },
   {
     "name": "Nathan Tjoe-A-On",
@@ -192,7 +204,8 @@
     "goals": 0,
     "photo_url": "https://example.com/nathan.jpg",
     "is_active": 1,
-    "status": "active"
+    "status": "active",
+    "player_code": "nathan-tjoe-a-on"
   },
   {
     "name": "Rizky Ridho Ramadhani",
@@ -207,7 +220,8 @@
     "goals": 3,
     "photo_url": "https://example.com/ridho.jpg",
     "is_active": 1,
-    "status": "active"
+    "status": "active",
+    "player_code": "rizky-ridho-ramadhani"
   },
   {
     "name": "Jordi Amat",
@@ -222,7 +236,8 @@
     "goals": 1,
     "photo_url": "https://example.com/jordi.jpg",
     "is_active": 1,
-    "status": "active"
+    "status": "active",
+    "player_code": "jordi-amat"
   },
   {
     "name": "Thom Jan Marinus Haye",
@@ -237,7 +252,8 @@
     "goals": 2,
     "photo_url": "https://example.com/haye.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "thom-jan-marinus-haye"
   },
   {
     "name": "Ivar Jenner",
@@ -252,7 +268,8 @@
     "goals": 0,
     "photo_url": "https://example.com/jenner.jpg",
     "is_active": 1,
-    "status": "active"
+    "status": "active",
+    "player_code": "ivar-jenner"
   },
   {
     "name": "Marselino Ferdinan",
@@ -267,7 +284,8 @@
     "goals": 5,
     "photo_url": "https://example.com/marselino.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "marselino-ferdinan"
   },
   {
     "name": "Ricky Kambuaya",
@@ -282,7 +300,8 @@
     "goals": 5,
     "photo_url": "https://example.com/kambuaya.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "ricky-kambuaya"
   },
   {
     "name": "Joey Pelupessy",
@@ -297,7 +316,8 @@
     "goals": 0,
     "photo_url": "https://example.com/pelupessy.jpg",
     "is_active": 1,
-    "status": "active"
+    "status": "active",
+    "player_code": "joey-pelupessy"
   },
   {
     "name": "Ole Ter Haar Romeny",
@@ -312,7 +332,8 @@
     "goals": 4,
     "photo_url": "https://example.com/romeny.jpg",
     "is_active": 1,
-    "status": "active"
+    "status": "active",
+    "player_code": "ole-ter-haar-romeny"
   },
   {
     "name": "Rafael William Struick",
@@ -327,7 +348,8 @@
     "goals": 1,
     "photo_url": "https://example.com/struick.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "rafael-william-struick"
   },
   {
     "name": "Miliano Jonathans",
@@ -342,7 +364,8 @@
     "goals": 0,
     "photo_url": "https://example.com/miliano.jpg",
     "is_active": 1,
-    "status": "injured"
+    "status": "injured",
+    "player_code": "miliano-jonathans"
   },
   {
     "name": "Ramadhan Sananta",
@@ -357,7 +380,8 @@
     "goals": 6,
     "photo_url": "https://example.com/sananta.jpg",
     "is_active": 1,
-    "status": "active"
+    "status": "active",
+    "player_code": "ramadhan-sananta"
   },
   {
     "name": "Jens Raven",
@@ -372,7 +396,8 @@
     "goals": 0,
     "photo_url": "https://example.com/raven.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "jens-raven"
   },
   {
     "name": "Ragnar Oratmangoen",
@@ -387,7 +412,8 @@
     "goals": 2,
     "photo_url": "https://example.com/ragnar.jpg",
     "is_active": 1,
-    "status": "active"
+    "status": "active",
+    "player_code": "ragnar-oratmangoen"
   },
   {
     "name": "Mauro Zijlstra",
@@ -402,7 +428,8 @@
     "goals": 1,
     "photo_url": "https://example.com/mauro.jpg",
     "is_active": 1,
-    "status": "injured"
+    "status": "injured",
+    "player_code": "mauro-zijlstra"
   },
   {
     "name": "Egy Maulana Vikri",
@@ -417,7 +444,8 @@
     "goals": 8,
     "photo_url": "https://example.com/egy.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "egy-maulana-vikri"
   },
   {
     "name": "Adi Satryo",
@@ -432,7 +460,8 @@
     "goals": 0,
     "photo_url": "https://example.com/adi_satryo.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "adi-satryo"
   },
   {
     "name": "Reza Arya Pratama",
@@ -447,7 +476,8 @@
     "goals": 0,
     "photo_url": "https://example.com/reza_arya.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "reza-arya-pratama"
   },
   {
     "name": "Elkan William Tio Baggott",
@@ -462,7 +492,8 @@
     "goals": 2,
     "photo_url": "https://example.com/elkan.jpg",
     "is_active": 1,
-    "status": "active"
+    "status": "active",
+    "player_code": "elkan-william-tio-baggott"
   },
   {
     "name": "Pratama Arhan Alif Rifai",
@@ -477,7 +508,8 @@
     "goals": 3,
     "photo_url": "https://example.com/arhan.jpg",
     "is_active": 1,
-    "status": "injured"
+    "status": "injured",
+    "player_code": "pratama-arhan-alif-rifai"
   },
   {
     "name": "Asnawi Mangkualam Bahar",
@@ -492,7 +524,8 @@
     "goals": 2,
     "photo_url": "https://example.com/asnawi.jpg",
     "is_active": 1,
-    "status": "injured"
+    "status": "injured",
+    "player_code": "asnawi-mangkualam-bahar"
   },
   {
     "name": "Wahyu Prasetyo",
@@ -507,7 +540,8 @@
     "goals": 0,
     "photo_url": "https://example.com/wahyu.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "wahyu-prasetyo"
   },
   {
     "name": "Edo Febriansah",
@@ -522,7 +556,8 @@
     "goals": 0,
     "photo_url": "https://example.com/edo.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "edo-febriansah"
   },
   {
     "name": "Fachruddin Aryanto",
@@ -537,7 +572,8 @@
     "goals": 4,
     "photo_url": "https://example.com/fachruddin.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "fachruddin-aryanto"
   },
   {
     "name": "Witan Sulaeman",
@@ -552,7 +588,8 @@
     "goals": 9,
     "photo_url": "https://example.com/witan.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "witan-sulaeman"
   },
   {
     "name": "Marc Anthony Klok",
@@ -567,7 +604,8 @@
     "goals": 4,
     "photo_url": "https://example.com/klok.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "marc-anthony-klok"
   },
   {
     "name": "Rachmat Irianto",
@@ -582,7 +620,8 @@
     "goals": 3,
     "photo_url": "https://example.com/irianto.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "rachmat-irianto"
   },
   {
     "name": "Dimas Drajad",
@@ -597,7 +636,8 @@
     "goals": 6,
     "photo_url": "https://example.com/dimas.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "dimas-drajad"
   },
   {
     "name": "Cahya Supriadi",
@@ -612,7 +652,8 @@
     "goals": 0,
     "photo_url": "https://example.com/cahya.jpg",
     "is_active": 1,
-    "status": "active"
+    "status": "active",
+    "player_code": "cahya-supriadi"
   },
   {
     "name": "Mees Hilgers",
@@ -627,7 +668,8 @@
     "goals": 0,
     "photo_url": "https://example.com/hilgers.jpg",
     "is_active": 1,
-    "status": "injured"
+    "status": "injured",
+    "player_code": "mees-hilgers"
   },
   {
     "name": "Dean James",
@@ -642,7 +684,8 @@
     "goals": 0,
     "photo_url": "https://example.com/dean.jpg",
     "is_active": 1,
-    "status": "active"
+    "status": "active",
+    "player_code": "dean-james"
   },
   {
     "name": "Muhammad Ferarri",
@@ -657,7 +700,8 @@
     "goals": 2,
     "photo_url": "https://example.com/ferarri.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "muhammad-ferarri"
   },
   {
     "name": "Dony Tri Pamungkas",
@@ -672,7 +716,8 @@
     "goals": 0,
     "photo_url": "https://example.com/dony.jpg",
     "is_active": 1,
-    "status": "active"
+    "status": "active",
+    "player_code": "dony-tri-pamungkas"
   },
   {
     "name": "Eliano Reijnders",
@@ -687,7 +732,8 @@
     "goals": 1,
     "photo_url": "https://example.com/eliano.jpg",
     "is_active": 1,
-    "status": "active"
+    "status": "active",
+    "player_code": "eliano-reijnders"
   },
   {
     "name": "Beckham Putra Nugraha",
@@ -702,7 +748,8 @@
     "goals": 2,
     "photo_url": "https://example.com/beckham.jpg",
     "is_active": 1,
-    "status": "active"
+    "status": "active",
+    "player_code": "beckham-putra-nugraha"
   },
   {
     "name": "Saddil Ramdani",
@@ -717,7 +764,8 @@
     "goals": 2,
     "photo_url": "https://example.com/saddil.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "saddil-ramdani"
   },
   {
     "name": "Stefano Lilipaly",
@@ -732,7 +780,8 @@
     "goals": 2,
     "photo_url": "https://example.com/lilipaly.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "stefano-lilipaly"
   },
   {
     "name": "Malik Risaldi",
@@ -747,7 +796,8 @@
     "goals": 0,
     "photo_url": "https://example.com/malik.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "malik-risaldi"
   },
   {
     "name": "Yakob Sayuri",
@@ -762,7 +812,8 @@
     "goals": 3,
     "photo_url": "https://example.com/yakob.jpg",
     "is_active": 1,
-    "status": "active"
+    "status": "active",
+    "player_code": "yakob-sayuri"
   },
   {
     "name": "Hokky Caraka Bintang Brilyant",
@@ -777,7 +828,8 @@
     "goals": 2,
     "photo_url": "https://example.com/hokky.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "hokky-caraka-bintang-brilyant"
   },
   {
     "name": "Dendy Sulistyawan",
@@ -792,7 +844,8 @@
     "goals": 5,
     "photo_url": "https://example.com/dendy.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "dendy-sulistyawan"
   },
   {
     "name": "Yance Sayuri",
@@ -807,7 +860,8 @@
     "goals": 0,
     "photo_url": "https://example.com/yance.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "yance-sayuri"
   },
   {
     "name": "Andy Setyo Nugroho",
@@ -822,7 +876,8 @@
     "goals": 0,
     "photo_url": "https://example.com/andy.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "andy-setyo-nugroho"
   },
   {
     "name": "Daffa Fasya Sumawijaya",
@@ -837,7 +892,8 @@
     "goals": 0,
     "photo_url": "https://example.com/daffa.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "daffa-fasya-sumawijaya"
   },
   {
     "name": "Erlangga Setyo Dwi Saputra",
@@ -852,7 +908,8 @@
     "goals": 0,
     "photo_url": "https://example.com/erlangga.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "erlangga-setyo-dwi-saputra"
   },
   {
     "name": "Achmad Maulana Syarif",
@@ -867,7 +924,8 @@
     "goals": 0,
     "photo_url": "https://example.com/achmad.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "achmad-maulana-syarif"
   },
   {
     "name": "Kadek Arel Priyatna",
@@ -882,7 +940,8 @@
     "goals": 1,
     "photo_url": "https://example.com/kadek.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "kadek-arel-priyatna"
   },
   {
     "name": "Kakang Rudianto",
@@ -897,7 +956,8 @@
     "goals": 0,
     "photo_url": "https://example.com/kakang.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "kakang-rudianto"
   },
   {
     "name": "Mikael Alfredo Tata",
@@ -912,7 +972,8 @@
     "goals": 0,
     "photo_url": "https://example.com/tata.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "mikael-alfredo-tata"
   },
   {
     "name": "Sulthan Zaky Pramana",
@@ -927,7 +988,8 @@
     "goals": 0,
     "photo_url": "https://example.com/zaky.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "sulthan-zaky-pramana"
   },
   {
     "name": "Adam Alis Setyano",
@@ -942,7 +1004,8 @@
     "goals": 0,
     "photo_url": "https://example.com/adam.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "adam-alis-setyano"
   },
   {
     "name": "Arkhan Fikri",
@@ -957,7 +1020,8 @@
     "goals": 0,
     "photo_url": "https://example.com/arkhan_f.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "arkhan-fikri"
   },
   {
     "name": "Muhammad Rayhan Hannan",
@@ -972,7 +1036,8 @@
     "goals": 0,
     "photo_url": "https://example.com/hannan.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "muhammad-rayhan-hannan"
   },
   {
     "name": "Rivaldo Pakpahan",
@@ -987,7 +1052,8 @@
     "goals": 0,
     "photo_url": "https://example.com/rivaldo.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "rivaldo-pakpahan"
   },
   {
     "name": "Robi Darwis",
@@ -1002,7 +1068,8 @@
     "goals": 0,
     "photo_url": "https://example.com/robi.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "robi-darwis"
   },
   {
     "name": "Zanadin Fariz",
@@ -1017,7 +1084,8 @@
     "goals": 0,
     "photo_url": "https://example.com/zanadin.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "zanadin-fariz"
   },
   {
     "name": "Alfriyanto Nico Saputro",
@@ -1032,7 +1100,8 @@
     "goals": 0,
     "photo_url": "https://example.com/nico.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "alfriyanto-nico-saputro"
   },
   {
     "name": "Arkhan Kaka Putra Purwanto",
@@ -1047,7 +1116,8 @@
     "goals": 0,
     "photo_url": "https://example.com/kaka.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "arkhan-kaka-putra-purwanto"
   },
   {
     "name": "Ronaldo Joybera Kwateh",
@@ -1062,7 +1132,8 @@
     "goals": 0,
     "photo_url": "https://example.com/ronaldo.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "ronaldo-joybera-kwateh"
   },
   {
     "name": "Victor Jonson Benjamin Dethan",
@@ -1077,6 +1148,23 @@
     "goals": 0,
     "photo_url": "https://example.com/dethan.jpg",
     "is_active": 0,
-    "status": "suspended"
+    "status": "suspended",
+    "player_code": "victor-jonson-benjamin-dethan"
+  },
+  {
+    "name": "Muhammad Dzaky Asraf Huwaidi",
+    "nickname": "Dzaky",
+    "position": "DEF",
+    "date_of_birth": "06 februari 2003",
+    "nationality": "Indonesia",
+    "is_naturalized": 0,
+    "club": "PSM Makassar",
+    "club_country": "Indonesia",
+    "caps": 5,
+    "goals": 0,
+    "photo_url": "https://example.com/dzaky.jpg",
+    "is_active": 1,
+    "status": "active",
+    "player_code": "muhammad-dzaky-asraf-huwaidi"
   }
 ]

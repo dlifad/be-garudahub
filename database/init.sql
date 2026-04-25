@@ -85,6 +85,7 @@ CREATE TABLE IF NOT EXISTS matches (
 
 CREATE TABLE IF NOT EXISTS players (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
+    player_code TEXT,
     name TEXT NOT NULL,
     nickname TEXT,
     position TEXT NOT NULL CHECK(position IN ('GK', 'DEF', 'MID', 'FWD')),
@@ -106,9 +107,6 @@ CREATE TABLE IF NOT EXISTS tournament_players (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     tournament_id INTEGER NOT NULL,
     player_id INTEGER NOT NULL,
-    jersey_number INTEGER NOT NULL,
-    is_active INTEGER DEFAULT 1,
-    status TEXT DEFAULT 'active' CHECK(status IN ('active', 'injured', 'suspended')),
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (tournament_id) REFERENCES tournaments(id),
     FOREIGN KEY (player_id) REFERENCES players(id)
@@ -170,14 +168,14 @@ ON matches(tournament_id, match_date_utc);
 CREATE UNIQUE INDEX IF NOT EXISTS idx_players_name_unique
 ON players(name);
 
+CREATE UNIQUE INDEX IF NOT EXISTS idx_players_code_unique
+ON players(player_code);
+
 CREATE INDEX IF NOT EXISTS idx_players_position
 ON players(position);
 
 CREATE UNIQUE INDEX IF NOT EXISTS idx_tournament_players_unique
 ON tournament_players(tournament_id, player_id);
-
-CREATE UNIQUE INDEX IF NOT EXISTS idx_tournament_players_jersey
-ON tournament_players(tournament_id, jersey_number);
 
 CREATE INDEX IF NOT EXISTS idx_tournament_players_tournament
 ON tournament_players(tournament_id);

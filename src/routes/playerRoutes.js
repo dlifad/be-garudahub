@@ -3,10 +3,9 @@ const playerController = require("../controllers/playerController");
 
 const router = express.Router();
 
-// Assign/unassign/update jersey endpoints
+// Assign/unassign squad membership endpoints
 router.post("/assign", playerController.assignPlayerToTournament);
 router.delete("/assign", playerController.unassignPlayerFromTournament);
-router.patch("/assign", playerController.updateJerseyNumber);
 
 router.get("/", playerController.getPlayers);
 router.post("/", playerController.createPlayer);

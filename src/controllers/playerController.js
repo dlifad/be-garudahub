@@ -1,12 +1,13 @@
+const { all, get, run } = require("../utils/dbAsync");
+
 // Assign player to tournament (POST /assign)
 exports.assignPlayerToTournament = async (req, res) => {
   try {
-    const { tournament_id, player_id, jersey_number, status, is_active } =
-      req.body;
-    if (!tournament_id || !player_id || jersey_number === undefined) {
+    const { tournament_id, player_id } = req.body;
+    if (!tournament_id || !player_id) {
       return res.status(400).json({
         success: false,
-        message: "Field wajib: tournament_id, player_id, jersey_number",
+        message: "Field wajib: tournament_id, player_id",
       });
     }
     // Cek turnamen dan pemain
@@ -34,25 +35,9 @@ exports.assignPlayerToTournament = async (req, res) => {
         success: false,
         message: "Pemain sudah terdaftar di turnamen ini",
       });
-    // Cek nomor punggung
-    const jerseyUsed = await get(
-      "SELECT id FROM tournament_players WHERE tournament_id = ? AND jersey_number = ? AND is_active = 1",
-      [tournament_id, jersey_number],
-    );
-    if (jerseyUsed)
-      return res.status(409).json({
-        success: false,
-        message: "Nomor punggung sudah dipakai pemain aktif di turnamen ini",
-      });
     await run(
-      `INSERT INTO tournament_players (tournament_id, player_id, jersey_number, is_active, status) VALUES (?, ?, ?, ?, ?)`,
-      [
-        tournament_id,
-        player_id,
-        jersey_number,
-        typeof is_active === "undefined" ? 1 : is_active ? 1 : 0,
-        status || "active",
-      ],
+      `INSERT INTO tournament_players (tournament_id, player_id) VALUES (?, ?)`,
+      [tournament_id, player_id],
     );
     return res
       .status(201)
@@ -99,54 +84,6 @@ exports.unassignPlayerFromTournament = async (req, res) => {
   }
 };
 
-// Update jersey number (PATCH /assign)
-exports.updateJerseyNumber = async (req, res) => {
-  try {
-    const { tournament_id, player_id, jersey_number } = req.body;
-    if (!tournament_id || !player_id || jersey_number === undefined) {
-      return res.status(400).json({
-        success: false,
-        message: "Field wajib: tournament_id, player_id, jersey_number",
-      });
-    }
-    // Cek link
-    const link = await get(
-      "SELECT id FROM tournament_players WHERE tournament_id = ? AND player_id = ?",
-      [tournament_id, player_id],
-    );
-    if (!link)
-      return res.status(404).json({
-        success: false,
-        message: "Pemain tidak terdaftar di turnamen ini",
-      });
-    // Cek nomor punggung baru
-    const jerseyUsed = await get(
-      "SELECT id FROM tournament_players WHERE tournament_id = ? AND jersey_number = ? AND is_active = 1 AND player_id != ?",
-      [tournament_id, jersey_number, player_id],
-    );
-    if (jerseyUsed)
-      return res.status(409).json({
-        success: false,
-        message: "Nomor punggung sudah dipakai pemain aktif di turnamen ini",
-      });
-    await run("UPDATE tournament_players SET jersey_number = ? WHERE id = ?", [
-      jersey_number,
-      link.id,
-    ]);
-    return res.json({
-      success: true,
-      message: "Nomor punggung berhasil diupdate",
-    });
-  } catch (error) {
-    return res.status(500).json({
-      success: false,
-      message: "Gagal update nomor punggung",
-      error: error.message,
-    });
-  }
-};
-const { all, get, run } = require("../utils/dbAsync");
-
 const ALLOWED_POSITIONS = new Set(["GK", "DEF", "MID", "FWD"]);
 
 function toBool(value) {
@@ -163,6 +100,7 @@ exports.getPlayers = async (req, res) => {
   try {
     const { position, tournament_id, club } = req.query;
     const isActive = req.query.is_active;
+    const playerAlias = tournament_id ? "p" : "players";
 
     if (position && !ALLOWED_POSITIONS.has(position)) {
       return res
@@ -185,7 +123,7 @@ exports.getPlayers = async (req, res) => {
     }
 
     if (position) {
-      where.push(`${tournament_id ? "p" : "players"}.position = ?`);
+      where.push(`${playerAlias}.position = ?`);
       params.push(position);
     }
 
@@ -201,7 +139,7 @@ exports.getPlayers = async (req, res) => {
           .status(400)
           .json({ success: false, message: "is_active harus true/false" });
       }
-      where.push(`${tournament_id ? "tp" : "players"}.is_active = ?`);
+      where.push(`${playerAlias}.is_active = ?`);
       params.push(parsed);
     }
 
@@ -218,12 +156,17 @@ exports.getPlayers = async (req, res) => {
 
     const rows = tournament_id
       ? await all(
-          `SELECT p.*, tp.tournament_id, tp.jersey_number,
-                  tp.status AS squad_status, tp.is_active AS squad_is_active
+          `SELECT p.*, tp.tournament_id
            FROM tournament_players tp
            JOIN players p ON p.id = tp.player_id
            ${whereClause}
-           ORDER BY tp.jersey_number ASC`,
+           ORDER BY CASE p.position
+             WHEN 'GK' THEN 1
+             WHEN 'DEF' THEN 2
+             WHEN 'MID' THEN 3
+             WHEN 'FWD' THEN 4
+             ELSE 5
+           END, p.name ASC`,
           params,
         )
       : await all(
@@ -236,16 +179,10 @@ exports.getPlayers = async (req, res) => {
     return res.json({
       success: true,
       data: rows.map((row) => {
-        const resolvedActive =
-          typeof row.squad_is_active === "undefined"
-            ? Boolean(row.is_active)
-            : Boolean(row.squad_is_active);
-
         return {
           ...row,
-          status: row.squad_status || row.status,
           is_naturalized: Boolean(row.is_naturalized),
-          is_active: resolvedActive,
+          is_active: Boolean(row.is_active),
         };
       }),
     });
@@ -265,7 +202,6 @@ exports.createPlayer = async (req, res) => {
       name,
       nickname,
       position,
-      jersey_number,
       date_of_birth,
       is_naturalized,
       current_club,
@@ -342,13 +278,6 @@ exports.createPlayer = async (req, res) => {
     }
 
     if (tournament_id) {
-      if (jersey_number === undefined) {
-        return res.status(400).json({
-          success: false,
-          message: "Jika pakai tournament_id, field jersey_number wajib diisi",
-        });
-      }
-
       const tournament = await get("SELECT id FROM tournaments WHERE id = ?", [
         tournamentIdNum,
       ]);
@@ -369,28 +298,11 @@ exports.createPlayer = async (req, res) => {
         });
       }
 
-      const existingJersey = await get(
-        "SELECT id FROM tournament_players WHERE tournament_id = ? AND jersey_number = ? AND is_active = 1",
-        [tournamentIdNum, Number(jersey_number)],
-      );
-      if (existingJersey) {
-        return res.status(409).json({
-          success: false,
-          message: "Nomor punggung sudah dipakai pemain aktif di turnamen ini",
-        });
-      }
-
       await run(
         `INSERT INTO tournament_players
-         (tournament_id, player_id, jersey_number, is_active, status)
-         VALUES (?, ?, ?, ?, ?)`,
-        [
-          tournamentIdNum,
-          playerId,
-          Number(jersey_number),
-          typeof is_active === "undefined" ? 1 : is_active ? 1 : 0,
-          status || "active",
-        ],
+         (tournament_id, player_id)
+         VALUES (?, ?)`,
+        [tournamentIdNum, playerId],
       );
     }
 
@@ -398,7 +310,7 @@ exports.createPlayer = async (req, res) => {
 
     const squadAssignment = tournament_id
       ? await get(
-          `SELECT tournament_id, jersey_number, status, is_active
+          `SELECT tournament_id
            FROM tournament_players
            WHERE tournament_id = ? AND player_id = ?`,
           [tournamentIdNum, playerId],
@@ -411,12 +323,7 @@ exports.createPlayer = async (req, res) => {
       player_already_existed: Boolean(existingPlayer),
       data: {
         ...created,
-        tournament_assignment: squadAssignment
-          ? {
-              ...squadAssignment,
-              is_active: Boolean(squadAssignment.is_active),
-            }
-          : null,
+        tournament_assignment: squadAssignment ? { ...squadAssignment } : null,
         is_naturalized: Boolean(created.is_naturalized),
         is_active: Boolean(created.is_active),
       },
@@ -456,13 +363,17 @@ exports.getSquadByTournament = async (req, res) => {
       coaches.find((coach) => coach.is_active === 1) || coaches[0];
 
     const players = await all(
-      `SELECT p.*, tp.jersey_number,
-              tp.status AS squad_status,
-              tp.is_active AS squad_is_active
+      `SELECT p.*, tp.tournament_id
        FROM tournament_players tp
        JOIN players p ON p.id = tp.player_id
-       WHERE tp.tournament_id = ? AND tp.is_active = 1
-       ORDER BY tp.jersey_number ASC`,
+       WHERE tp.tournament_id = ?
+       ORDER BY CASE p.position
+         WHEN 'GK' THEN 1
+         WHEN 'DEF' THEN 2
+         WHEN 'MID' THEN 3
+         WHEN 'FWD' THEN 4
+         ELSE 5
+       END, p.name ASC`,
       [tournament_id],
     );
 
@@ -476,9 +387,8 @@ exports.getSquadByTournament = async (req, res) => {
     players.forEach((player) => {
       grouped[player.position].push({
         ...player,
-        status: player.squad_status || player.status,
         is_naturalized: Boolean(player.is_naturalized),
-        is_active: Boolean(player.squad_is_active),
+        is_active: Boolean(player.is_active),
       });
     });
 
