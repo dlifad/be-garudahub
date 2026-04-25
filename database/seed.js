@@ -17,7 +17,9 @@ const ensurePlayersPlayerCodeColumn = (onDone) => {
       return;
     }
 
-    const hasPlayerCode = columns.some((column) => column.name === "player_code");
+    const hasPlayerCode = columns.some(
+      (column) => column.name === "player_code",
+    );
 
     const ensureIndex = () => {
       db.run(
@@ -129,17 +131,40 @@ const seedConfig = [
 ];
 
 ensurePlayersPlayerCodeColumn(() => {
-  db.serialize(() => {
-    seedConfig.forEach((config) => {
-      const data = require(config.file);
+  let venueMap = {};
 
-    if (config.table === "matches") {
-      data.forEach((item) => {
-        db.get(
-          "SELECT id FROM venues WHERE name = ?",
-          [item.venue_name],
-          (err, venue) => {
-            const venueId = venue ? venue.id : null;
+  // 🔥 1. load venues dulu
+  db.all("SELECT id, name FROM venues", [], (err, rows) => {
+    if (err) {
+      console.error("Gagal ambil venues:", err.message);
+      return;
+    }
+
+    rows.forEach((v) => {
+      venueMap[v.name.toLowerCase().trim()] = v.id;
+    });
+
+    // 🔥 2. baru mulai seeding
+    startSeeding();
+  });
+
+  function startSeeding() {
+    db.serialize(() => {
+      seedConfig.forEach((config) => {
+        const data = require(config.file);
+
+        if (config.table === "matches") {
+          data.forEach((item) => {
+            let venueId = null;
+
+            if (item.venue_name) {
+              const key = item.venue_name.toLowerCase().trim();
+              venueId = venueMap[key] || null;
+            }
+
+            if (!venueId && item.venue_name) {
+              console.log("VENUE NOT FOUND:", item.venue_name);
+            }
 
             db.run(
               `INSERT INTO matches (
@@ -153,25 +178,7 @@ ensurePlayersPlayerCodeColumn(() => {
                 ticket_cat1, ticket_cat2, ticket_cat3, ticket_VIP
               ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
               ON CONFLICT(tournament_id, match_date_utc) DO UPDATE SET
-                matchday = excluded.matchday,
-                round = excluded.round,
-                is_home = excluded.is_home,
-                home_team = excluded.home_team,
-                away_team = excluded.away_team,
-                opponent = excluded.opponent,
-                opponent_flag = excluded.opponent_flag,
-                home_team_flag = excluded.home_team_flag,
-                away_team_flag = excluded.away_team_flag,
-                venue_id = excluded.venue_id,
-                status = excluded.status,
-                home_score = excluded.home_score,
-                away_score = excluded.away_score,
-                home_goals = excluded.home_goals,
-                away_goals = excluded.away_goals,
-                ticket_cat1 = excluded.ticket_cat1,
-                ticket_cat2 = excluded.ticket_cat2,
-                ticket_cat3 = excluded.ticket_cat3,
-                ticket_VIP = excluded.ticket_VIP`,
+                venue_id = excluded.venue_id`,
               [
                 item.tournament_id,
                 item.matchday,
@@ -194,22 +201,19 @@ ensurePlayersPlayerCodeColumn(() => {
                 item.ticket_cat2,
                 item.ticket_cat3,
                 item.ticket_VIP,
-              ],
+              ]
             );
-          },
-        );
-      });
+          });
 
-      console.log("Seeder matches selesai (with venue mapping).");
-      return;
-    }
+          console.log("Seeder matches selesai.");
+        }
 
-      if (config.table === "players") {
-        data.forEach((item) => {
-          const playerCode = item.player_code || toPlayerCode(item.name);
+        if (config.table === "players") {
+          data.forEach((item) => {
+            const playerCode = item.player_code || toPlayerCode(item.name);
 
-          db.run(
-            `INSERT INTO players
+            db.run(
+              `INSERT INTO players
              (player_code, name, nickname, position, date_of_birth, nationality,
               is_naturalized, current_club, club, club_country, caps, goals,
               photo_url, is_active, status)
@@ -229,72 +233,119 @@ ensurePlayersPlayerCodeColumn(() => {
                photo_url = excluded.photo_url,
                is_active = excluded.is_active,
                status = excluded.status`,
-            [
-              playerCode,
-              item.name,
-              item.nickname,
-              item.position,
-              item.date_of_birth,
-              item.nationality,
-              item.is_naturalized,
-              item.club || item.current_club || null,
-              item.club || item.current_club || null,
-              item.club_country,
-              item.caps,
-              item.goals,
-              item.photo_url,
-              item.is_active,
-              item.status,
-            ],
-            (insertErr) => {
-              if (insertErr) {
-                console.error(
-                  `Gagal upsert pemain ${item.name}:`,
-                  insertErr.message,
-                );
-              }
-            },
-          );
-        });
-        console.log("Seeder players selesai (mode upsert + player_code).");
+              [
+                playerCode,
+                item.name,
+                item.nickname,
+                item.position,
+                item.date_of_birth,
+                item.nationality,
+                item.is_naturalized,
+                item.club || item.current_club || null,
+                item.club || item.current_club || null,
+                item.club_country,
+                item.caps,
+                item.goals,
+                item.photo_url,
+                item.is_active,
+                item.status,
+              ],
+              (insertErr) => {
+                if (insertErr) {
+                  console.error(
+                    `Gagal upsert pemain ${item.name}:`,
+                    insertErr.message,
+                  );
+                }
+              },
+            );
+          });
+          console.log("Seeder players selesai (mode upsert + player_code).");
 
-        return;
-      }
+          return;
+        }
 
-      if (config.table === "tournament_players") {
-        const upsertTournamentPlayer = (
-          tournamentId,
-          playerId,
-          label,
-          sourceValue,
-        ) => {
-          db.run(
-            `INSERT INTO tournament_players
+        if (config.table === "tournament_players") {
+          const upsertTournamentPlayer = (
+            tournamentId,
+            playerId,
+            label,
+            sourceValue,
+          ) => {
+            db.run(
+              `INSERT INTO tournament_players
              (tournament_id, player_id)
              VALUES (?, ?)
              ON CONFLICT(tournament_id, player_id) DO UPDATE SET
                player_id = excluded.player_id`,
-            [tournamentId, playerId],
-            (squadErr) => {
-              if (squadErr) {
-                console.error(
-                  `Gagal upsert relasi pemain ${label} ${sourceValue} ke turnamen ${tournamentId}:`,
-                  squadErr.message,
-                );
-              }
-            },
-          );
-        };
+              [tournamentId, playerId],
+              (squadErr) => {
+                if (squadErr) {
+                  console.error(
+                    `Gagal upsert relasi pemain ${label} ${sourceValue} ke turnamen ${tournamentId}:`,
+                    squadErr.message,
+                  );
+                }
+              },
+            );
+          };
 
-        data.forEach((item) => {
-          if (item.player_code) {
+          data.forEach((item) => {
+            if (item.player_code) {
+              db.get(
+                "SELECT id FROM players WHERE player_code = ?",
+                [item.player_code],
+                (findErr, rowPlayer) => {
+                  if (findErr) {
+                    console.error(
+                      `Gagal cari id pemain dari player_code ${item.player_code}:`,
+                      findErr.message,
+                    );
+                    return;
+                  }
+
+                  if (!rowPlayer) {
+                    console.error(
+                      `Player dengan player_code ${item.player_code} tidak ditemukan untuk relasi turnamen ${item.tournament_id}`,
+                    );
+                    return;
+                  }
+
+                  upsertTournamentPlayer(
+                    item.tournament_id,
+                    rowPlayer.id,
+                    "player_code",
+                    item.player_code,
+                  );
+                },
+              );
+              return;
+            }
+
+            if (item.player_id) {
+              upsertTournamentPlayer(
+                item.tournament_id,
+                item.player_id,
+                "id",
+                item.player_id,
+              );
+              return;
+            }
+
+            if (!item.player_name) {
+              console.error(
+                `Relasi turnamen ${item.tournament_id} tidak punya player_code/player_id/player_name`,
+              );
+              return;
+            }
+
             db.get(
-              "SELECT id FROM players WHERE player_code = ?",
-              [item.player_code],
+              "SELECT id FROM players WHERE LOWER(name) = LOWER(?)",
+              [item.player_name],
               (findErr, rowPlayer) => {
                 if (findErr) {
                   console.error(
-                    `Gagal cari id pemain dari player_code ${item.player_code}:`,
+                    `Gagal cari id pemain ${item.player_name}:`,
                     findErr.message,
                   );
                   return;
@@ -302,7 +353,7 @@ ensurePlayersPlayerCodeColumn(() => {
 
                 if (!rowPlayer) {
                   console.error(
-                    `Player dengan player_code ${item.player_code} tidak ditemukan untuk relasi turnamen ${item.tournament_id}`,
+                    `Player ${item.player_name} tidak ditemukan untuk relasi turnamen ${item.tournament_id}`,
                   );
                   return;
                 }
@@ -310,90 +361,48 @@ ensurePlayersPlayerCodeColumn(() => {
                 upsertTournamentPlayer(
                   item.tournament_id,
                   rowPlayer.id,
-                  "player_code",
-                  item.player_code,
+                  "nama",
+                  item.player_name,
                 );
               },
             );
-            return;
-          }
-
-          if (item.player_id) {
-            upsertTournamentPlayer(
-              item.tournament_id,
-              item.player_id,
-              "id",
-              item.player_id,
-            );
-            return;
-          }
-
-          if (!item.player_name) {
-            console.error(
-              `Relasi turnamen ${item.tournament_id} tidak punya player_code/player_id/player_name`,
-            );
-            return;
-          }
-
-          db.get(
-            "SELECT id FROM players WHERE LOWER(name) = LOWER(?)",
-            [item.player_name],
-            (findErr, rowPlayer) => {
-              if (findErr) {
-                console.error(
-                  `Gagal cari id pemain ${item.player_name}:`,
-                  findErr.message,
-                );
-                return;
-              }
-
-              if (!rowPlayer) {
-                console.error(
-                  `Player ${item.player_name} tidak ditemukan untuk relasi turnamen ${item.tournament_id}`,
-                );
-                return;
-              }
-
-              upsertTournamentPlayer(
-                item.tournament_id,
-                rowPlayer.id,
-                "nama",
-                item.player_name,
-              );
-            },
+          });
+          console.log(
+            "Seeder tournament_players selesai (mode upsert: player_code -> player_id -> player_name).",
           );
-        });
-        console.log(
-          "Seeder tournament_players selesai (mode upsert: player_code -> player_id -> player_name).",
-        );
 
-        return;
-      }
-
-      db.get(`SELECT COUNT(*) as count FROM ${config.table}`, [], (err, row) => {
-        if (err) return console.error(err.message);
-
-        if (row.count > 0) {
-          console.log(`${config.table} sudah ada, skip.`);
           return;
         }
 
-        const placeholders = config.columns.map(() => "?").join(", ");
-        const columnNames = config.columns.join(", ");
+        db.get(
+          `SELECT COUNT(*) as count FROM ${config.table}`,
+          [],
+          (err, row) => {
+            if (err) return console.error(err.message);
 
-        const stmt = db.prepare(`
+            if (row.count > 0) {
+              console.log(`${config.table} sudah ada, skip.`);
+              return;
+            }
+
+            const placeholders = config.columns.map(() => "?").join(", ");
+            const columnNames = config.columns.join(", ");
+
+            const stmt = db.prepare(`
           INSERT INTO ${config.table} (${columnNames})
           VALUES (${placeholders})
         `);
 
-        data.forEach((item) => {
-          const values = config.columns.map((col) => item[col]);
-          stmt.run(values);
-        });
+            data.forEach((item) => {
+              const values = config.columns.map((col) => item[col]);
+              stmt.run(values);
+            });
 
-        stmt.finalize();
-        console.log(`Seeder ${config.table} selesai.`);
+            stmt.finalize();
+            console.log(`Seeder ${config.table} selesai.`);
+          },
+        );
       });
     });
-  });
+  }
 });
