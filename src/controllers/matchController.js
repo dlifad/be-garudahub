@@ -28,10 +28,20 @@ function mapMatchRow(row, timezone) {
     }
   }
 
+  const prices = [
+    row.ticket_cat1,
+    row.ticket_cat2,
+    row.ticket_cat3,
+    row.ticket_VIP,
+  ].filter(v => v !== null);
+
+  const minPrice = prices.length ? Math.min(...prices) : null;
+
   return {
     id: row.id,
     tournament_id: row.tournament_id,
     tournament_name: row.tournament_name,
+    tournament_logo: row.tournament_logo,
     head_coach: row.head_coach_name || null,
     matchday: row.matchday,
     round: row.round,
@@ -42,14 +52,26 @@ function mapMatchRow(row, timezone) {
     away_team_flag: row.away_team_flag,
     match_date_utc: row.match_date_utc,
     match_date_local: formatWithOffset(row.match_date_utc, timezone),
-    venue: row.venue,
+    venue: row.venue_name,
+    stadium: {
+      name: row.venue_name,
+      city: row.city,
+      latitude: row.latitude,
+      longitude: row.longitude,
+    },
     status: row.status,
     home_score: row.home_score,
     away_score: row.away_score,
     indonesia_score: indonesiaScore,
     opponent_score: opponentScore,
     result,
-    ticket_price_idr: row.ticket_price_idr,
+    min_ticket_price: minPrice,
+    tickets: {
+      cat1: row.ticket_cat1,
+      cat2: row.ticket_cat2,
+      cat3: row.ticket_cat3,
+      vip: row.ticket_VIP,
+    },
   };
 }
 
@@ -99,13 +121,37 @@ exports.getMatches = async (req, res) => {
       params.push(date);
     }
 
+    const { has_ticket } = req.query;
+
+    const { upcoming } = req.query;
+
+    if (upcoming === "true") {
+      where.push(`
+        m.status = 'scheduled'
+        AND datetime(m.match_date_utc) > datetime('now')
+      `);
+    }
+
+    if (has_ticket === "true") {
+      where.push(`
+        (
+          m.ticket_cat1 IS NOT NULL OR
+          m.ticket_cat2 IS NOT NULL OR
+          m.ticket_cat3 IS NOT NULL OR
+          m.ticket_VIP IS NOT NULL
+        )
+      `);
+    }
+
     const whereClause = where.length ? `WHERE ${where.join(" AND ")}` : "";
 
     const rows = await all(
-      `SELECT m.*, t.name AS tournament_name,
-              tc.name AS head_coach_name
+      `SELECT m.*, t.name AS tournament_name, t.logo_url AS tournament_logo,
+              tc.name AS head_coach_name,
+              v.name AS venue_name, v.city, v.latitude, v.longitude
        FROM matches m
        JOIN tournaments t ON t.id = m.tournament_id
+       LEFT JOIN venues v ON v.id = m.venue_id
        LEFT JOIN tournament_coaches tc ON tc.tournament_id = t.id
          AND tc.role = 'head_coach' AND tc.is_active = 1
        ${whereClause}
@@ -139,9 +185,11 @@ exports.getMatchById = async (req, res) => {
 
     const row = await get(
       `SELECT m.*, t.name AS tournament_name,
-              tc.name AS head_coach_name
+              tc.name AS head_coach_name,
+              v.name AS venue_name, v.city, v.latitude, v.longitude
        FROM matches m
        JOIN tournaments t ON t.id = m.tournament_id
+       LEFT JOIN venues v ON v.id = m.venue_id
        LEFT JOIN tournament_coaches tc ON tc.tournament_id = t.id
          AND tc.role = 'head_coach' AND tc.is_active = 1
        WHERE m.id = ?`,
@@ -177,8 +225,11 @@ exports.createMatch = async (req, res) => {
       opponent,
       opponent_flag,
       match_date_utc,
-      venue,
-      ticket_price_idr,
+      venue_id,
+      ticket_cat1,
+      ticket_cat2,
+      ticket_cat3,
+      ticket_VIP,
     } = req.body;
 
     if (typeof is_home !== "boolean") {
@@ -237,8 +288,9 @@ exports.createMatch = async (req, res) => {
     const inserted = await run(
       `INSERT INTO matches
        (tournament_id, matchday, round, is_home, home_team, away_team, opponent, opponent_flag,
-        home_team_flag, away_team_flag, match_date_utc, venue, stadium_name, ticket_price_idr)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+        home_team_flag, away_team_flag, match_date_utc, venue_id,
+        ticket_cat1, ticket_cat2, ticket_cat3, ticket_VIP)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
       [
         tournament_id,
         matchday || null,
@@ -251,9 +303,11 @@ exports.createMatch = async (req, res) => {
         is_home ? "IDN" : opponent_flag || null,
         is_home ? opponent_flag || null : "IDN",
         iso,
-        venue || null,
-        venue || null,
-        ticket_price_idr || null,
+        venue_id || null,
+        ticket_cat1 || null,
+        ticket_cat2 || null,
+        ticket_cat3 || null,
+        ticket_VIP || null,
       ],
     );
 

@@ -20,6 +20,17 @@ const seedConfig = [
     ],
   },
   {
+    table: "venues",
+    file: "./data/venues.json",
+    columns: [
+      "name", 
+      "city", 
+      "country", 
+      "latitude", 
+      "longitude"
+    ],
+  },
+  {
     table: "matches",
     file: "./data/matches.json",
     columns: [
@@ -34,7 +45,7 @@ const seedConfig = [
       "home_team_flag",
       "away_team_flag",
       "match_date_utc",
-      "venue",
+      "venue_name",
       "status",
       "home_score",
       "away_score",
@@ -78,6 +89,57 @@ const seedConfig = [
 db.serialize(() => {
   seedConfig.forEach((config) => {
     const data = require(config.file);
+
+    if (config.table === "matches") {
+      data.forEach((item) => {
+        db.get(
+          "SELECT id FROM venues WHERE name = ?",
+          [item.venue_name],
+          (err, venue) => {
+            const venueId = venue ? venue.id : null;
+
+            db.run(
+              `INSERT INTO matches (
+                tournament_id, matchday, round, is_home,
+                home_team, away_team, opponent,
+                opponent_flag, home_team_flag, away_team_flag,
+                match_date_utc,
+                venue_id,
+                status, home_score, away_score,
+                home_goals, away_goals,
+                ticket_cat1, ticket_cat2, ticket_cat3, ticket_VIP
+              ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+              [
+                item.tournament_id,
+                item.matchday,
+                item.round,
+                item.is_home,
+                item.home_team,
+                item.away_team,
+                item.opponent,
+                item.opponent_flag,
+                item.home_team_flag,
+                item.away_team_flag,
+                item.match_date_utc,
+                venueId,
+                item.status,
+                item.home_score,
+                item.away_score,
+                item.home_goals,
+                item.away_goals,
+                item.ticket_cat1,
+                item.ticket_cat2,
+                item.ticket_cat3,
+                item.ticket_VIP,
+              ]
+            );
+          }
+        );
+      });
+
+      console.log("Seeder matches selesai (with venue mapping).");
+      return;
+    }
 
     if (config.table === "players") {
       data.forEach((item) => {

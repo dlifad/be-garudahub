@@ -3,12 +3,13 @@ TABEL (AKTUAL)
 2. news
 3. merchandise
 4. tournaments
-5. matches
-6. players
-7. tournament_players
-8. tournament_coaches
-9. predictions
-10. match_lineups
+5. venue
+6. matches
+7. players
+8. tournament_players
+9. tournament_coaches
+10. predictions
+11. match_lineups
 
 Endpoint :
 1.Auth
@@ -54,6 +55,7 @@ Endpoint :
 - POST /api/matches/:id/lineup
 - GET /api/matches/:id/lineup
 - DELETE /api/matches/:id/lineup/:player_id
+- /api/matches?has_ticket=true&upcoming=true
 
 8. Players
 - GET /api/players

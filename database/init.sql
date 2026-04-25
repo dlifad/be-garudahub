@@ -46,6 +46,15 @@ CREATE TABLE IF NOT EXISTS tournaments (
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
+CREATE TABLE IF NOT EXISTS venues (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    city TEXT,
+    country TEXT,
+    latitude REAL NOT NULL,
+    longitude REAL NOT NULL
+);
+
 CREATE TABLE IF NOT EXISTS matches (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     tournament_id INTEGER NOT NULL,
@@ -59,7 +68,7 @@ CREATE TABLE IF NOT EXISTS matches (
     home_team_flag TEXT DEFAULT '🇮🇩',
     away_team_flag TEXT,
     match_date_utc TEXT NOT NULL,
-    venue TEXT,
+    venue_id INTEGER,
     status TEXT NOT NULL DEFAULT 'scheduled' CHECK(status IN ('scheduled', 'ongoing', 'finished')),
     home_score INTEGER,
     away_score INTEGER,
@@ -70,7 +79,8 @@ CREATE TABLE IF NOT EXISTS matches (
     ticket_cat3 INTEGER,
     ticket_VIP INTEGER,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (tournament_id) REFERENCES tournaments(id)
+    FOREIGN KEY (tournament_id) REFERENCES tournaments(id),
+    FOREIGN KEY (venue_id) REFERENCES venues(id)
 );
 
 CREATE TABLE IF NOT EXISTS players (

@@ -1,0 +1,114 @@
+[
+  {
+    "name": "Gelora Bung Karno Stadium",
+    "city": "Jakarta",
+    "country": "Indonesia",
+    "latitude": -6.2186,
+    "longitude": 106.8003
+  },
+  {
+    "name": "Gelora Bung Tomo Stadium",
+    "city": "Surabaya",
+    "country": "Indonesia",
+    "latitude": -7.2232,
+    "longitude": 112.6202
+  },
+  {
+    "name": "Sultan Hassanal Bolkiah Stadium",
+    "city": "Bandar Seri Begawan",
+    "country": "Brunei",
+    "latitude": 4.9289,
+    "longitude": 114.9429
+  },
+  {
+    "name": "Basra International Stadium",
+    "city": "Basra",
+    "country": "Iraq",
+    "latitude": 30.4399,
+    "longitude": 47.7774
+  },
+  {
+    "name": "Rizal Memorial Stadium",
+    "city": "Manila",
+    "country": "Philippines",
+    "latitude": 14.5633,
+    "longitude": 120.9874
+  },
+  {
+    "name": "Ahmad bin Ali Stadium",
+    "city": "Al Rayyan",
+    "country": "Qatar",
+    "latitude": 25.3296,
+    "longitude": 51.3397
+  },
+  {
+    "name": "Abdullah bin Khalifa Stadium",
+    "city": "Doha",
+    "country": "Qatar",
+    "latitude": 25.3730,
+    "longitude": 51.4665
+  },
+  {
+    "name": "Al Thumama Stadium",
+    "city": "Doha",
+    "country": "Qatar",
+    "latitude": 25.2354,
+    "longitude": 51.5295
+  },
+  {
+    "name": "Jassim Bin Hamad Stadium",
+    "city": "Doha",
+    "country": "Qatar",
+    "latitude": 25.2672,
+    "longitude": 51.4816
+  },
+  {
+    "name": "My Dinh National Stadium",
+    "city": "Hanoi",
+    "country": "Vietnam",
+    "latitude": 21.0204,
+    "longitude": 105.7613
+  },
+  {
+    "name": "King Abdullah Sports City",
+    "city": "Jeddah",
+    "country": "Saudi Arabia",
+    "latitude": 21.7635,
+    "longitude": 39.1616
+  },
+  {
+    "name": "Bahrain National Stadium",
+    "city": "Riffa",
+    "country": "Bahrain",
+    "latitude": 26.1534,
+    "longitude": 50.5410
+  },
+  {
+    "name": "Qingdao Youth Football Stadium",
+    "city": "Qingdao",
+    "country": "China",
+    "latitude": 36.0587,
+    "longitude": 120.3466
+  },
+  {
+    "name": "Thuwunna Stadium",
+    "city": "Yangon",
+    "country": "Myanmar",
+    "latitude": 16.8213,
+    "longitude": 96.1842
+  },
+  {
+    "name": "Sydney Football Stadium",
+    "city": "Sydney",
+    "country": "Australia",
+    "latitude": -33.8890,
+    "longitude": 151.2227
+  },
+  {
+    "name": "Panasonic Stadium Suita",
+    "city": "Suita",
+    "country": "Japan",
+    "latitude": 34.8735,
+    "longitude": 135.1139
+  }
+]
