@@ -6,7 +6,29 @@ const {
 } = require("../utils/datetime");
 
 const STATUS_VALUES = new Set(["scheduled", "ongoing", "finished"]);
-const LINEUP_POSITIONS = new Set(["GK", "DEF", "MID", "FWD"]);
+const LINEUP_POSITIONS = new Set([
+  "GK",
+  "DEF",
+  "MID",
+  "FWD",
+  "CB",
+  "LCB",
+  "RCB",
+  "RB",
+  "LB",
+  "RWB",
+  "LWB",
+  "CM",
+  "CDM",
+  "CAM",
+  "LM",
+  "RM",
+  "LW",
+  "RW",
+  "ST",
+]);
+
+const FORMATION_REGEX = /^\d-\d-\d(?:-\d)?$/;
 
 function mapMatchRow(row, timezone) {
   const isHome = Boolean(row.is_home);
@@ -45,6 +67,7 @@ function mapMatchRow(row, timezone) {
     head_coach: row.head_coach_name || null,
     matchday: row.matchday,
     round: row.round,
+    formation: row.formation || null,
     is_home: isHome,
     home_team: row.home_team,
     away_team: row.away_team,
@@ -221,6 +244,7 @@ exports.createMatch = async (req, res) => {
       tournament_id,
       matchday,
       round,
+      formation,
       is_home,
       opponent,
       opponent_flag,
@@ -284,17 +308,32 @@ exports.createMatch = async (req, res) => {
 
     const homeTeam = is_home ? "Indonesia" : opponent;
     const awayTeam = is_home ? opponent : "Indonesia";
+    const normalizedFormation =
+      typeof formation === "undefined" || formation === null || formation === ""
+        ? null
+        : String(formation).trim();
+
+    if (
+      normalizedFormation !== null &&
+      !FORMATION_REGEX.test(normalizedFormation)
+    ) {
+      return res.status(400).json({
+        success: false,
+        message: "formation tidak valid. Contoh: 4-3-3 atau 3-4-2-1",
+      });
+    }
 
     const inserted = await run(
       `INSERT INTO matches
-       (tournament_id, matchday, round, is_home, home_team, away_team, opponent, opponent_flag,
+       (tournament_id, matchday, round, formation, is_home, home_team, away_team, opponent, opponent_flag,
         home_team_flag, away_team_flag, match_date_utc, venue_id,
         ticket_cat1, ticket_cat2, ticket_cat3, ticket_VIP)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)` ,
       [
         tournament_id,
         matchday || null,
         round || null,
+        normalizedFormation,
         is_home ? 1 : 0,
         homeTeam,
         awayTeam,
@@ -339,7 +378,7 @@ exports.createMatch = async (req, res) => {
 exports.updateMatch = async (req, res) => {
   try {
     const { id } = req.params;
-    const { status, home_score, away_score } = req.body;
+    const { status, home_score, away_score, formation } = req.body;
 
     if (!status || !STATUS_VALUES.has(status)) {
       return res
@@ -368,6 +407,20 @@ exports.updateMatch = async (req, res) => {
       home_score === undefined ? match.home_score : Number(home_score);
     const parsedAway =
       away_score === undefined ? match.away_score : Number(away_score);
+    const normalizedFormation =
+      typeof formation === "undefined" || formation === null || formation === ""
+        ? match.formation
+        : String(formation).trim();
+
+    if (
+      normalizedFormation !== null &&
+      !FORMATION_REGEX.test(normalizedFormation)
+    ) {
+      return res.status(400).json({
+        success: false,
+        message: "formation tidak valid. Contoh: 4-3-3 atau 3-4-2-1",
+      });
+    }
 
     if (
       (home_score !== undefined &&
@@ -381,9 +434,9 @@ exports.updateMatch = async (req, res) => {
 
     await run(
       `UPDATE matches
-       SET status = ?, home_score = ?, away_score = ?
+       SET status = ?, home_score = ?, away_score = ?, formation = ?
        WHERE id = ?`,
-      [status, parsedHome, parsedAway, id],
+      [status, parsedHome, parsedAway, normalizedFormation, id],
     );
 
     const updated = await get(
@@ -465,9 +518,9 @@ exports.setMatchLineup = async (req, res) => {
     const {
       player_id,
       is_starting_eleven,
+      is_captain,
       jersey_number,
       position,
-      is_active,
     } = req.body;
 
     if (!Number.isInteger(matchId) || matchId <= 0) {
@@ -483,7 +536,9 @@ exports.setMatchLineup = async (req, res) => {
         .json({ success: false, message: "player_id tidak valid" });
     }
 
-    if (position && !LINEUP_POSITIONS.has(position)) {
+    const normalizedPosition = position ? String(position).toUpperCase() : null;
+
+    if (normalizedPosition && !LINEUP_POSITIONS.has(normalizedPosition)) {
       return res
         .status(400)
         .json({ success: false, message: "position lineup tidak valid" });
@@ -532,10 +587,10 @@ exports.setMatchLineup = async (req, res) => {
           ? 1
           : 0;
 
-    const isActive =
-      typeof is_active === "undefined"
-        ? 1
-        : is_active === true || is_active === 1 || is_active === "1"
+    const isCaptain =
+      typeof is_captain === "undefined"
+        ? 0
+        : is_captain === true || is_captain === 1 || is_captain === "1"
           ? 1
           : 0;
 
@@ -559,27 +614,27 @@ exports.setMatchLineup = async (req, res) => {
 
     await run(
       `INSERT INTO match_lineups
-       (match_id, player_id, tournament_id, is_starting_eleven, jersey_number, position, is_active)
+       (match_id, player_id, tournament_id, is_starting_eleven, is_captain, jersey_number, position)
        VALUES (?, ?, ?, ?, ?, ?, ?)
        ON CONFLICT(match_id, player_id) DO UPDATE SET
          is_starting_eleven = excluded.is_starting_eleven,
+         is_captain = excluded.is_captain,
          jersey_number = excluded.jersey_number,
-         position = excluded.position,
-         is_active = excluded.is_active`,
+         position = excluded.position`,
       [
         matchId,
         playerIdNum,
         match.tournament_id,
         isStarting,
+        isCaptain,
         jerseyNumber,
-        position || player.position,
-        isActive,
+        normalizedPosition || player.position,
       ],
     );
 
     const lineupPlayer = await get(
       `SELECT ml.match_id, ml.player_id, ml.tournament_id, ml.is_starting_eleven,
-              ml.jersey_number, ml.position, ml.is_active,
+              ml.is_captain, ml.jersey_number, ml.position,
               p.name AS player_name
        FROM match_lineups ml
        JOIN players p ON p.id = ml.player_id
@@ -593,7 +648,7 @@ exports.setMatchLineup = async (req, res) => {
       data: {
         ...lineupPlayer,
         is_starting_eleven: Boolean(lineupPlayer.is_starting_eleven),
-        is_active: Boolean(lineupPlayer.is_active),
+        is_captain: Boolean(lineupPlayer.is_captain),
       },
     });
   } catch (error) {
@@ -632,12 +687,12 @@ exports.getMatchLineup = async (req, res) => {
 
     const rows = await all(
       `SELECT ml.player_id, ml.is_starting_eleven, ml.jersey_number,
-              ml.position AS lineup_position, ml.is_active,
+              ml.is_captain, ml.position AS lineup_position,
               p.name, p.nickname, p.position AS player_position,
               p.current_club, p.photo_url
        FROM match_lineups ml
        JOIN players p ON p.id = ml.player_id
-       WHERE ml.match_id = ? AND ml.is_active = 1
+       WHERE ml.match_id = ?
        ORDER BY ml.is_starting_eleven DESC, ml.jersey_number ASC, p.name ASC`,
       [matchId],
     );
@@ -651,7 +706,7 @@ exports.getMatchLineup = async (req, res) => {
       current_club: row.current_club,
       photo_url: row.photo_url,
       is_starting_eleven: Boolean(row.is_starting_eleven),
-      is_active: Boolean(row.is_active),
+      is_captain: Boolean(row.is_captain),
     }));
 
     return res.json({
