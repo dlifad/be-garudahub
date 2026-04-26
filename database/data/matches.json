@@ -20,7 +20,8 @@
     "ticket_cat1": null,
     "ticket_cat2": null,
     "ticket_cat3": null,
-    "ticket_VIP": null
+    "ticket_VIP": null,
+    "formation": "4-3-3"
   },
   {
     "tournament_id": 4,
@@ -43,7 +44,8 @@
     "ticket_cat1": 2500000,
     "ticket_cat2": 1200000,
     "ticket_cat3": 600000,
-    "ticket_VIP": 4250000
+    "ticket_VIP": 4250000,
+    "formation": "5-3-2"
   },
   {
     "tournament_id": 3,
@@ -66,7 +68,8 @@
     "ticket_cat1": 250000,
     "ticket_cat2": 125000,
     "ticket_cat3": null,
-    "ticket_VIP": 450000
+    "ticket_VIP": 450000,
+    "formation": "4-4-2"
   },
   {
     "tournament_id": 3,
@@ -89,7 +92,8 @@
     "ticket_cat1": null,
     "ticket_cat2": null,
     "ticket_cat3": null,
-    "ticket_VIP": null
+    "ticket_VIP": null,
+    "formation": "4-4-2"
   },
   {
     "tournament_id": 3,
@@ -112,7 +116,8 @@
     "ticket_cat1": null,
     "ticket_cat2": null,
     "ticket_cat3": null,
-    "ticket_VIP": null
+    "ticket_VIP": null,
+    "formation": "3-4-1-2 "
   },
   {
     "tournament_id": 3,
@@ -135,7 +140,8 @@
     "ticket_cat1": null,
     "ticket_cat2": null,
     "ticket_cat3": null,
-    "ticket_VIP": null
+    "ticket_VIP": null,
+    "formation": "3-5-2"
   },
   {
     "tournament_id": 2,
@@ -158,7 +164,8 @@
     "ticket_cat1": 253000,
     "ticket_cat2": 169000,
     "ticket_cat3": 105000,
-    "ticket_VIP": null
+    "ticket_VIP": null,
+    "formation": "3-4-3"
   },
   {
     "tournament_id": 2,
@@ -181,7 +188,8 @@
     "ticket_cat1": null,
     "ticket_cat2": null,
     "ticket_cat3": null,
-    "ticket_VIP": null
+    "ticket_VIP": null,
+    "formation": "5-4-1"
   },
   {
     "tournament_id": 2,
@@ -204,7 +212,8 @@
     "ticket_cat1": null,
     "ticket_cat2": null,
     "ticket_cat3": null,
-    "ticket_VIP": null
+    "ticket_VIP": null,
+    "formation": "5-4-1"
   },
   {
     "tournament_id": 2,
@@ -227,7 +236,8 @@
     "ticket_cat1": null,
     "ticket_cat2": null,
     "ticket_cat3": null,
-    "ticket_VIP": null
+    "ticket_VIP": null,
+    "formation": "3-4-3"
   },
   {
     "tournament_id": 3,
@@ -250,7 +260,8 @@
     "ticket_cat1": 400000,
     "ticket_cat2": 200000,
     "ticket_cat3": 100000,
-    "ticket_VIP": 750000
+    "ticket_VIP": 750000,
+    "formation": "4-4-2"
   },
   {
     "tournament_id": 3,
@@ -273,7 +284,8 @@
     "ticket_cat1": null,
     "ticket_cat2": null,
     "ticket_cat3": null,
-    "ticket_VIP": null
+    "ticket_VIP": null,
+    "formation": "5-4-1"
   },
   {
     "tournament_id": 4,
@@ -296,7 +308,8 @@
     "ticket_cat1": null,
     "ticket_cat2": null,
     "ticket_cat3": null,
-    "ticket_VIP": null
+    "ticket_VIP": null,
+    "formation": "3-4-3"
   },
   {
     "tournament_id": 3,
@@ -319,7 +332,8 @@
     "ticket_cat1": 850000,
     "ticket_cat2": 550000,
     "ticket_cat3": 250000,
-    "ticket_VIP": 1250000
+    "ticket_VIP": 1250000,
+    "formation": "3-4-2-1"
   },
   {
     "tournament_id": 3,
@@ -342,7 +356,8 @@
     "ticket_cat1": 850000,
     "ticket_cat2": 555000,
     "ticket_cat3": 250000,
-    "ticket_VIP": 1250000
+    "ticket_VIP": 1250000,
+    "formation": "3-5-2"
   },
   {
     "tournament_id": 3,
@@ -365,7 +380,8 @@
     "ticket_cat1": null,
     "ticket_cat2": null,
     "ticket_cat3": null,
-    "ticket_VIP": null
+    "ticket_VIP": null,
+    "formation": "5-4-1"
   },
   {
     "tournament_id": 3,
@@ -388,7 +404,8 @@
     "ticket_cat1": 1000000,
     "ticket_cat2": 550000,
     "ticket_cat3": 250000,
-    "ticket_VIP": 1500000
+    "ticket_VIP": 1500000,
+    "formation": "5-4-1"
   },
   {
     "tournament_id": 3,
@@ -411,7 +428,8 @@
     "ticket_cat1": null,
     "ticket_cat2": null,
     "ticket_cat3": null,
-    "ticket_VIP": null
+    "ticket_VIP": null,
+    "formation": "5-4-1"
   },
   {
     "tournament_id": 3,
@@ -434,7 +452,8 @@
     "ticket_cat1": null,
     "ticket_cat2": null,
     "ticket_cat3": null,
-    "ticket_VIP": null
+    "ticket_VIP": null,
+    "formation": "5-4-1"
   },
   {
     "tournament_id": 3,
@@ -457,7 +476,8 @@
     "ticket_cat1": 1000000,
     "ticket_cat2": 480000,
     "ticket_cat3": 240000,
-    "ticket_VIP": 1400000
+    "ticket_VIP": 1400000,
+    "formation": "5-4-1"
   },
   {
     "tournament_id": 3,
@@ -480,7 +500,8 @@
     "ticket_cat1": 1000000,
     "ticket_cat2": 480000,
     "ticket_cat3": 240000,
-    "ticket_VIP": 1400000
+    "ticket_VIP": 1400000,
+    "formation": "5-3-2"
   },
   {
     "tournament_id": 1,
@@ -503,7 +524,8 @@
     "ticket_cat1": null,
     "ticket_cat2": null,
     "ticket_cat3": null,
-    "ticket_VIP": null
+    "ticket_VIP": null,
+    "formation": "4-3-3"
   },
   {
     "tournament_id": 1,
@@ -526,7 +548,8 @@
     "ticket_cat1": 200000,
     "ticket_cat2": 150000,
     "ticket_cat3": 125000,
-    "ticket_VIP": 250000
+    "ticket_VIP": 250000,
+    "formation": "4-3-3"
   },
   {
     "tournament_id": 1,
@@ -549,7 +572,8 @@
     "ticket_cat1": null,
     "ticket_cat2": null,
     "ticket_cat3": null,
-    "ticket_VIP": null
+    "ticket_VIP": null,
+    "formation": "4-3-3"
   },
   {
     "tournament_id": 1,
@@ -572,7 +596,8 @@
     "ticket_cat1": 200000,
     "ticket_cat2": 150000,
     "ticket_cat3": 125000,
-    "ticket_VIP": 250000
+    "ticket_VIP": 250000,
+    "formation": "4-3-3"
   },
   {
     "tournament_id": 3,
@@ -595,7 +620,8 @@
     "ticket_cat1": null,
     "ticket_cat2": null,
     "ticket_cat3": null,
-    "ticket_VIP": null
+    "ticket_VIP": null,
+    "formation": "4-3-3"
   },
   {
     "tournament_id": 3,
@@ -618,7 +644,8 @@
     "ticket_cat1": 1250000,
     "ticket_cat2": 600000,
     "ticket_cat3": 300000,
-    "ticket_VIP": 1750000
+    "ticket_VIP": 1750000,
+    "formation": "4-3-3"
   },
   {
     "tournament_id": 3,
@@ -641,7 +668,8 @@
     "ticket_cat1": 1250000,
     "ticket_cat2": 600000,
     "ticket_cat3": 300000,
-    "ticket_VIP": 1750000
+    "ticket_VIP": 1750000,
+    "formation": "4-3-3"
   },
   {
     "tournament_id": 3,
@@ -664,7 +692,8 @@
     "ticket_cat1": null,
     "ticket_cat2": null,
     "ticket_cat3": null,
-    "ticket_VIP": null
+    "ticket_VIP": null,
+    "formation": "4-3-3"
   },
   {
     "tournament_id": 4,
@@ -687,7 +716,8 @@
     "ticket_cat1": 300000,
     "ticket_cat2": 150000,
     "ticket_cat3": 100000,
-    "ticket_VIP": 400000
+    "ticket_VIP": 400000,
+    "formation": "4-3-3"
   },
   {
     "tournament_id": 4,
@@ -710,7 +740,8 @@
     "ticket_cat1": 300000,
     "ticket_cat2": 150000,
     "ticket_cat3": 100000,
-    "ticket_VIP": 400000
+    "ticket_VIP": 400000,
+    "formation": "4-3-3"
   },
   {
     "tournament_id": 3,
@@ -733,7 +764,8 @@
     "ticket_cat1": null,
     "ticket_cat2": null,
     "ticket_cat3": null,
-    "ticket_VIP": null
+    "ticket_VIP": null,
+    "formation": "4-3-3"
   },
   {
     "tournament_id": 3,
@@ -756,7 +788,8 @@
     "ticket_cat1": null,
     "ticket_cat2": null,
     "ticket_cat3": null,
-    "ticket_VIP": null
+    "ticket_VIP": null,
+    "formation": "4-3-3"
   },
   {
     "tournament_id": 5,
@@ -779,7 +812,8 @@
     "ticket_cat1": 750000,
     "ticket_cat2": 500000,
     "ticket_cat3": 250000,
-    "ticket_VIP": 1000000
+    "ticket_VIP": 1000000,
+    "formation": "4-3-3"
   },
   {
     "tournament_id": 5,
@@ -802,7 +836,8 @@
     "ticket_cat1": 750000,
     "ticket_cat2": 500000,
     "ticket_cat3": 250000,
-    "ticket_VIP": 1000000
+    "ticket_VIP": 1000000,
+    "formation": "4-3-3"
   },
   {
     "tournament_id": 6,
@@ -825,7 +860,8 @@
     "ticket_cat1": null,
     "ticket_cat2": null,
     "ticket_cat3": null,
-    "ticket_VIP": null
+    "ticket_VIP": null,
+    "formation": "4-3-3"
   },
   {
     "tournament_id": 6,
@@ -848,7 +884,8 @@
     "ticket_cat1": null,
     "ticket_cat2": null,
     "ticket_cat3": null,
-    "ticket_VIP": null
+    "ticket_VIP": null,
+    "formation": "4-3-3"
   },
   {
     "tournament_id": 6,
@@ -871,6 +908,7 @@
     "ticket_cat1": null,
     "ticket_cat2": null,
     "ticket_cat3": null,
-    "ticket_VIP": null
+    "ticket_VIP": null,
+    "formation": "4-3-3"
   }
 ]
