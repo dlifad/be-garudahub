@@ -1,0 +1,5792 @@
+[
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-14T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "syahrul-trisna-fadillah",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 26,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-14T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "asnawi-mangkualam-bahar",
+    "is_starting_eleven": 1,
+    "is_captain": 1,
+    "jersey_number": 14,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-14T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "rizky-ridho-ramadhani",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 5,
+    "position": "RCB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-14T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "elkan-william-tio-baggott",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 30,
+    "position": "LCB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-14T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "pratama-arhan-alif-rifai",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 12,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-14T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "ricky-kambuaya",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 15,
+    "position": "CM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-14T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "marc-anthony-klok",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 23,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-14T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "marselino-ferdinan",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 7,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-14T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "yakob-sayuri",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 2,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-14T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "dimas-drajad",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 9,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-14T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "rafael-william-struick",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 27,
+    "position": "LW"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-14T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "jordi-amat",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 4,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-14T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "ernando-ari-sutaryadi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 21,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-14T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "fachruddin-aryanto",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 19,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-14T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "reza-arya-pratama",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 1,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-14T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "edo-febriansah",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 3,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-14T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "rachmat-irianto",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 13,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-14T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "ivar-jenner",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 6,
+    "position": "CM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-14T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "stefano-lilipaly",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 10,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-14T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "shayne-pattynama",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 20,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-14T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "saddil-ramdani",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 17,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-14T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "yance-sayuri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 22,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-14T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "andy-setyo-nugroho",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 16,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-14T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "dendy-sulistyawan",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 11,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-14T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "sandy-walsh",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 25,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-14T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "witan-sulaeman",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 8,
+    "position": "LW"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-19T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "ernando-ari-sutaryadi",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 21,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-19T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "asnawi-mangkualam-bahar",
+    "is_starting_eleven": 1,
+    "is_captain": 1,
+    "jersey_number": 14,
+    "position": "RWB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-19T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "rizky-ridho-ramadhani",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 5,
+    "position": "RCB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-19T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "jordi-amat",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 4,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-19T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "elkan-william-tio-baggott",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 30,
+    "position": "LCB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-19T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "shayne-pattynama",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 20,
+    "position": "LWB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-19T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "marc-anthony-klok",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 23,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-19T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "marselino-ferdinan",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 7,
+    "position": "CM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-19T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "ivar-jenner",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 6,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-19T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "rafael-william-struick",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 27,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-19T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "dimas-drajad",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 9,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-19T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "pratama-arhan-alif-rifai",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 12,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-19T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "fachruddin-aryanto",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 19,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-19T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "reza-arya-pratama",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 1,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-19T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "edo-febriansah",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 3,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-19T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "rachmat-irianto",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 13,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-19T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "ricky-kambuaya",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 15,
+    "position": "CM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-19T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "stefano-lilipaly",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 10,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-19T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "saddil-ramdani",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 17,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-19T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "yance-sayuri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 22,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-19T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "yakob-sayuri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 2,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-19T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "andy-setyo-nugroho",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 16,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-19T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "dendy-sulistyawan",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 11,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-19T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "syahrul-trisna-fadillah",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 26,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-19T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "sandy-walsh",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 25,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-06-19T12:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "witan-sulaeman",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 8,
+    "position": "LW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-12T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "nadeo-argawinata",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 1,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-12T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "asnawi-mangkualam-bahar",
+    "is_starting_eleven": 1,
+    "is_captain": 1,
+    "jersey_number": 14,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-12T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rizky-ridho-ramadhani",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 5,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-12T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "elkan-william-tio-baggott",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 4,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-12T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "pratama-arhan-alif-rifai",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 12,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-12T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "marc-anthony-klok",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 23,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-12T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "sandy-walsh",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 6,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-12T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "dendy-sulistyawan",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 11,
+    "position": "LM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-12T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "saddil-ramdani",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 17,
+    "position": "RM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-12T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "dimas-drajad",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 9,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-12T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "hokky-caraka-bintang-brilyant",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 16,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-12T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "syahrul-trisna-fadillah",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 22,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-12T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ernando-ari-sutaryadi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 21,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-12T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "fachruddin-aryanto",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 19,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-12T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "wahyu-prasetyo",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 3,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-12T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "shayne-pattynama",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 20,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-12T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rachmat-irianto",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 13,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-12T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "arkhan-fikri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 7,
+    "position": "CM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-12T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ricky-kambuaya",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 15,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-12T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "witan-sulaeman",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 8,
+    "position": "LW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-12T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "muhammad-dzaky-asraf-huwaidi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 2,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-12T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "egy-maulana-vikri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 10,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-12T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ramadhan-sananta",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 18,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-17T12:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ernando-ari-sutaryadi",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 21,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-17T12:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "shayne-pattynama",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 20,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-17T12:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "fachruddin-aryanto",
+    "is_starting_eleven": 1,
+    "is_captain": 1,
+    "jersey_number": 19,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-17T12:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rizky-ridho-ramadhani",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 5,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-17T12:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "sandy-walsh",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 6,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-17T12:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rachmat-irianto",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 13,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-17T12:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ricky-kambuaya",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 15,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-17T12:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "witan-sulaeman",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 8,
+    "position": "LM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-17T12:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "egy-maulana-vikri",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 10,
+    "position": "RM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-17T12:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "dendy-sulistyawan",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 11,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-17T12:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "hokky-caraka-bintang-brilyant",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 16,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-17T12:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "syahrul-trisna-fadillah",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 22,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-17T12:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "nadeo-argawinata",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 1,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-17T12:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "wahyu-prasetyo",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 3,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-17T12:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "pratama-arhan-alif-rifai",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 12,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-17T12:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "edo-febriansah",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 4,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-17T12:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "asnawi-mangkualam-bahar",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 14,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-17T12:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "arkhan-fikri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 7,
+    "position": "CM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-17T12:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "marc-anthony-klok",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 23,
+    "position": "CM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-17T12:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "saddil-ramdani",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 17,
+    "position": "LW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-17T12:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rafael-william-struick",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 9,
+    "position": "LW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-17T12:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "muhammad-dzaky-asraf-huwaidi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 2,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-10-17T12:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ramadhan-sananta",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 18,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-11-16T18:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "nadeo-argawinata",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 1,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-11-16T18:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rizky-ridho-ramadhani",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 5,
+    "position": "RCB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-11-16T18:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "jordi-amat",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 4,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-11-16T18:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "elkan-william-tio-baggott",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 3,
+    "position": "LCB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-11-16T18:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "asnawi-mangkualam-bahar",
+    "is_starting_eleven": 1,
+    "is_captain": 1,
+    "jersey_number": 14,
+    "position": "RM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-11-16T18:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "adam-alis-setyano",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 10,
+    "position": "CM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-11-16T18:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "marc-anthony-klok",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 23,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-11-16T18:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "shayne-pattynama",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 20,
+    "position": "LM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-11-16T18:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ricky-kambuaya",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 15,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-11-16T18:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "dimas-drajad",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 9,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-11-16T18:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "dendy-sulistyawan",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 11,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-11-16T18:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ernando-ari-sutaryadi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 21,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-11-16T18:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "muhammad-riyandi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 22,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-11-16T18:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "wahyu-prasetyo",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 19,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-11-16T18:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "pratama-arhan-alif-rifai",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 12,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-11-16T18:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "sandy-walsh",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 6,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-11-16T18:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rachmat-irianto",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 13,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-11-16T18:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "arkhan-fikri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 2,
+    "position": "CM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-11-16T18:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "saddil-ramdani",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 17,
+    "position": "LW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-11-16T18:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rafael-william-struick",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 7,
+    "position": "LW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-11-16T18:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "witan-sulaeman",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 8,
+    "position": "LW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-11-16T18:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "hokky-caraka-bintang-brilyant",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 16,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2023-11-16T18:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ramadhan-sananta",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 18,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-11-21T10:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "ernando-ari-sutaryadi",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 21,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-11-21T10:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "rizky-ridho-ramadhani",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 5,
+    "position": "RCB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-11-21T10:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "jordi-amat",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 4,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-11-21T10:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "elkan-william-tio-baggott",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 3,
+    "position": "LCB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-11-21T10:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "asnawi-mangkualam-bahar",
+    "is_starting_eleven": 1,
+    "is_captain": 1,
+    "jersey_number": 14,
+    "position": "RM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-11-21T10:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "sandy-walsh",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 6,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-11-21T10:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "ricky-kambuaya",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 15,
+    "position": "CM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-11-21T10:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "rachmat-irianto",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 13,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-11-21T10:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "shayne-pattynama",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 20,
+    "position": "LM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-11-21T10:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "rafael-william-struick",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 9,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-11-21T10:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "saddil-ramdani",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 17,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-11-21T10:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "muhammad-riyandi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 22,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-11-21T10:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "nadeo-argawinata",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 1,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-11-21T10:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "wahyu-prasetyo",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 19,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-11-21T10:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "pratama-arhan-alif-rifai",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 12,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-11-21T10:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "edo-febriansah",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 2,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-11-21T10:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "adam-alis-setyano",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 18,
+    "position": "CM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-11-21T10:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "arkhan-fikri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 7,
+    "position": "CM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-11-21T10:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "marc-anthony-klok",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 23,
+    "position": "CM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-11-21T10:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "witan-sulaeman",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 8,
+    "position": "LW"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-11-21T10:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "dendy-sulistyawan",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 11,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-11-21T10:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "hokky-caraka-bintang-brilyant",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 16,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2023-11-21T10:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "ramadhan-sananta",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 10,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-15T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "ernando-ari-sutaryadi",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 21,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-15T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "jordi-amat",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 4,
+    "position": "RCB"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-15T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "rizky-ridho-ramadhani",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 5,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-15T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "elkan-william-tio-baggott",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 3,
+    "position": "LCB"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-15T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "asnawi-mangkualam-bahar",
+    "is_starting_eleven": 1,
+    "is_captain": 1,
+    "jersey_number": 14,
+    "position": "RM"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-15T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "justin-hubner",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 25,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-15T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "ivar-jenner",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 24,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-15T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "pratama-arhan-alif-rifai",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 12,
+    "position": "LM"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-15T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "yakob-sayuri",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 2,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-15T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "marselino-ferdinan",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 7,
+    "position": "LW"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-15T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "rafael-william-struick",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 11,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-15T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "muhammad-riyandi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 1,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-15T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "nadeo-argawinata",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 26,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-15T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "wahyu-prasetyo",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 19,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-15T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "edo-febriansah",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 13,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-15T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "sandy-walsh",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 6,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-15T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "marc-anthony-klok",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 23,
+    "position": "CM"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-15T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "adam-alis-setyano",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 17,
+    "position": "CM"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-15T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "ricky-kambuaya",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 15,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-15T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "witan-sulaeman",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 8,
+    "position": "LW"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-15T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "egy-maulana-vikri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 10,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-15T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "hokky-caraka-bintang-brilyant",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 16,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-15T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "dimas-drajad",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 9,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-19T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "ernando-ari-sutaryadi",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 21,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-19T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "asnawi-mangkualam-bahar",
+    "is_starting_eleven": 1,
+    "is_captain": 1,
+    "jersey_number": 14,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-19T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "justin-hubner",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 25,
+    "position": "LCB"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-19T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "jordi-amat",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 4,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-19T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "sandy-walsh",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 6,
+    "position": "RCB"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-19T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "pratama-arhan-alif-rifai",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 12,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-19T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "ivar-jenner",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 24,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-19T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "yakob-sayuri",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 2,
+    "position": "RM"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-19T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "egy-maulana-vikri",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 10,
+    "position": "LM"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-19T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "marselino-ferdinan",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 7,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-19T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "rafael-william-struick",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 11,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-19T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "muhammad-riyandi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 1,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-19T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "nadeo-argawinata",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 26,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-19T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "rizky-ridho-ramadhani",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 5,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-19T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "wahyu-prasetyo",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 19,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-19T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "elkan-william-tio-baggott",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 3,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-19T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "edo-febriansah",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 13,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-19T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "shayne-pattynama",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 20,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-19T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "adam-alis-setyano",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 17,
+    "position": "CM"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-19T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "marc-anthony-klok",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 23,
+    "position": "CM"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-19T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "ricky-kambuaya",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 15,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-19T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "witan-sulaeman",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 8,
+    "position": "LW"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-19T16:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "hokky-caraka-bintang-brilyant",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 16,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-24T14:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "ernando-ari-sutaryadi",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 21,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-24T14:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "justin-hubner",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 25,
+    "position": "LCB"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-24T14:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "rizky-ridho-ramadhani",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 5,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-24T14:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "jordi-amat",
+    "is_starting_eleven": 1,
+    "is_captain": 1,
+    "jersey_number": 4,
+    "position": "RCB"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-24T14:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "sandy-walsh",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 6,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-24T14:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "pratama-arhan-alif-rifai",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 12,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-24T14:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "ivar-jenner",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 24,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-24T14:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "marselino-ferdinan",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 7,
+    "position": "CM"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-24T14:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "egy-maulana-vikri",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 10,
+    "position": "RM"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-24T14:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "yakob-sayuri",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 2,
+    "position": "LM"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-24T14:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "rafael-william-struick",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 11,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-24T14:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "nadeo-argawinata",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 26,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-24T14:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "muhammad-riyandi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 1,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-24T14:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "elkan-william-tio-baggott",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 3,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-24T14:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "wahyu-prasetyo",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 19,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-24T14:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "shayne-pattynama",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 20,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-24T14:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "asnawi-mangkualam-bahar",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 14,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-24T14:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "adam-alis-setyano",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 17,
+    "position": "CM"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-24T14:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "marc-anthony-klok",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 23,
+    "position": "CM"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-24T14:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "ricky-kambuaya",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 15,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-24T14:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "witan-sulaeman",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 8,
+    "position": "LW"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-24T14:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "hokky-caraka-bintang-brilyant",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 16,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-24T14:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "dendy-sulistyawan",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 22,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-28T15:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "ernando-ari-sutaryadi",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 21,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-28T15:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "sandy-walsh",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 6,
+    "position": "RCB"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-28T15:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "elkan-william-tio-baggott",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 3,
+    "position": "LCB"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-28T15:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "jordi-amat",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 4,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-28T15:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "asnawi-mangkualam-bahar",
+    "is_starting_eleven": 1,
+    "is_captain": 1,
+    "jersey_number": 14,
+    "position": "RM"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-28T15:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "justin-hubner",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 25,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-28T15:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "ivar-jenner",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 24,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-28T15:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "shayne-pattynama",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 20,
+    "position": "LM"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-28T15:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "yakob-sayuri",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 2,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-28T15:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "marselino-ferdinan",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 7,
+    "position": "LW"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-28T15:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "rafael-william-struick",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 11,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-28T15:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "muhammad-riyandi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 1,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-28T15:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "nadeo-argawinata",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 26,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-28T15:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "rizky-ridho-ramadhani",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 5,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-28T15:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "wahyu-prasetyo",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 19,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-28T15:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "pratama-arhan-alif-rifai",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 12,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-28T15:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "adam-alis-setyano",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 17,
+    "position": "CM"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-28T15:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "marc-anthony-klok",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 23,
+    "position": "CM"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-28T15:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "ricky-kambuaya",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 15,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-28T15:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "witan-sulaeman",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 8,
+    "position": "LW"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-28T15:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "egy-maulana-vikri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 10,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-28T15:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "hokky-caraka-bintang-brilyant",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 16,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 2,
+    "match_date_utc": "2024-01-28T15:30:00.000Z",
+    "tournament_id": 2,
+    "player_code": "dimas-drajad",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 9,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-21T13:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "adi-satryo",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 21,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-21T13:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rizky-ridho-ramadhani",
+    "is_starting_eleven": 1,
+    "is_captain": 1,
+    "jersey_number": 5,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-21T13:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "jay-idzes",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 4,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-21T13:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "justin-hubner",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 18,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-21T13:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "nathan-tjoe-a-on",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 14,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-21T13:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ivar-jenner",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 17,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-21T13:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "yakob-sayuri",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 2,
+    "position": "RM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-21T13:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "witan-sulaeman",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 8,
+    "position": "LM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-21T13:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "marselino-ferdinan",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 7,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-21T13:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rafael-william-struick",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 11,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-21T13:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "hokky-caraka-bintang-brilyant",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 20,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-21T13:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "nadeo-argawinata",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 22,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-21T13:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "muhammad-riyandi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 1,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-21T13:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "wahyu-prasetyo",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 3,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-21T13:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "pratama-arhan-alif-rifai",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 12,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-21T13:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "edo-febriansah",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 13,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-21T13:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "sandy-walsh",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 6,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-21T13:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "arkhan-fikri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 16,
+    "position": "CM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-21T13:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "marc-anthony-klok",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 23,
+    "position": "CM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-21T13:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ricky-kambuaya",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 15,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-21T13:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "egy-maulana-vikri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 10,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-21T13:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "dimas-drajad",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 9,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-21T13:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ramadhan-sananta",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 19,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-26T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ernando-ari-sutaryadi",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 22,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-26T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rizky-ridho-ramadhani",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 5,
+    "position": "RCB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-26T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "jay-idzes",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 4,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-26T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "justin-hubner",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 18,
+    "position": "LCB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-26T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "asnawi-mangkualam-bahar",
+    "is_starting_eleven": 1,
+    "is_captain": 1,
+    "jersey_number": 14,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-26T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "nathan-tjoe-a-on",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 6,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-26T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "thom-jan-marinus-haye",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 19,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-26T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "marselino-ferdinan",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 7,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-26T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "witan-sulaeman",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 8,
+    "position": "RM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-26T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ragnar-oratmangoen",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 11,
+    "position": "LM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-26T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "hokky-caraka-bintang-brilyant",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 20,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-26T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "muhammad-riyandi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 1,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-26T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "syahrul-trisna-fadillah",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 21,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-26T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "wahyu-prasetyo",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 3,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-26T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "muhammad-ferarri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 17,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-26T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "yakob-sayuri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 2,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-26T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "edo-febriansah",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 13,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-26T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ricky-kambuaya",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 15,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-26T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "arkhan-fikri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 16,
+    "position": "CM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-26T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rachmat-irianto",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 23,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-26T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "egy-maulana-vikri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 10,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-26T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ramadhan-sananta",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 9,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-03-26T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "dimas-drajad",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 12,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2024-06-02T09:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "ernando-ari-sutaryadi",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 1,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2024-06-02T09:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "rizky-ridho-ramadhani",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 3,
+    "position": "LCB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2024-06-02T09:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "jordi-amat",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 23,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2024-06-02T09:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "sandy-walsh",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 5,
+    "position": "RCB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2024-06-02T09:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "asnawi-mangkualam-bahar",
+    "is_starting_eleven": 1,
+    "is_captain": 1,
+    "jersey_number": 18,
+    "position": "RM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2024-06-02T09:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "thom-jan-marinus-haye",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 19,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2024-06-02T09:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "ivar-jenner",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 7,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2024-06-02T09:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "shayne-pattynama",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 22,
+    "position": "LM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2024-06-02T09:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "marselino-ferdinan",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 8,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2024-06-02T09:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "ragnar-oratmangoen",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 6,
+    "position": "LW"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2024-06-02T09:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "rafael-william-struick",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 14,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2024-06-02T09:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "nadeo-argawinata",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 21,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2024-06-02T09:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "adi-satryo",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 16,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2024-06-02T09:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "justin-hubner",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 4,
+    "position": "LCB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2024-06-02T09:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "muhammad-ferarri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 13,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2024-06-02T09:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "pratama-arhan-alif-rifai",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 2,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2024-06-02T09:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "nathan-tjoe-a-on",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 20,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2024-06-02T09:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "ricky-kambuaya",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 15,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2024-06-02T09:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "egy-maulana-vikri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 12,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2024-06-02T09:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "yakob-sayuri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 10,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2024-06-02T09:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "dimas-drajad",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 17,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2024-06-02T09:00:00.000Z",
+    "tournament_id": 4,
+    "player_code": "malik-risaldi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 9,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-06T09:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ernando-ari-sutaryadi",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 21,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-06T09:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rizky-ridho-ramadhani",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 5,
+    "position": "RCB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-06T09:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "jordi-amat",
+    "is_starting_eleven": 1,
+    "is_captain": 1,
+    "jersey_number": 4,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-06T09:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "justin-hubner",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 23,
+    "position": "LCB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-06T09:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "sandy-walsh",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 6,
+    "position": "RM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-06T09:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "thom-jan-marinus-haye",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 19,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-06T09:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "nathan-tjoe-a-on",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 22,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-06T09:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "shayne-pattynama",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 20,
+    "position": "LM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-06T09:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "marselino-ferdinan",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 7,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-06T09:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ragnar-oratmangoen",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 11,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-06T09:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rafael-william-struick",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 9,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-06T09:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "nadeo-argawinata",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 1,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-06T09:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "adi-satryo",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 16,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-06T09:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "jay-idzes",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 3,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-06T09:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "muhammad-ferarri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 13,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-06T09:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "pratama-arhan-alif-rifai",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 12,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-06T09:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "asnawi-mangkualam-bahar",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 14,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-06T09:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ivar-jenner",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 8,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-06T09:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ricky-kambuaya",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 15,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-06T09:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "egy-maulana-vikri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 10,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-06T09:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "yakob-sayuri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 2,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-06T09:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "dimas-drajad",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 17,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-06T09:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "malik-risaldi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 18,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-11T12:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ernando-ari-sutaryadi",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 21,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-11T12:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rizky-ridho-ramadhani",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 5,
+    "position": "RCB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-11T12:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "jay-idzes",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 3,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-11T12:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "justin-hubner",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 23,
+    "position": "LCB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-11T12:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "asnawi-mangkualam-bahar",
+    "is_starting_eleven": 1,
+    "is_captain": 1,
+    "jersey_number": 14,
+    "position": "RM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-11T12:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "thom-jan-marinus-haye",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 19,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-11T12:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "nathan-tjoe-a-on",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 22,
+    "position": "CM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-11T12:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "calvin-verdonk",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 4,
+    "position": "LM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-11T12:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "marselino-ferdinan",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 7,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-11T12:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ragnar-oratmangoen",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 11,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-11T12:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rafael-william-struick",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 9,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-11T12:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "nadeo-argawinata",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 1,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-11T12:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "adi-satryo",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 16,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-11T12:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "muhammad-ferarri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 13,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-11T12:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "pratama-arhan-alif-rifai",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 12,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-11T12:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "sandy-walsh",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 6,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-11T12:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "shayne-pattynama",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 20,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-11T12:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ivar-jenner",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 8,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-11T12:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ricky-kambuaya",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 15,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-11T12:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "egy-maulana-vikri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 10,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-11T12:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "yakob-sayuri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 2,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-11T12:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "dimas-drajad",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 17,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-06-11T12:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "malik-risaldi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 18,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-05T18:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "maarten-paes",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 1,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-05T18:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rizky-ridho-ramadhani",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 5,
+    "position": "RCB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-05T18:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "jay-idzes",
+    "is_starting_eleven": 1,
+    "is_captain": 1,
+    "jersey_number": 3,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-05T18:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "calvin-verdonk",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 2,
+    "position": "LCB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-05T18:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "sandy-walsh",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 6,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-05T18:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "nathan-tjoe-a-on",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 22,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-05T18:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "thom-jan-marinus-haye",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 19,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-05T18:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ivar-jenner",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 18,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-05T18:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "witan-sulaeman",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 8,
+    "position": "RM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-05T18:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ragnar-oratmangoen",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 11,
+    "position": "LM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-05T18:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rafael-william-struick",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 9,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-05T18:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "nadeo-argawinata",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 16,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-05T18:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ernando-ari-sutaryadi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 21,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-05T18:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "wahyu-prasetyo",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 4,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-05T18:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "muhammad-ferarri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 13,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-05T18:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "shayne-pattynama",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 20,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-05T18:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "pratama-arhan-alif-rifai",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 12,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-05T18:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "asnawi-mangkualam-bahar",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 14,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-05T18:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ricky-kambuaya",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 15,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-05T18:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "marselino-ferdinan",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 7,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-05T18:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "egy-maulana-vikri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 10,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-05T18:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ramadhan-sananta",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 17,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-05T18:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "hokky-caraka-bintang-brilyant",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 23,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-10T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "maarten-paes",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 1,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-10T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rizky-ridho-ramadhani",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 5,
+    "position": "RCB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-10T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "jay-idzes",
+    "is_starting_eleven": 1,
+    "is_captain": 1,
+    "jersey_number": 3,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-10T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "justin-hubner",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 23,
+    "position": "LCB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-10T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "sandy-walsh",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 6,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-10T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "calvin-verdonk",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 2,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-10T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "nathan-tjoe-a-on",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 22,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-10T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ivar-jenner",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 18,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-10T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "marselino-ferdinan",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 7,
+    "position": "RM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-10T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ragnar-oratmangoen",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 11,
+    "position": "LM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-10T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rafael-william-struick",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 9,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-10T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "nadeo-argawinata",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 16,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-10T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ernando-ari-sutaryadi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 21,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-10T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "wahyu-prasetyo",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 4,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-10T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "muhammad-ferarri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 13,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-10T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "shayne-pattynama",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 20,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-10T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "pratama-arhan-alif-rifai",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 12,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-10T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "asnawi-mangkualam-bahar",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 14,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-10T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "thom-jan-marinus-haye",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 19,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-10T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ricky-kambuaya",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 15,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-10T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "egy-maulana-vikri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 10,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-09-10T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "witan-sulaeman",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 8,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-10T20:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "maarten-paes",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 1,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-10T20:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "calvin-verdonk",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 17,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-10T20:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "mees-hilgers",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 2,
+    "position": "LCB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-10T20:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "jay-idzes",
+    "is_starting_eleven": 1,
+    "is_captain": 1,
+    "jersey_number": 3,
+    "position": "RCB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-10T20:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "jordi-amat",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 4,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-10T20:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "sandy-walsh",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 6,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-10T20:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ragnar-oratmangoen",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 11,
+    "position": "LM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-10T20:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "thom-jan-marinus-haye",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 19,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-10T20:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ivar-jenner",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 18,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-10T20:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "malik-risaldi",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 10,
+    "position": "RM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-10T20:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rafael-william-struick",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 9,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-10T20:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ernando-ari-sutaryadi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 21,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-10T20:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "nadeo-argawinata",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 16,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-10T20:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rizky-ridho-ramadhani",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 5,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-10T20:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "wahyu-prasetyo",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 13,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-10T20:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "nathan-tjoe-a-on",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 22,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-10T20:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "pratama-arhan-alif-rifai",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 12,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-10T20:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "shayne-pattynama",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 20,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-10T20:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "asnawi-mangkualam-bahar",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 14,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-10T20:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "marselino-ferdinan",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 7,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-10T20:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "witan-sulaeman",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 8,
+    "position": "LW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-10T20:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "eliano-reijnders",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 23,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-10T20:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "dimas-drajad",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 15,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-15T11:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "maarten-paes",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 1,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-15T11:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "shayne-pattynama",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 20,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-15T11:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "calvin-verdonk",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 17,
+    "position": "LCB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-15T11:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "jay-idzes",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 3,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-15T11:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "mees-hilgers",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 2,
+    "position": "RCB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-15T11:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "asnawi-mangkualam-bahar",
+    "is_starting_eleven": 1,
+    "is_captain": 1,
+    "jersey_number": 14,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-15T11:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ragnar-oratmangoen",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 11,
+    "position": "LM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-15T11:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ivar-jenner",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 18,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-15T11:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "nathan-tjoe-a-on",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 22,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-15T11:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "witan-sulaeman",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 8,
+    "position": "RM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-15T11:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rafael-william-struick",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 9,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-15T11:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ernando-ari-sutaryadi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 21,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-15T11:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "nadeo-argawinata",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 16,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-15T11:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rizky-ridho-ramadhani",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 5,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-15T11:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "wahyu-prasetyo",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 13,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-15T11:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "pratama-arhan-alif-rifai",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 12,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-15T11:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "sandy-walsh",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 6,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-15T11:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "thom-jan-marinus-haye",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 19,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-15T11:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "marselino-ferdinan",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 7,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-15T11:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ricky-kambuaya",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 4,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-15T11:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "egy-maulana-vikri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 10,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-15T11:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "malik-risaldi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 23,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-10-15T11:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "dimas-drajad",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 15,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-15T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "maarten-paes",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 1,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-15T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "calvin-verdonk",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 17,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-15T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rizky-ridho-ramadhani",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 5,
+    "position": "RCB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-15T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "jay-idzes",
+    "is_starting_eleven": 1,
+    "is_captain": 1,
+    "jersey_number": 3,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-15T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "justin-hubner",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 23,
+    "position": "LCB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-15T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "kevin-diks",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 2,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-15T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rafael-william-struick",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 9,
+    "position": "LM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-15T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "thom-jan-marinus-haye",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 19,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-15T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "nathan-tjoe-a-on",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 22,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-15T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "yakob-sayuri",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 14,
+    "position": "RM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-15T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ragnar-oratmangoen",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 11,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-15T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "muhammad-riyandi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 21,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-15T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "nadeo-argawinata",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 16,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-15T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "jordi-amat",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 4,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-15T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "muhammad-ferarri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 13,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-15T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "shayne-pattynama",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 20,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-15T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "pratama-arhan-alif-rifai",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 12,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-15T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "sandy-walsh",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 6,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-15T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "marselino-ferdinan",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 7,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-15T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ricky-kambuaya",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 15,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-15T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "witan-sulaeman",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 8,
+    "position": "LW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-15T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "egy-maulana-vikri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 10,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-15T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "hokky-caraka-bintang-brilyant",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 18,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-19T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "maarten-paes",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 1,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-19T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "calvin-verdonk",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 17,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-19T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "justin-hubner",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 23,
+    "position": "LCB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-19T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "jay-idzes",
+    "is_starting_eleven": 1,
+    "is_captain": 1,
+    "jersey_number": 3,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-19T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rizky-ridho-ramadhani",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 5,
+    "position": "RCB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-19T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "sandy-walsh",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 6,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-19T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ivar-jenner",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 18,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-19T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "thom-jan-marinus-haye",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 19,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-19T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "marselino-ferdinan",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 7,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-19T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rafael-william-struick",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 9,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-19T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ragnar-oratmangoen",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 11,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-19T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "muhammad-riyandi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 21,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-19T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "nadeo-argawinata",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 16,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-19T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "jordi-amat",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 4,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-19T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "muhammad-ferarri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 13,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-19T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "nathan-tjoe-a-on",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 22,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-19T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "shayne-pattynama",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 20,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-19T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "pratama-arhan-alif-rifai",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 12,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-19T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ricky-kambuaya",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 15,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-19T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "witan-sulaeman",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 8,
+    "position": "LW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-19T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "eliano-reijnders",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 14,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-19T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "yakob-sayuri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 2,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2024-11-19T12:00:00.000Z",
+    "tournament_id": 3,
+    "player_code": "hokky-caraka-bintang-brilyant",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 10,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-09T12:30:00.000Z",
+    "tournament_id": 1,
+    "player_code": "cahya-supriadi",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 1,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-09T12:30:00.000Z",
+    "tournament_id": 1,
+    "player_code": "alfriyanto-nico-saputro",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 2,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-09T12:30:00.000Z",
+    "tournament_id": 1,
+    "player_code": "dony-tri-pamungkas",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 16,
+    "position": "LCB"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-09T12:30:00.000Z",
+    "tournament_id": 1,
+    "player_code": "kadek-arel-priyatna",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 4,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-09T12:30:00.000Z",
+    "tournament_id": 1,
+    "player_code": "muhammad-ferarri",
+    "is_starting_eleven": 1,
+    "is_captain": 1,
+    "jersey_number": 13,
+    "position": "RCB"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-09T12:30:00.000Z",
+    "tournament_id": 1,
+    "player_code": "pratama-arhan-alif-rifai",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 12,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-09T12:30:00.000Z",
+    "tournament_id": 1,
+    "player_code": "arkhan-fikri",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 8,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-09T12:30:00.000Z",
+    "tournament_id": 1,
+    "player_code": "zanadin-fariz",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 17,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-09T12:30:00.000Z",
+    "tournament_id": 1,
+    "player_code": "marselino-ferdinan",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 7,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-09T12:30:00.000Z",
+    "tournament_id": 1,
+    "player_code": "arkhan-kaka-putra-purwanto",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 20,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-09T12:30:00.000Z",
+    "tournament_id": 1,
+    "player_code": "hokky-caraka-bintang-brilyant",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 9,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-09T12:30:00.000Z",
+    "tournament_id": 1,
+    "player_code": "daffa-fasya-sumawijaya",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 22,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-09T12:30:00.000Z",
+    "tournament_id": 1,
+    "player_code": "kakang-rudianto",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 5,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-09T12:30:00.000Z",
+    "tournament_id": 1,
+    "player_code": "sulthan-zaky-pramana",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 3,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-09T12:30:00.000Z",
+    "tournament_id": 1,
+    "player_code": "mikael-alfredo-tata",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 25,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-09T12:30:00.000Z",
+    "tournament_id": 1,
+    "player_code": "asnawi-mangkualam-bahar",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 14,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-09T12:30:00.000Z",
+    "tournament_id": 1,
+    "player_code": "achmad-maulana-syarif",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 19,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-09T12:30:00.000Z",
+    "tournament_id": 1,
+    "player_code": "robi-darwis",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 24,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-09T12:30:00.000Z",
+    "tournament_id": 1,
+    "player_code": "rivaldo-pakpahan",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 21,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-09T12:30:00.000Z",
+    "tournament_id": 1,
+    "player_code": "muhammad-rayhan-hannan",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 15,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-09T12:30:00.000Z",
+    "tournament_id": 1,
+    "player_code": "rafael-william-struick",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 10,
+    "position": "LW"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-09T12:30:00.000Z",
+    "tournament_id": 1,
+    "player_code": "victor-jonson-benjamin-dethan",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 18,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-09T12:30:00.000Z",
+    "tournament_id": 1,
+    "player_code": "ronaldo-joybera-kwateh",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 11,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-12T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "daffa-fasya-sumawijaya",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 22,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-12T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "kadek-arel-priyatna",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 4,
+    "position": "LCB"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-12T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "muhammad-ferarri",
+    "is_starting_eleven": 1,
+    "is_captain": 1,
+    "jersey_number": 13,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-12T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "kakang-rudianto",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 5,
+    "position": "RCB"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-12T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "dony-tri-pamungkas",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 16,
+    "position": "LM"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-12T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "muhammad-rayhan-hannan",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 15,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-12T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "marselino-ferdinan",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 7,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-12T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "arkhan-fikri",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 8,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-12T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "pratama-arhan-alif-rifai",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 12,
+    "position": "RM"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-12T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "hokky-caraka-bintang-brilyant",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 9,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-12T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "rafael-william-struick",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 10,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-12T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "erlangga-setyo-dwi-saputra",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 26,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-12T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "cahya-supriadi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 1,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-12T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "sulthan-zaky-pramana",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 3,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-12T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "mikael-alfredo-tata",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 25,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-12T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "asnawi-mangkualam-bahar",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 14,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-12T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "achmad-maulana-syarif",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 19,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-12T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "alfriyanto-nico-saputro",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 2,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-12T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "robi-darwis",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 24,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-12T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "zanadin-fariz",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 17,
+    "position": "CM"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-12T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "victor-jonson-benjamin-dethan",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 18,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-12T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "ronaldo-joybera-kwateh",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 11,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-12T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "arkhan-kaka-putra-purwanto",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 20,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-15T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "cahya-supriadi",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 1,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-15T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "kadek-arel-priyatna",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 4,
+    "position": "LCB"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-15T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "muhammad-ferarri",
+    "is_starting_eleven": 1,
+    "is_captain": 1,
+    "jersey_number": 13,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-15T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "dony-tri-pamungkas",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 16,
+    "position": "RCB"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-15T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "mikael-alfredo-tata",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 25,
+    "position": "LM"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-15T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "arkhan-fikri",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 8,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-15T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "rivaldo-pakpahan",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 21,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-15T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "achmad-maulana-syarif",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 19,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-15T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "asnawi-mangkualam-bahar",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 14,
+    "position": "RM"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-15T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "hokky-caraka-bintang-brilyant",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 9,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-15T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "muhammad-rayhan-hannan",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 15,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-15T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "erlangga-setyo-dwi-saputra",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 26,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-15T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "daffa-fasya-sumawijaya",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 22,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-15T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "kakang-rudianto",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 5,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-15T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "sulthan-zaky-pramana",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 3,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-15T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "pratama-arhan-alif-rifai",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 12,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-15T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "alfriyanto-nico-saputro",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 2,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-15T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "robi-darwis",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 24,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-15T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "zanadin-fariz",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 17,
+    "position": "CM"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-15T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "rafael-william-struick",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 10,
+    "position": "LW"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-15T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "victor-jonson-benjamin-dethan",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 18,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-15T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "ronaldo-joybera-kwateh",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 11,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-15T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "arkhan-kaka-putra-purwanto",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 20,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-21T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "cahya-supriadi",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 1,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-21T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "kadek-arel-priyatna",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 4,
+    "position": "LCB"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-21T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "muhammad-ferarri",
+    "is_starting_eleven": 1,
+    "is_captain": 1,
+    "jersey_number": 13,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-21T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "dony-tri-pamungkas",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 16,
+    "position": "RCB"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-21T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "pratama-arhan-alif-rifai",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 12,
+    "position": "LM"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-21T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "achmad-maulana-syarif",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 19,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-21T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "muhammad-rayhan-hannan",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 15,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-21T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "arkhan-fikri",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 8,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-21T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "asnawi-mangkualam-bahar",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 14,
+    "position": "RM"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-21T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "rafael-william-struick",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 10,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-21T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "marselino-ferdinan",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 7,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-21T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "erlangga-setyo-dwi-saputra",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 26,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-21T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "daffa-fasya-sumawijaya",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 22,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-21T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "kakang-rudianto",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 5,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-21T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "sulthan-zaky-pramana",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 3,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-21T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "mikael-alfredo-tata",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 25,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-21T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "alfriyanto-nico-saputro",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 2,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-21T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "robi-darwis",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 24,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-21T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "zanadin-fariz",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 17,
+    "position": "CM"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-21T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "victor-jonson-benjamin-dethan",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 18,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-21T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "ronaldo-joybera-kwateh",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 11,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-21T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "hokky-caraka-bintang-brilyant",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 9,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 1,
+    "match_date_utc": "2024-12-21T13:00:00.000Z",
+    "tournament_id": 1,
+    "player_code": "arkhan-kaka-putra-purwanto",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 20,
+    "position": "ST"
+  }
+]
