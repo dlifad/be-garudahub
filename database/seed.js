@@ -48,6 +48,148 @@ const ensurePlayersPlayerCodeColumn = (onDone) => {
   });
 };
 
+const ensureMatchesFormationColumn = (onDone) => {
+  db.all("PRAGMA table_info(matches)", [], (err, columns) => {
+    if (err) {
+      console.error("Gagal cek skema matches:", err.message);
+      onDone();
+      return;
+    }
+
+    const hasFormation = columns.some((column) => column.name === "formation");
+
+    if (hasFormation) {
+      onDone();
+      return;
+    }
+
+    db.run(
+      "ALTER TABLE matches ADD COLUMN formation TEXT",
+      (alterErr) => {
+        if (alterErr) {
+          console.error(
+            "Gagal tambah kolom formation ke matches:",
+            alterErr.message,
+          );
+        }
+        onDone();
+      },
+    );
+  });
+};
+
+const ensureMatchLineupsSchema = (onDone) => {
+  db.get(
+    "SELECT sql FROM sqlite_master WHERE type = 'table' AND name = 'match_lineups'",
+    [],
+    (err, row) => {
+      if (err) {
+        console.error("Gagal baca schema match_lineups:", err.message);
+        onDone();
+        return;
+      }
+
+      const sql = String((row && row.sql) || "").toUpperCase();
+      const hasIsCaptain = sql.includes("IS_CAPTAIN");
+      const hasDetailedPositions = sql.includes("'LCB'") && sql.includes("'RWB'");
+      const hasIsActive = sql.includes("IS_ACTIVE");
+
+      if (hasIsCaptain && hasDetailedPositions && !hasIsActive) {
+        onDone();
+        return;
+      }
+
+      db.serialize(() => {
+        db.run("PRAGMA foreign_keys = OFF");
+        db.run("BEGIN TRANSACTION");
+        db.run("ALTER TABLE match_lineups RENAME TO match_lineups_old", (renameErr) => {
+          if (renameErr) {
+            console.error("Gagal rename match_lineups:", renameErr.message);
+            db.run("ROLLBACK");
+            db.run("PRAGMA foreign_keys = ON");
+            onDone();
+            return;
+          }
+
+          db.run(
+            `CREATE TABLE match_lineups (
+              id INTEGER PRIMARY KEY AUTOINCREMENT,
+              match_id INTEGER NOT NULL,
+              player_id INTEGER NOT NULL,
+              tournament_id INTEGER NOT NULL,
+              is_starting_eleven INTEGER DEFAULT 1,
+              is_captain INTEGER DEFAULT 0,
+              jersey_number INTEGER,
+              position TEXT CHECK(position IN ('GK', 'DEF', 'MID', 'FWD', 'CB', 'LCB', 'RCB', 'RB', 'LB', 'RWB', 'LWB', 'CM', 'CDM', 'CAM', 'LM', 'RM', 'LW', 'RW', 'ST')),
+              created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+              FOREIGN KEY (match_id) REFERENCES matches(id),
+              FOREIGN KEY (player_id) REFERENCES players(id),
+              FOREIGN KEY (tournament_id) REFERENCES tournaments(id),
+              UNIQUE(match_id, player_id)
+            )`,
+            (createErr) => {
+              if (createErr) {
+                console.error("Gagal create match_lineups baru:", createErr.message);
+                db.run("ROLLBACK");
+                db.run("PRAGMA foreign_keys = ON");
+                onDone();
+                return;
+              }
+
+              db.run(
+                `INSERT INTO match_lineups
+                 (id, match_id, player_id, tournament_id, is_starting_eleven, is_captain, jersey_number, position, created_at)
+                 SELECT
+                   id,
+                   match_id,
+                   player_id,
+                   tournament_id,
+                   is_starting_eleven,
+                   COALESCE(is_captain, 0),
+                   jersey_number,
+                   CASE
+                     WHEN position IS NULL THEN NULL
+                     ELSE UPPER(position)
+                   END,
+                   created_at
+                 FROM match_lineups_old`,
+                (copyErr) => {
+                  if (copyErr) {
+                    console.error("Gagal copy data match_lineups:", copyErr.message);
+                    db.run("ROLLBACK");
+                    db.run("PRAGMA foreign_keys = ON");
+                    onDone();
+                    return;
+                  }
+
+                  db.run("DROP TABLE match_lineups_old");
+                  db.run(
+                    "CREATE INDEX IF NOT EXISTS idx_match_lineups_match ON match_lineups(match_id)",
+                  );
+                  db.run(
+                    "CREATE INDEX IF NOT EXISTS idx_match_lineups_player ON match_lineups(player_id)",
+                  );
+                  db.run("COMMIT", (commitErr) => {
+                    if (commitErr) {
+                      console.error(
+                        "Gagal commit migrasi match_lineups:",
+                        commitErr.message,
+                      );
+                      db.run("ROLLBACK");
+                    }
+                    db.run("PRAGMA foreign_keys = ON");
+                    onDone();
+                  });
+                },
+              );
+            },
+          );
+        });
+      });
+    },
+  );
+};
+
 // mapping tabel ke file JSON
 const seedConfig = [
   {
@@ -79,6 +221,7 @@ const seedConfig = [
       "tournament_id",
       "matchday",
       "round",
+      "formation",
       "is_home",
       "home_team",
       "away_team",
@@ -110,6 +253,11 @@ const seedConfig = [
     columns: [],
   },
   {
+    table: "match_lineups",
+    file: "./data/match_lineups.json",
+    columns: [],
+  },
+  {
     table: "merchandise",
     file: "./data/merchandise.json",
     columns: [
@@ -129,9 +277,11 @@ const seedConfig = [
 ];
 
 ensurePlayersPlayerCodeColumn(() => {
-  db.serialize(() => {
-    seedConfig.forEach((config) => {
-      const data = require(config.file);
+  ensureMatchesFormationColumn(() => {
+    ensureMatchLineupsSchema(() => {
+      db.serialize(() => {
+        seedConfig.forEach((config) => {
+          const data = require(config.file);
 
     if (config.table === "matches") {
       data.forEach((item) => {
@@ -143,7 +293,7 @@ ensurePlayersPlayerCodeColumn(() => {
 
             db.run(
               `INSERT INTO matches (
-                tournament_id, matchday, round, is_home,
+                tournament_id, matchday, round, formation, is_home,
                 home_team, away_team, opponent,
                 opponent_flag, home_team_flag, away_team_flag,
                 match_date_utc,
@@ -151,10 +301,11 @@ ensurePlayersPlayerCodeColumn(() => {
                 status, home_score, away_score,
                 home_goals, away_goals,
                 ticket_cat1, ticket_cat2, ticket_cat3, ticket_VIP
-              ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+              ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
               ON CONFLICT(tournament_id, match_date_utc) DO UPDATE SET
                 matchday = excluded.matchday,
                 round = excluded.round,
+                formation = excluded.formation,
                 is_home = excluded.is_home,
                 home_team = excluded.home_team,
                 away_team = excluded.away_team,
@@ -176,6 +327,7 @@ ensurePlayersPlayerCodeColumn(() => {
                 item.tournament_id,
                 item.matchday,
                 item.round,
+                item.formation || null,
                 item.is_home,
                 item.home_team,
                 item.away_team,
@@ -370,6 +522,184 @@ ensurePlayersPlayerCodeColumn(() => {
         return;
       }
 
+      if (config.table === "match_lineups") {
+        const upsertMatchLineup = ({
+          matchId,
+          playerId,
+          tournamentId,
+          isStartingEleven,
+          isCaptain,
+          jerseyNumber,
+          position,
+          sourceLabel,
+        }) => {
+          db.run(
+            `INSERT INTO match_lineups
+             (match_id, player_id, tournament_id, is_starting_eleven, is_captain, jersey_number, position)
+             VALUES (?, ?, ?, ?, ?, ?, ?)
+             ON CONFLICT(match_id, player_id) DO UPDATE SET
+               tournament_id = excluded.tournament_id,
+               is_starting_eleven = excluded.is_starting_eleven,
+               is_captain = excluded.is_captain,
+               jersey_number = excluded.jersey_number,
+               position = excluded.position`,
+            [
+              matchId,
+              playerId,
+              tournamentId,
+              isStartingEleven,
+              isCaptain,
+              jerseyNumber,
+              position,
+            ],
+            (lineupErr) => {
+              if (lineupErr) {
+                console.error(
+                  `Gagal upsert match_lineups (${sourceLabel}):`,
+                  lineupErr.message,
+                );
+              }
+            },
+          );
+        };
+
+        data.forEach((item) => {
+          const onResolvedPlayer = (playerId) => {
+            const onResolvedMatch = (matchId) => {
+              const tournamentId = item.tournament_id ?? item.match_tournament_id;
+              const isStartingEleven = Number(
+                item.is_starting_eleven !== undefined
+                  ? item.is_starting_eleven
+                  : item.is_starting || 0,
+              );
+              const isCaptain = Number(
+                item.is_captain !== undefined
+                  ? item.is_captain
+                  : item.captain || 0,
+              );
+              const normalizedPosition = item.position
+                ? String(item.position).toUpperCase()
+                : null;
+
+              upsertMatchLineup({
+                matchId,
+                playerId,
+                tournamentId,
+                isStartingEleven,
+                isCaptain,
+                jerseyNumber: item.jersey_number ?? null,
+                position: normalizedPosition,
+                sourceLabel: item.player_code || item.player_id || item.player_name,
+              });
+            };
+
+            if (item.match_id) {
+              onResolvedMatch(item.match_id);
+              return;
+            }
+
+            if (!item.match_tournament_id || !item.match_date_utc) {
+              console.error(
+                "Data match_lineups butuh match_id ATAU kombinasi match_tournament_id + match_date_utc.",
+              );
+              return;
+            }
+
+            db.get(
+              `SELECT id
+               FROM matches
+               WHERE tournament_id = ? AND match_date_utc = ?`,
+              [item.match_tournament_id, item.match_date_utc],
+              (findMatchErr, rowMatch) => {
+                if (findMatchErr) {
+                  console.error(
+                    `Gagal cari match ${item.match_tournament_id} @ ${item.match_date_utc}:`,
+                    findMatchErr.message,
+                  );
+                  return;
+                }
+
+                if (!rowMatch) {
+                  console.error(
+                    `Match tidak ditemukan untuk tournament_id ${item.match_tournament_id} pada ${item.match_date_utc}`,
+                  );
+                  return;
+                }
+
+                onResolvedMatch(rowMatch.id);
+              },
+            );
+          };
+
+          if (item.player_id) {
+            onResolvedPlayer(item.player_id);
+            return;
+          }
+
+          if (item.player_code) {
+            db.get(
+              "SELECT id FROM players WHERE player_code = ?",
+              [item.player_code],
+              (findErr, rowPlayer) => {
+                if (findErr) {
+                  console.error(
+                    `Gagal cari player_id dari player_code ${item.player_code}:`,
+                    findErr.message,
+                  );
+                  return;
+                }
+
+                if (!rowPlayer) {
+                  console.error(
+                    `Player dengan player_code ${item.player_code} tidak ditemukan.`,
+                  );
+                  return;
+                }
+
+                onResolvedPlayer(rowPlayer.id);
+              },
+            );
+            return;
+          }
+
+          if (item.player_name) {
+            db.get(
+              "SELECT id FROM players WHERE LOWER(name) = LOWER(?)",
+              [item.player_name],
+              (findErr, rowPlayer) => {
+                if (findErr) {
+                  console.error(
+                    `Gagal cari player_id dari player_name ${item.player_name}:`,
+                    findErr.message,
+                  );
+                  return;
+                }
+
+                if (!rowPlayer) {
+                  console.error(
+                    `Player dengan nama ${item.player_name} tidak ditemukan.`,
+                  );
+                  return;
+                }
+
+                onResolvedPlayer(rowPlayer.id);
+              },
+            );
+            return;
+          }
+
+          console.error(
+            "Data match_lineups harus punya player_code, player_id, atau player_name.",
+          );
+        });
+
+        console.log(
+          "Seeder match_lineups selesai (mode upsert: player_code/match_key didukung).",
+        );
+
+        return;
+      }
+
       db.get(`SELECT COUNT(*) as count FROM ${config.table}`, [], (err, row) => {
         if (err) return console.error(err.message);
 
@@ -393,6 +723,8 @@ ensurePlayersPlayerCodeColumn(() => {
 
         stmt.finalize();
         console.log(`Seeder ${config.table} selesai.`);
+      });
+        });
       });
     });
   });
