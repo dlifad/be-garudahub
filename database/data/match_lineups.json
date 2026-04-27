@@ -5788,5 +5788,1605 @@
     "is_captain": 0,
     "jersey_number": 20,
     "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-20T08:10:00.000Z",
+    "tournament_id": 3,
+    "player_code": "maarten-paes",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 1,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-20T08:10:00.000Z",
+    "tournament_id": 3,
+    "player_code": "jay-idzes",
+    "is_starting_eleven": 1,
+    "is_captain": 1,
+    "jersey_number": 3,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-20T08:10:00.000Z",
+    "tournament_id": 3,
+    "player_code": "mees-hilgers",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 2,
+    "position": "RCB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-20T08:10:00.000Z",
+    "tournament_id": 3,
+    "player_code": "calvin-verdonk",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 17,
+    "position": "LCB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-20T08:10:00.000Z",
+    "tournament_id": 3,
+    "player_code": "dean-james",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 21,
+    "position": "LM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-20T08:10:00.000Z",
+    "tournament_id": 3,
+    "player_code": "thom-jan-marinus-haye",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 19,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-20T08:10:00.000Z",
+    "tournament_id": 3,
+    "player_code": "nathan-tjoe-a-on",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 22,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-20T08:10:00.000Z",
+    "tournament_id": 3,
+    "player_code": "kevin-diks",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 8,
+    "position": "RM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-20T08:10:00.000Z",
+    "tournament_id": 3,
+    "player_code": "marselino-ferdinan",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 7,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-20T08:10:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ole-ter-haar-romeny",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 10,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-20T08:10:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rafael-william-struick",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 9,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-20T08:10:00.000Z",
+    "tournament_id": 3,
+    "player_code": "emil-audero-mulyadi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 12,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-20T08:10:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ernando-ari-sutaryadi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 16,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-20T08:10:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rizky-ridho-ramadhani",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 5,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-20T08:10:00.000Z",
+    "tournament_id": 3,
+    "player_code": "jordi-amat",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 4,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-20T08:10:00.000Z",
+    "tournament_id": 3,
+    "player_code": "shayne-pattynama",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 20,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-20T08:10:00.000Z",
+    "tournament_id": 3,
+    "player_code": "sandy-walsh",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 6,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-20T08:10:00.000Z",
+    "tournament_id": 3,
+    "player_code": "joey-pelupessy",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 14,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-20T08:10:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ivar-jenner",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 18,
+    "position": "CM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-20T08:10:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ricky-kambuaya",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 15,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-20T08:10:00.000Z",
+    "tournament_id": 3,
+    "player_code": "eliano-reijnders",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 23,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-20T08:10:00.000Z",
+    "tournament_id": 3,
+    "player_code": "septian-bagaskara",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 13,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-20T08:10:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ramadhan-sananta",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 11,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-25T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "maarten-paes",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 1,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-25T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "jay-idzes",
+    "is_starting_eleven": 1,
+    "is_captain": 1,
+    "jersey_number": 3,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-25T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rizky-ridho-ramadhani",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 5,
+    "position": "RCB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-25T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "justin-hubner",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 23,
+    "position": "LCB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-25T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "calvin-verdonk",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 17,
+    "position": "LM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-25T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "joey-pelupessy",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 14,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-25T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "thom-jan-marinus-haye",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 19,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-25T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "kevin-diks",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 2,
+    "position": "RM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-25T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ragnar-oratmangoen",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 11,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-25T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "marselino-ferdinan",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 7,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-25T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ole-ter-haar-romeny",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 10,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-25T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "emil-audero-mulyadi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 12,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-25T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ernando-ari-sutaryadi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 16,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-25T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "jordi-amat",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 4,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-25T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "dean-james",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 21,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-25T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "shayne-pattynama",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 20,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-25T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "nathan-tjoe-a-on",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 22,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-25T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "sandy-walsh",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 6,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-25T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ivar-jenner",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 18,
+    "position": "CM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-25T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ricky-kambuaya",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 15,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-25T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rafael-william-struick",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 9,
+    "position": "LW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-25T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "eliano-reijnders",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 8,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-03-25T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ramadhan-sananta",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 13,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-06-05T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "emil-audero-mulyadi",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 12,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-06-05T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "jay-idzes",
+    "is_starting_eleven": 1,
+    "is_captain": 1,
+    "jersey_number": 3,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-06-05T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rizky-ridho-ramadhani",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 5,
+    "position": "RCB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-06-05T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "justin-hubner",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 23,
+    "position": "LCB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-06-05T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "calvin-verdonk",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 17,
+    "position": "LM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-06-05T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "thom-jan-marinus-haye",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 19,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-06-05T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "joey-pelupessy",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 14,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-06-05T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "yakob-sayuri",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 8,
+    "position": "RM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-06-05T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ricky-kambuaya",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 15,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-06-05T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "egy-maulana-vikri",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 7,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-06-05T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ole-ter-haar-romeny",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 10,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-06-05T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "nadeo-argawinata",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 1,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-06-05T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ernando-ari-sutaryadi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 16,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-06-05T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "mees-hilgers",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 2,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-06-05T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "kevin-diks",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 4,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-06-05T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "yance-sayuri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 13,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-06-05T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "nathan-tjoe-a-on",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 22,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-06-05T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "dean-james",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 21,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-06-05T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ivar-jenner",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 18,
+    "position": "CM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-06-05T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rafael-william-struick",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 9,
+    "position": "LW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-06-05T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "stefano-lilipaly",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 20,
+    "position": "LW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-06-05T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "beckham-putra-nugraha",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 6,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-06-05T13:45:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ramadhan-sananta",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 11,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-05T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "emil-audero-mulyadi",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 1,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-05T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "rizky-ridho-ramadhani",
+    "is_starting_eleven": 1,
+    "is_captain": 1,
+    "jersey_number": 5,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-05T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "jordi-amat",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 4,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-05T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "shayne-pattynama",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 20,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-05T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "yakob-sayuri",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 2,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-05T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "marc-anthony-klok",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 18,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-05T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "nathan-tjoe-a-on",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 22,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-05T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "robi-darwis",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 24,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-05T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "beckham-putra-nugraha",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 25,
+    "position": "LW"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-05T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "egy-maulana-vikri",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 10,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-05T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "ramadhan-sananta",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 9,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-05T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "nadeo-argawinata",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 16,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-05T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "ernando-ari-sutaryadi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 12,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-05T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "justin-hubner",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 23,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-05T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "dean-james",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 21,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-05T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "sandy-walsh",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 6,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-05T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "joey-pelupessy",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 14,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-05T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "thom-jan-marinus-haye",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 19,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-05T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "marselino-ferdinan",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 7,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-05T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "stefano-lilipaly",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 8,
+    "position": "LW"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-05T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "miliano-jonathans",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 15,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-05T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "mauro-zijlstra",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 13,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-08T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "maarten-paes",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 1,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-08T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "jay-idzes",
+    "is_starting_eleven": 1,
+    "is_captain": 1,
+    "jersey_number": 3,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-08T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "justin-hubner",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 23,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-08T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "calvin-verdonk",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 17,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-08T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "kevin-diks",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 2,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-08T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "joey-pelupessy",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 14,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-08T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "thom-jan-marinus-haye",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 19,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-08T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "marselino-ferdinan",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 7,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-08T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "ragnar-oratmangoen",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 11,
+    "position": "LW"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-08T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "eliano-reijnders",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 6,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-08T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "ole-ter-haar-romeny",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 10,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-08T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "emil-audero-mulyadi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 12,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-08T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "ernando-ari-sutaryadi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 16,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-08T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "rizky-ridho-ramadhani",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 5,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-08T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "jordi-amat",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 4,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-08T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "dean-james",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 21,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-08T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "sandy-walsh",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 22,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-08T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "ivar-jenner",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 18,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-08T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "nathan-tjoe-a-on",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 15,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-08T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "ricky-kambuaya",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 20,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-08T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "rafael-william-struick",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 9,
+    "position": "LW"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-08T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "miliano-jonathans",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 8,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 4,
+    "match_date_utc": "2025-09-08T13:30:00.000Z",
+    "tournament_id": 4,
+    "player_code": "ramadhan-sananta",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 13,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-09T17:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "maarten-paes",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 1,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-09T17:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "jay-idzes",
+    "is_starting_eleven": 1,
+    "is_captain": 1,
+    "jersey_number": 3,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-09T17:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "kevin-diks",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 2,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-09T17:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "dean-james",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 21,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-09T17:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "yakob-sayuri",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 22,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-09T17:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "marc-anthony-klok",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 18,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-09T17:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "joey-pelupessy",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 14,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-09T17:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "beckham-putra-nugraha",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 7,
+    "position": "LM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-09T17:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "miliano-jonathans",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 9,
+    "position": "RM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-09T17:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ragnar-oratmangoen",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 11,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-09T17:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ricky-kambuaya",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 15,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-09T17:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "nadeo-argawinata",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 16,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-09T17:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ernando-ari-sutaryadi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 12,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-09T17:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "justin-hubner",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 23,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-09T17:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rizky-ridho-ramadhani",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 5,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-09T17:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "shayne-pattynama",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 20,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-09T17:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "yance-sayuri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 4,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-09T17:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "sandy-walsh",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 6,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-09T17:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "thom-jan-marinus-haye",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 19,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-09T17:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "stefano-lilipaly",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 8,
+    "position": "LW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-09T17:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "eliano-reijnders",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 17,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-09T17:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ole-ter-haar-romeny",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 10,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-09T17:15:00.000Z",
+    "tournament_id": 3,
+    "player_code": "mauro-zijlstra",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 13,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-12T23:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "maarten-paes",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 1,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-12T23:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "jay-idzes",
+    "is_starting_eleven": 1,
+    "is_captain": 1,
+    "jersey_number": 3,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-12T23:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "rizky-ridho-ramadhani",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 5,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-12T23:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "dean-james",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 21,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-12T23:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "kevin-diks",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 2,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-12T23:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "joey-pelupessy",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 14,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-12T23:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "calvin-verdonk",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 17,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-12T23:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "thom-jan-marinus-haye",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 19,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-12T23:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ricky-kambuaya",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 15,
+    "position": "LW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-12T23:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "eliano-reijnders",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 23,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-12T23:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "mauro-zijlstra",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 13,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-12T23:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "nadeo-argawinata",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 16,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-12T23:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ernando-ari-sutaryadi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 12,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-12T23:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "jordi-amat",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 4,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-12T23:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "shayne-pattynama",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 20,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-12T23:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "nathan-tjoe-a-on",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 22,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-12T23:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "sandy-walsh",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 6,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-12T23:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "marc-anthony-klok",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 18,
+    "position": "CM"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-12T23:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "stefano-lilipaly",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 8,
+    "position": "LW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-12T23:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ragnar-oratmangoen",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 11,
+    "position": "LW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-12T23:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "miliano-jonathans",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 9,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-12T23:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ole-ter-haar-romeny",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 10,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 3,
+    "match_date_utc": "2025-10-12T23:30:00.000Z",
+    "tournament_id": 3,
+    "player_code": "ramadhan-sananta",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 7,
+    "position": "ST"
   }
 ]
