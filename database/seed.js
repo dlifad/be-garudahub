@@ -649,35 +649,60 @@ const seedGenericIfEmpty = (config, data) => {
   });
 };
 
+const seedVenuesForced = (data, onDone) => {
+  const stmt = db.prepare(
+    `INSERT INTO venues (name, city, country, latitude, longitude)
+     VALUES (?, ?, ?, ?, ?)
+     ON CONFLICT(name) DO UPDATE SET
+       city = excluded.city,
+       country = excluded.country,
+       latitude = excluded.latitude,
+       longitude = excluded.longitude`
+  );
+
+  data.forEach((item) => {
+    stmt.run([item.name, item.city, item.country, item.latitude, item.longitude]);
+  });
+
+  stmt.finalize(onDone);
+};
+
 const runSeed = () => {
-  db.serialize(() => {
-    seedConfig.forEach((config) => {
-      const data = require(config.file);
+  const venueConfig = seedConfig.find(c => c.table === "venues");
+  const venueData = require(venueConfig.file);
 
-      if (config.table === "matches") {
-        seedMatches(data);
-        return;
-      }
+  seedVenuesForced(venueData, () => {
+    db.serialize(() => {
+      seedConfig.forEach((config) => {
+        if (config.table === "venues") return;
+        const data = require(config.file);
 
-      if (config.table === "players") {
-        seedPlayers(data);
-        return;
-      }
+        if (config.table === "matches") {
+          seedMatches(data);
+          return;
+        }
 
-      if (config.table === "tournament_players") {
-        seedTournamentPlayers(data);
-        return;
-      }
+        if (config.table === "players") {
+          seedPlayers(data);
+          return;
+        }
 
-      if (config.table === "match_lineups") {
-        seedMatchLineups(data);
-        return;
-      }
+        if (config.table === "tournament_players") {
+          seedTournamentPlayers(data);
+          return;
+        }
 
-      seedGenericIfEmpty(config, data);
+        if (config.table === "match_lineups") {
+          seedMatchLineups(data);
+          return;
+        }
+
+        seedGenericIfEmpty(config, data);
+      });
     });
   });
 };
+
 
 ensurePlayersPlayerCodeColumn(() => {
   ensureMatchesFormationColumn(() => {

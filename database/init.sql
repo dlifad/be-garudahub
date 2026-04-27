@@ -195,3 +195,5 @@ ON match_lineups(match_id);
 
 CREATE INDEX IF NOT EXISTS idx_match_lineups_player
 ON match_lineups(player_id);
+
+CREATE UNIQUE INDEX IF NOT EXISTS idx_venues_name_unique ON venues(name);
