@@ -813,7 +813,7 @@
     "ticket_cat2": 500000,
     "ticket_cat3": 250000,
     "ticket_VIP": 1000000,
-    "formation": "4-3-3"
+    "formation": "5-3-2"
   },
   {
     "tournament_id": 5,
@@ -837,7 +837,7 @@
     "ticket_cat2": 500000,
     "ticket_cat3": 250000,
     "ticket_VIP": 1000000,
-    "formation": "4-3-3"
+    "formation": "3-4-3"
   },
   {
     "tournament_id": 6,
