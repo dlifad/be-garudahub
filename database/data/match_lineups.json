@@ -7388,5 +7388,465 @@
     "is_captain": 0,
     "jersey_number": 7,
     "position": "ST"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-27T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "maarten-paes",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 12,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-27T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "jay-idzes",
+    "is_starting_eleven": 1,
+    "is_captain": 1,
+    "jersey_number": 3,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-27T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "elkan-william-tio-baggott",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 20,
+    "position": "LCB"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-27T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "rizky-ridho-ramadhani",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 5,
+    "position": "RCB"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-27T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "dony-tri-pamungkas",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 16,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-27T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "kevin-diks",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 2,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-27T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "jordi-amat",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 4,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-27T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "calvin-verdonk",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 17,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-27T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "beckham-putra-nugraha",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 7,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-27T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "ole-ter-haar-romeny",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 10,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-27T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "ramadhan-sananta",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 9,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-27T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "nadeo-argawinata",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 25,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-27T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "emil-audero-mulyadi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 1,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-27T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "cahya-supriadi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 24,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-27T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "justin-hubner",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 23,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-27T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "nathan-tjoe-a-on",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 22,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-27T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "sandy-walsh",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 6,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-27T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "joey-pelupessy",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 14,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-27T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "ivar-jenner",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 18,
+    "position": "CM"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-27T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "ragnar-oratmangoen",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 11,
+    "position": "LW"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-27T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "eliano-reijnders",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 15,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-27T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "yakob-sayuri",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 8,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-27T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "mauro-zijlstra",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 13,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-30T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "maarten-paes",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 1,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-30T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "jay-idzes",
+    "is_starting_eleven": 1,
+    "is_captain": 1,
+    "jersey_number": 3,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-30T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "justin-hubner",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 23,
+    "position": "LCB"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-30T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "rizky-ridho-ramadhani",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 5,
+    "position": "RCB"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-30T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "calvin-verdonk",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 17,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-30T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "kevin-diks",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 2,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-30T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "joey-pelupessy",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 14,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-30T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "thom-jan-marinus-haye",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 19,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-30T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "marselino-ferdinan",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 7,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-30T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "ragnar-oratmangoen",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 11,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-30T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "ole-ter-haar-romeny",
+    "is_starting_eleven": 1,
+    "is_captain": 0,
+    "jersey_number": 10,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-30T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "nadeo-argawinata",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 16,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-30T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "ernando-ari-sutaryadi",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 12,
+    "position": "GK"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-30T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "jordi-amat",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 4,
+    "position": "CB"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-30T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "shayne-pattynama",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 20,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-30T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "nathan-tjoe-a-on",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 22,
+    "position": "LB"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-30T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "sandy-walsh",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 6,
+    "position": "RB"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-30T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "ivar-jenner",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 18,
+    "position": "CDM"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-30T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "ricky-kambuaya",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 15,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-30T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "beckham-putra-nugraha",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 25,
+    "position": "CAM"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-30T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "eliano-reijnders",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 8,
+    "position": "RW"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-30T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "mauro-zijlstra",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 13,
+    "position": "ST"
+  },
+  {
+    "match_tournament_id": 5,
+    "match_date_utc": "2026-03-30T13:00:00.000Z",
+    "tournament_id": 5,
+    "player_code": "ramadhan-sananta",
+    "is_starting_eleven": 0,
+    "is_captain": 0,
+    "jersey_number": 9,
+    "position": "ST"
   }
 ]
