@@ -85,5 +85,20 @@ CATATAN PENTING (SEED DATA)
 - players.json adalah master pemain dan sekarang menyimpan player_code sebagai identifier stabil lintas environment.
 - tournament_players.json sekarang memakai format relasi: tournament_id + player_code.
 - Seeder tournament_players memproses urutan fallback: player_code -> player_id -> player_name (untuk kompatibilitas data lama).
+- tournament_coaches.json menyimpan riwayat coach per turnamen dan sudah disiapkan untuk seeder backend.
+- matches.json sekarang sudah menyimpan formation per match.
+- match_lineups.json sekarang menyimpan lineup starter/subs per match lengkap dengan is_captain dan posisi detail (GK/CB/LCB/RCB/RB/LB/RWB/LWB/CM/CDM/CAM/LM/RM/LW/RW/ST).
 - Seeder matches sudah mode upsert dengan konflik unik (tournament_id, match_date_utc), sehingga aman dijalankan berulang (idempotent) tanpa duplikasi match.
+- Seeder match_lineups sudah mode upsert, resolve pemain via player_code, dan resolve match via kombinasi match_tournament_id + match_date_utc.
 - Backend tetap memvalidasi bahwa pemain harus terdaftar di squad turnamen sebelum bisa masuk lineup match.
+
+STATUS KESIAPAN DATA (CEK TERAKHIR)
+- Formation di matches: lengkap (0 data kosong).
+- Data lineup total: 785 baris.
+- Masih ada mismatch referensi lineup ke match: 23 baris.
+- Masih ada 5 match yang belum punya lineup.
+
+KESIMPULAN UNTUK MOBILE APP
+- Sudah bisa mulai coding mobile app sekarang (struktur API dan data utama sudah siap).
+- Disarankan tetap handle empty state untuk match tanpa lineup.
+- Sebelum release final, rapikan 23 mismatch referensi lineup agar semua lineup konsisten 100%.

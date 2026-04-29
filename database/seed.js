@@ -28,6 +28,18 @@ const seedConfig = [
     ],
   },
   {
+    table: "tournament_coaches",
+    file: "./data/tournament_coaches.json",
+    columns: [
+      "tournament_id",
+      "name",
+      "role",
+      "start_date",
+      "end_date",
+      "is_active",
+    ],
+  },
+  {
     table: "venues",
     file: "./data/venues.json",
     columns: ["name", "city", "country", "latitude", "longitude"],
