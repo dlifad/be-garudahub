@@ -269,7 +269,7 @@ const seedMatches = (data) => {
         opponent_flag, home_team_flag, away_team_flag,
         match_date_utc, venue_id, status, home_score, away_score,
         home_goals, away_goals, ticket_cat1, ticket_cat2, ticket_cat3, ticket_VIP
-      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, (SELECT id FROM venues WHERE LOWER(name)=LOWER(?) LIMIT 1), ?, ?, ?, ?, ?, ?, ?, ?, ?)
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
       ON CONFLICT(tournament_id, match_date_utc) DO UPDATE SET
         matchday = excluded.matchday,
         round = excluded.round,
@@ -304,7 +304,7 @@ const seedMatches = (data) => {
         item.home_team_flag,
         item.away_team_flag,
         item.match_date_utc,
-        item.venue_name || "",
+        item.venue_id || null,
         item.status,
         item.home_score,
         item.away_score,
