@@ -14,6 +14,9 @@ CREATE TABLE IF NOT EXISTS news (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     title TEXT NOT NULL,
     content TEXT NOT NULL,
+    author TEXT,
+    source TEXT,
+    source_url TEXT,
     image_url TEXT,
     published_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
@@ -197,3 +200,5 @@ CREATE INDEX IF NOT EXISTS idx_match_lineups_player
 ON match_lineups(player_id);
 
 CREATE UNIQUE INDEX IF NOT EXISTS idx_venues_name_unique ON venues(name);
+
+CREATE UNIQUE INDEX IF NOT EXISTS idx_news_source_url_unique ON news(source_url);

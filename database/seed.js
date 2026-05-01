@@ -79,7 +79,7 @@ const seedConfig = [
   {
     table: "news",
     file: "./data/news.json",
-    columns: ["title", "content", "image_url"],
+    columns: ["title", "content", "author", "source", "source_url", "image_url", "published_at"],
   },
 ];
 
@@ -679,6 +679,35 @@ const seedVenuesForced = (data, onDone) => {
   stmt.finalize(onDone);
 };
 
+const seedNews = (data) => {
+  data.forEach((item) => {
+    db.run(
+      `INSERT INTO news (title, content, author, source, source_url, image_url, published_at)
+       VALUES (?, ?, ?, ?, ?, ?, ?)
+       ON CONFLICT(source_url) DO UPDATE SET
+         title = excluded.title,
+         content = excluded.content,
+         author = excluded.author,
+         source = excluded.source,
+         image_url = excluded.image_url,
+         published_at = excluded.published_at`,
+      [
+        item.title,
+        item.content,
+        item.author || null,
+        item.source || null,
+        item.source_url || null,
+        item.image_url || null,
+        item.date || null,
+      ],
+      (err) => {
+        if (err) console.error(`Gagal upsert news "${item.title}":`, err.message);
+      }
+    );
+  });
+  console.log("Seeder news selesai (mode upsert by source_url).");
+};
+
 const runSeed = () => {
   const venueConfig = seedConfig.find(c => c.table === "venues");
   const venueData = require(venueConfig.file);
@@ -706,6 +735,11 @@ const runSeed = () => {
 
         if (config.table === "match_lineups") {
           seedMatchLineups(data);
+          return;
+        }
+
+        if (config.table === "news") {
+          seedNews(data);
           return;
         }
 
