@@ -30,6 +30,27 @@ const LINEUP_POSITIONS = new Set([
 
 const FORMATION_REGEX = /^\d-\d-\d(?:-\d)?$/;
 
+function parseGoals(goalStr, isIndonesia) {
+  if (!goalStr) return [];
+
+  return goalStr.split(",")
+    .map((g) => {
+      const parts = g.trim().split("-");
+      if (parts.length < 2) return null;
+
+      const minuteRaw = parts[0].trim();
+      const name = parts.slice(1).join("-").trim();
+
+      return {
+        scorer_name: name,
+        minute: Number(minuteRaw.split("+")[0]) || 0,
+        assist_name: null,
+        is_indonesia_goal: isIndonesia,
+      };
+    })
+    .filter(Boolean);
+}
+
 function mapMatchRow(row, timezone) {
   const isHome = Boolean(row.is_home);
   const indonesiaScore = isHome ? row.home_score : row.away_score;
@@ -41,14 +62,14 @@ function mapMatchRow(row, timezone) {
     indonesiaScore !== null &&
     opponentScore !== null
   ) {
-    if (indonesiaScore > opponentScore) {
-      result = "WIN";
-    } else if (indonesiaScore < opponentScore) {
-      result = "LOSS";
-    } else {
-      result = "DRAW";
-    }
+    if (indonesiaScore > opponentScore) result = "WIN";
+    else if (indonesiaScore < opponentScore) result = "LOSS";
+    else result = "DRAW";
   }
+
+  const homeGoals = parseGoals(row.home_goals, isHome);
+  const awayGoals = parseGoals(row.away_goals, !isHome);
+  const goals = [...homeGoals, ...awayGoals].sort((a, b) => a.minute - b.minute);
 
   const prices = [
     row.ticket_cat1,
@@ -88,6 +109,7 @@ function mapMatchRow(row, timezone) {
     indonesia_score: indonesiaScore,
     opponent_score: opponentScore,
     result,
+    goals: goals.length ? goals : null,
     min_ticket_price: minPrice,
     tickets: {
       cat1: row.ticket_cat1,
