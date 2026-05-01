@@ -8,4 +8,7 @@ const upload = require('../middleware/upload');
 router.get('/', authMiddleware, profileController.getProfile);
 router.put('/', authMiddleware, upload.single('profile_photo'), profileController.updateProfile);
 
+router.post('/request-email-update', authMiddleware, profileController.requestEmailUpdate);
+router.post('/verify-email-update', authMiddleware, profileController.verifyEmailUpdate);
+
 module.exports = router;
