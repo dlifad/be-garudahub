@@ -10,7 +10,7 @@
     "club_country": "Netherlands",
     "caps": 15,
     "goals": 0,
-    "photo_url": "assets/images/players/martenpaes.jpg",
+    "photo_url": "/assets/images/players/martenpaes.jpg",
     "is_active": 1,
     "status": "active",
     "player_code": "maarten-paes"
@@ -26,7 +26,7 @@
     "club_country": "Indonesia",
     "caps": 25,
     "goals": 0,
-    "photo_url": "assets/images/players/ernandoari.jpg",
+    "photo_url": "/assets/images/players/ernandoari.jpg",
     "is_active": 0,
     "status": "suspended",
     "player_code": "ernando-ari-sutaryadi"
@@ -74,7 +74,7 @@
     "club_country": "Italy",
     "caps": 8,
     "goals": 0,
-    "photo_url": "assets/images/players/emilaudero.jpg",
+    "photo_url": "/assets/images/players/emilaudero.jpg",
     "is_active": 1,
     "status": "active",
     "player_code": "emil-audero-mulyadi"
@@ -90,7 +90,7 @@
     "club_country": "Indonesia",
     "caps": 30,
     "goals": 0,
-    "photo_url": "assets/images/players/nadeo.jpg",
+    "photo_url": "/assets/images/players/nadeo.jpg",
     "is_active": 1,
     "status": "active",
     "player_code": "nadeo-argawinata"
@@ -106,7 +106,7 @@
     "club_country": "Italy",
     "caps": 25,
     "goals": 2,
-    "photo_url": "assets/images/players/jayidzes.jpg",
+    "photo_url": "/assets/images/players/jayidzes.jpg",
     "is_active": 1,
     "status": "active",
     "player_code": "jay-idzes"
@@ -122,7 +122,7 @@
     "club_country": "Germany",
     "caps": 12,
     "goals": 1,
-    "photo_url": "assets/images/players/kevindiks.jpg",
+    "photo_url": "/assets/images/players/kevindiks.jpg",
     "is_active": 1,
     "status": "active",
     "player_code": "kevin-diks"
@@ -138,7 +138,7 @@
     "club_country": "Netherlands",
     "caps": 28,
     "goals": 0,
-    "photo_url": "assets/images/players/justinhubner.jpg",
+    "photo_url": "/assets/images/players/justinhubner.jpg",
     "is_active": 1,
     "status": "active",
     "player_code": "justin-hubner"
@@ -154,7 +154,7 @@
     "club_country": "Thailand",
     "caps": 22,
     "goals": 1,
-    "photo_url": "assets/images/players/sandywalsh.jpg",
+    "photo_url": "/assets/images/players/sandywalsh.jpg",
     "is_active": 1,
     "status": "active",
     "player_code": "sandy-walsh"
@@ -170,7 +170,7 @@
     "club_country": "France",
     "caps": 18,
     "goals": 0,
-    "photo_url": "assets/images/players/calvinverdonk.jpg",
+    "photo_url": "/assets/images/players/calvinverdonk.jpg",
     "is_active": 1,
     "status": "active",
     "player_code": "calvin-verdonk"
@@ -186,7 +186,7 @@
     "club_country": "Indonesia",
     "caps": 20,
     "goals": 1,
-    "photo_url": "assets/images/players/shaynepatt.jpg",
+    "photo_url": "/assets/images/players/shaynepatt.jpg",
     "is_active": 0,
     "status": "suspended",
     "player_code": "shayne-pattynama"
@@ -202,7 +202,7 @@
     "club_country": "Netherlands",
     "caps": 24,
     "goals": 0,
-    "photo_url": "assets/images/players/nathan.jpg",
+    "photo_url": "/assets/images/players/nathan.jpg",
     "is_active": 1,
     "status": "active",
     "player_code": "nathan-tjoe-a-on"
@@ -218,7 +218,7 @@
     "club_country": "Indonesia",
     "caps": 55,
     "goals": 3,
-    "photo_url": "assets/images/players/rizkyridho.jpg",
+    "photo_url": "/assets/images/players/rizkyridho.jpg",
     "is_active": 1,
     "status": "active",
     "player_code": "rizky-ridho-ramadhani"
@@ -234,7 +234,7 @@
     "club_country": "Malaysia",
     "caps": 32,
     "goals": 1,
-    "photo_url": "assets/images/players/jordiamat.jpg",
+    "photo_url": "/assets/images/players/jordiamat.jpg",
     "is_active": 1,
     "status": "active",
     "player_code": "jordi-amat"
@@ -250,8 +250,8 @@
     "club_country": "Indonesia",
     "caps": 22,
     "goals": 2,
-    "photo_url": "assets/images/players/thomhaye.jpg",
-    "is_active": 1,
+    "photo_url": "/assets/images/players/thomhaye.jpg",
+    "is_active": 0,
     "status": "active",
     "player_code": "thom-jan-marinus-haye"
   },
@@ -283,7 +283,7 @@
     "caps": 37,
     "goals": 5,
     "photo_url": "https://example.com/marselino.jpg",
-    "is_active": 1,
+    "is_active": 0,
     "status": "active",
     "player_code": "marselino-ferdinan"
   },
@@ -298,7 +298,7 @@
     "club_country": "Indonesia",
     "caps": 43,
     "goals": 5,
-    "photo_url": "assets/images/players/rickykambuaya.jpg",
+    "photo_url": "/assets/images/players/rickykambuaya.jpg",
     "is_active": 0,
     "status": "suspended",
     "player_code": "ricky-kambuaya"
@@ -314,7 +314,7 @@
     "club_country": "Belgium",
     "caps": 5,
     "goals": 0,
-    "photo_url": "assets/images/players/joeypelupessy.jpg",
+    "photo_url": "/assets/images/players/joeypelupessy.jpg",
     "is_active": 1,
     "status": "active",
     "player_code": "joey-pelupessy"
@@ -330,7 +330,7 @@
     "club_country": "England",
     "caps": 8,
     "goals": 4,
-    "photo_url": "assets/images/players/oleromeny.jpg",
+    "photo_url": "/assets/images/players/oleromeny.jpg",
     "is_active": 1,
     "status": "active",
     "player_code": "ole-ter-haar-romeny"
@@ -362,8 +362,8 @@
     "club_country": "Netherlands",
     "caps": 4,
     "goals": 0,
-    "photo_url": "assets/images/players/milianojonathans.jpg",
-    "is_active": 1,
+    "photo_url": "/assets/images/players/milianojonathans.jpg",
+    "is_active": 0,
     "status": "active",
     "player_code": "miliano-jonathans"
   },
@@ -378,7 +378,7 @@
     "club_country": "Brunei",
     "caps": 18,
     "goals": 6,
-    "photo_url": "assets/images/players/ramadhansanantagoat.jpg",
+    "photo_url": "/assets/images/players/ramadhansanantagoat.jpg",
     "is_active": 1,
     "status": "active",
     "player_code": "ramadhan-sananta"
@@ -410,7 +410,7 @@
     "club_country": "Belgium",
     "caps": 14,
     "goals": 2,
-    "photo_url": "assets/images/players/ragnaroratmangoen.jpg",
+    "photo_url": "/assets/images/players/ragnaroratmangoen.jpg",
     "is_active": 1,
     "status": "active",
     "player_code": "ragnar-oratmangoen"
@@ -426,7 +426,7 @@
     "club_country": "Netherlands",
     "caps": 4,
     "goals": 1,
-    "photo_url": "assets/images/players/maurozijlstra.jpg",
+    "photo_url": "/assets/images/players/maurozijlstra.jpg",
     "is_active": 1,
     "status": "active",
     "player_code": "mauro-zijlstra"
@@ -442,7 +442,7 @@
     "club_country": "Indonesia",
     "caps": 29,
     "goals": 8,
-    "photo_url": "assets/images/players/egymv.jpg",
+    "photo_url": "/assets/images/players/egymv.jpg",
     "is_active": 0,
     "status": "suspended",
     "player_code": "egy-maulana-vikri"
@@ -490,7 +490,7 @@
     "club_country": "England",
     "caps": 22,
     "goals": 2,
-    "photo_url": "assets/images/players/elkanbaggot.jpg",
+    "photo_url": "/assets/images/players/elkanbaggot.jpg",
     "is_active": 1,
     "status": "active",
     "player_code": "elkan-william-tio-baggott"
@@ -602,7 +602,7 @@
     "club_country": "Indonesia",
     "caps": 25,
     "goals": 4,
-    "photo_url": "assets/images/players/marcklok.jpg",
+    "photo_url": "/assets/images/players/marcklok.jpg",
     "is_active": 0,
     "status": "suspended",
     "player_code": "marc-anthony-klok"
@@ -650,7 +650,7 @@
     "club_country": "Indonesia",
     "caps": 0,
     "goals": 0,
-    "photo_url": "assets/images/players/CahyaSupriadi.jpg",
+    "photo_url": "/assets/images/players/CahyaSupriadi.jpg",
     "is_active": 1,
     "status": "active",
     "player_code": "cahya-supriadi"
@@ -666,8 +666,8 @@
     "club_country": "Netherlands",
     "caps": 4,
     "goals": 0,
-    "photo_url": "assets/images/players/meeshillgers.jpeg",
-    "is_active": 1,
+    "photo_url": "/assets/images/players/meeshillgers.jpeg",
+    "is_active": 0,
     "status": "active",
     "player_code": "mees-hilgers"
   },
@@ -682,7 +682,7 @@
     "club_country": "Netherlands",
     "caps": 5,
     "goals": 0,
-    "photo_url": "assets/images/players/deanjames.jpg",
+    "photo_url": "/assets/images/players/deanjames.jpg",
     "is_active": 1,
     "status": "active",
     "player_code": "dean-james"
@@ -714,7 +714,7 @@
     "club_country": "Indonesia",
     "caps": 2,
     "goals": 0,
-    "photo_url": "assets/images/players/donytri.jpg",
+    "photo_url": "/assets/images/players/donytri.jpg",
     "is_active": 1,
     "status": "active",
     "player_code": "dony-tri-pamungkas"
@@ -730,7 +730,7 @@
     "club_country": "Netherlands",
     "caps": 9,
     "goals": 1,
-    "photo_url": "assets/images/players/elianoreijders.jpg",
+    "photo_url": "/assets/images/players/elianoreijders.jpg",
     "is_active": 1,
     "status": "active",
     "player_code": "eliano-reijnders"
@@ -746,7 +746,7 @@
     "club_country": "Indonesia",
     "caps": 6,
     "goals": 2,
-    "photo_url": "assets/images/players/beckham.jpg",
+    "photo_url": "/assets/images/players/beckham.jpg",
     "is_active": 1,
     "status": "active",
     "player_code": "beckham-putra-nugraha"
@@ -778,7 +778,7 @@
     "club_country": "Indonesia",
     "caps": 33,
     "goals": 2,
-    "photo_url": "assets/images/players/stefanolilipaly.jpg",
+    "photo_url": "/assets/images/players/stefanolilipaly.jpg",
     "is_active": 0,
     "status": "suspended",
     "player_code": "stefano-lilipaly"
@@ -810,7 +810,7 @@
     "club_country": "Indonesia",
     "caps": 30,
     "goals": 3,
-    "photo_url": "assets/images/players/yakobsayuri.jpg",
+    "photo_url": "/assets/images/players/yakobsayuri.jpg",
     "is_active": 1,
     "status": "active",
     "player_code": "yakob-sayuri"
@@ -858,7 +858,7 @@
     "club_country": "Indonesia",
     "caps": 4,
     "goals": 0,
-    "photo_url": "assets/images/players/yancesayuri.jpg",
+    "photo_url": "/assets/images/players/yancesayuri.jpg",
     "is_active": 0,
     "status": "suspended",
     "player_code": "yance-sayuri"
