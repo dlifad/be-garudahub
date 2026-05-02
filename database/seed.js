@@ -79,7 +79,7 @@ const seedConfig = [
   {
     table: "news",
     file: "./data/news.json",
-    columns: ["title", "content", "image_url"],
+    columns: ["title", "content", "author", "source", "source_url", "image_url", "published_at"],
   },
 ];
 
@@ -679,6 +679,78 @@ const seedVenuesForced = (data, onDone) => {
   stmt.finalize(onDone);
 };
 
+const seedNews = (data) => {
+  data.forEach((item) => {
+    db.run(
+      `INSERT INTO news (title, content, author, source, source_url, image_url, published_at)
+       VALUES (?, ?, ?, ?, ?, ?, ?)
+       ON CONFLICT(source_url) DO UPDATE SET
+         title = excluded.title,
+         content = excluded.content,
+         author = excluded.author,
+         source = excluded.source,
+         image_url = excluded.image_url,
+         published_at = excluded.published_at`,
+      [
+        item.title,
+        item.content,
+        item.author || null,
+        item.source || null,
+        item.source_url || null,
+        item.image_url || null,
+        item.date || null,
+      ],
+      (err) => {
+        if (err) console.error(`Gagal upsert news "${item.title}":`, err.message);
+      }
+    );
+  });
+  console.log("Seeder news selesai (mode upsert by source_url).");
+};
+
+const ensureNewsSchema = (onDone) => {
+  db.all("PRAGMA table_info(news)", [], (err, columns) => {
+    if (err) {
+      console.error("Gagal cek skema news:", err.message);
+      onDone();
+      return;
+    }
+
+    const columnNames = columns.map((c) => c.name);
+    const hasAuthor = columnNames.includes("author");
+    const hasSource = columnNames.includes("source");
+    const hasSourceUrl = columnNames.includes("source_url");
+
+    const migrations = [];
+    if (!hasAuthor) migrations.push("ALTER TABLE news ADD COLUMN author TEXT");
+    if (!hasSource) migrations.push("ALTER TABLE news ADD COLUMN source TEXT");
+    if (!hasSourceUrl) migrations.push("ALTER TABLE news ADD COLUMN source_url TEXT");
+
+    if (migrations.length === 0) {
+      // Pastikan index juga ada
+      db.run(
+        "CREATE UNIQUE INDEX IF NOT EXISTS idx_news_source_url_unique ON news(source_url)",
+        onDone
+      );
+      return;
+    }
+
+    let done = 0;
+    migrations.forEach((sql) => {
+      db.run(sql, (alterErr) => {
+        if (alterErr) console.error("Gagal migrasi news:", alterErr.message);
+        done++;
+        if (done === migrations.length) {
+          db.run(
+            "CREATE UNIQUE INDEX IF NOT EXISTS idx_news_source_url_unique ON news(source_url)",
+            onDone
+          );
+        }
+      });
+    });
+  });
+};
+
 const runSeed = () => {
   const venueConfig = seedConfig.find(c => c.table === "venues");
   const venueData = require(venueConfig.file);
@@ -709,6 +781,11 @@ const runSeed = () => {
           return;
         }
 
+        if (config.table === "news") {
+          seedNews(data);
+          return;
+        }
+
         seedGenericIfEmpty(config, data);
       });
     });
@@ -719,7 +796,9 @@ const runSeed = () => {
 ensurePlayersPlayerCodeColumn(() => {
   ensureMatchesFormationColumn(() => {
     ensureMatchLineupsSchema(() => {
-      runSeed();
+      ensureNewsSchema(() => {
+        runSeed();
+      });
     });
   });
 });
