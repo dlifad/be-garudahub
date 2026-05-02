@@ -100,6 +100,7 @@ function mapMatchRow(row, timezone) {
     stadium: {
       name: row.venue_name,
       city: row.city,
+      country: row.country,
       latitude: row.latitude,
       longitude: row.longitude,
     },
@@ -193,7 +194,7 @@ exports.getMatches = async (req, res) => {
     const rows = await all(
       `SELECT m.*, t.name AS tournament_name, t.logo_url AS tournament_logo,
               tc.name AS head_coach_name,
-              v.name AS venue_name, v.city, v.latitude, v.longitude
+              v.name AS venue_name, v.city, v.country, v.latitude, v.longitude
        FROM matches m
        JOIN tournaments t ON t.id = m.tournament_id
        LEFT JOIN venues v ON v.id = m.venue_id
