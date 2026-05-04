@@ -174,8 +174,8 @@ exports.getMyPredictions = async (req, res) => {
          p.id,
          m.home_team,
          m.away_team,
-         CASE WHEN m.is_home = 1 THEN 'id' ELSE m.home_team END AS home_flag,
-         CASE WHEN m.is_home = 1 THEN m.away_team ELSE 'id' END AS away_flag,
+        CASE WHEN m.is_home = 1 THEN 'id' ELSE m.home_team_flag END AS home_flag,
+        CASE WHEN m.is_home = 1 THEN m.away_team_flag ELSE 'id' END AS away_flag
          m.match_date_utc AS match_date,
          p.predicted_indonesia_score,
          p.predicted_opponent_score,
