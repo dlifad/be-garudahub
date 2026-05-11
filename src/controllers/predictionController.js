@@ -193,8 +193,8 @@ exports.getMyPredictions = async (req, res) => {
     );
 
     const data = rows.map((row) => {
-      // Tentukan status prediksi dengan gradasi lengkap
       let status = "pending";
+
       if (
         row.match_status === "finished" &&
         row.home_score !== null &&
@@ -277,14 +277,10 @@ exports.deletePrediction = async (req, res) => {
       return res.status(403).json({ success: false, message: "Forbidden" });
     }
 
-    if (
-      prediction.match_status === "ongoing" ||
-      prediction.match_status === "finished"
-    ) {
+    if (prediction.match_status === "ongoing" || prediction.match_status === "finished") {
       return res.status(400).json({
         success: false,
-        message:
-          "Prediksi tidak bisa dibatalkan, pertandingan sudah/sedang berlangsung",
+        message: "Prediksi tidak bisa dibatalkan, pertandingan sudah/sedang berlangsung",
       });
     }
 
@@ -293,8 +289,7 @@ exports.deletePrediction = async (req, res) => {
     if (Date.now() >= deadline) {
       return res.status(400).json({
         success: false,
-        message:
-          "Prediksi tidak bisa dibatalkan, sudah melewati batas waktu",
+        message: "Prediksi tidak bisa dibatalkan, sudah melewati batas waktu",
       });
     }
 
