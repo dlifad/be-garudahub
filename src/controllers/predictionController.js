@@ -215,7 +215,7 @@ exports.getMyPredictions = async (req, res) => {
           );
 
         if (exactScore) {
-          status = "exact_score"; // 🎯 Skor persis tepat
+          status = "exact_score"; // 🎯 Skor persis
         } else if (correctResult && actualIndonesia === actualOpponent) {
           status = "draw_correct"; // 🤝 Seri, hasil benar
         } else if (correctResult) {
