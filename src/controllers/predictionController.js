@@ -193,26 +193,35 @@ exports.getMyPredictions = async (req, res) => {
     );
 
     const data = rows.map((row) => {
-      // Tentukan status prediksi
+      // Tentukan status prediksi dengan gradasi lengkap
       let status = "pending";
-      if (row.match_status === "finished" && row.home_score !== null && row.away_score !== null) {
+      if (
+        row.match_status === "finished" &&
+        row.home_score !== null &&
+        row.away_score !== null
+      ) {
         const actualIndonesia = row.is_home ? row.home_score : row.away_score;
         const actualOpponent = row.is_home ? row.away_score : row.home_score;
-        const pts = calculatePoints(
-          actualIndonesia,
-          actualOpponent,
-          row.predicted_indonesia_score,
-          row.predicted_opponent_score,
-        );
-        if (pts >= 10) status = "correct";
-        else if (pts >= 5) status = "correct"; // hasil benar walau skor beda
-        else if (
+
+        const exactScore =
+          actualIndonesia === row.predicted_indonesia_score &&
+          actualOpponent === row.predicted_opponent_score;
+
+        const correctResult =
           getResultType(actualIndonesia, actualOpponent) ===
-          getResultType(row.predicted_indonesia_score, row.predicted_opponent_score)
-        ) {
-          status = actualIndonesia === actualOpponent ? "draw_correct" : "correct";
+          getResultType(
+            row.predicted_indonesia_score,
+            row.predicted_opponent_score,
+          );
+
+        if (exactScore) {
+          status = "exact_score"; // 🎯 Skor persis tepat
+        } else if (correctResult && actualIndonesia === actualOpponent) {
+          status = "draw_correct"; // 🤝 Seri, hasil benar
+        } else if (correctResult) {
+          status = "correct_winner"; // ✅ Hasil benar, skor beda
         } else {
-          status = "wrong";
+          status = "wrong"; // ❌ Meleset
         }
       }
 
@@ -268,10 +277,14 @@ exports.deletePrediction = async (req, res) => {
       return res.status(403).json({ success: false, message: "Forbidden" });
     }
 
-    if (prediction.match_status === "ongoing" || prediction.match_status === "finished") {
+    if (
+      prediction.match_status === "ongoing" ||
+      prediction.match_status === "finished"
+    ) {
       return res.status(400).json({
         success: false,
-        message: "Prediksi tidak bisa dibatalkan, pertandingan sudah/sedang berlangsung",
+        message:
+          "Prediksi tidak bisa dibatalkan, pertandingan sudah/sedang berlangsung",
       });
     }
 
@@ -280,7 +293,8 @@ exports.deletePrediction = async (req, res) => {
     if (Date.now() >= deadline) {
       return res.status(400).json({
         success: false,
-        message: "Prediksi tidak bisa dibatalkan, sudah melewati batas waktu",
+        message:
+          "Prediksi tidak bisa dibatalkan, sudah melewati batas waktu",
       });
     }
 
