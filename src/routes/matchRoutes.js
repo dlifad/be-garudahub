@@ -4,6 +4,7 @@ const matchController = require("../controllers/matchController");
 const router = express.Router();
 
 router.get("/", matchController.getMatches);
+router.get("/next-ai",matchController.getNextMatchWithAi);
 router.get("/:id", matchController.getMatchById);
 router.post("/", matchController.createMatch);
 router.put("/:id", matchController.updateMatch);

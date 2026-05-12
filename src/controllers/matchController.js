@@ -1,3 +1,4 @@
+const axios = require("axios");
 const { all, get, run } = require("../utils/dbAsync");
 const {
   formatWithOffset,
@@ -213,6 +214,89 @@ exports.getMatches = async (req, res) => {
     return res.status(500).json({
       success: false,
       message: "Gagal mengambil data pertandingan",
+      error: error.message,
+    });
+  }
+};
+
+exports.getNextMatchWithAi = async (req, res) => {
+  try {
+    const timezone = req.query.timezone || "UTC";
+
+    const row = await get(
+      `SELECT m.*, t.name AS tournament_name,
+              t.logo_url AS tournament_logo,
+
+              tc.name AS head_coach_name,
+
+              v.name AS venue_name,
+              v.city,
+              v.country,
+              v.latitude,
+              v.longitude
+
+       FROM matches m
+
+       JOIN tournaments t
+         ON t.id = m.tournament_id
+
+       LEFT JOIN venues v
+         ON v.id = m.venue_id
+
+       LEFT JOIN tournament_coaches tc
+         ON tc.tournament_id = t.id
+         AND tc.role = 'head_coach'
+         AND tc.is_active = 1
+
+       WHERE m.status = 'scheduled'
+         AND datetime(m.match_date_utc)
+             > datetime('now')
+
+       ORDER BY m.match_date_utc ASC
+
+       LIMIT 1`,
+    );
+
+    if (!row) {
+      return res.json({
+        success: true,
+        data: null,
+      });
+    }
+
+    const match = mapMatchRow(row, timezone);
+
+    let matchAi = null;
+
+    try {
+      const aiResponse = await axios.post(
+        "http://127.0.0.1:8000/predict",
+
+        {
+          home_team: match.home_team,
+          away_team: match.away_team,
+        },
+      );
+
+      matchAi = aiResponse.data;
+    } catch (e) {
+      console.log("Match AI Error:", e.message);
+    }
+
+    return res.json({
+      success: true,
+
+      data: {
+        ...match,
+        match_ai: matchAi,
+      },
+    });
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+
+      message: "Gagal mengambil next match AI",
+
       error: error.message,
     });
   }
